@@ -1,0 +1,38 @@
+{
+  "name": "Brian's Brain",
+  "neighborhood": "moore",
+  "boundary": "wrap",
+  "states": ["off", "on", "dying"],
+  "active_states": ["on", "dying"],
+  "symbols": {
+    "off": ". ",
+    "on": "■ ",
+    "dying": "x "
+  },
+  "colors": {
+    "off": "#0F172A",
+    "on": "#38BDF8",
+    "dying": "#EF4444"
+  },
+  "default_rows": 25,
+  "default_cols": 25,
+  "default_probabilities": [0.75, 0.2, 0.05],
+  "transitions": [
+    {
+      "current_state": "off",
+      "neighbor_state": "on",
+      "counts": [2],
+      "next_state": "on"
+    },
+    {
+      "current_state": "on",
+      "counts": "any",
+      "next_state": "dying"
+    },
+    {
+      "current_state": "dying",
+      "counts": "any",
+      "next_state": "off"
+    }
+  ]
+}

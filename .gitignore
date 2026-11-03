@@ -1,0 +1,16 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyCharm / IDE
+.idea/
+.vscode/
+
+# Checkpoints / temporary test exports (optional, keep default checkpoint if wanted)
+# conway_checkpoint.json
+
+# Environment
+.venv/
+venv/
+ENV/
