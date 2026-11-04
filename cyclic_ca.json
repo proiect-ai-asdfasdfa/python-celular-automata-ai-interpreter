@@ -1,0 +1,53 @@
+{
+  "name": "Cyclic Cellular Automaton",
+  "neighborhood": "moore",
+  "boundary": "wrap",
+  "states": ["0", "1", "2", "3"],
+  "active_states": ["1", "2", "3"],
+  "dead_state": "0",
+  "symbols": {
+    "0": "0 ",
+    "1": "1 ",
+    "2": "2 ",
+    "3": "3 "
+  },
+  "colors": {
+    "0": "#3B82F6",
+    "1": "#10B981",
+    "2": "#F59E0B",
+    "3": "#EF4444"
+  },
+  "default_rows": 30,
+  "default_cols": 30,
+  "default_probabilities": [0.25, 0.25, 0.25, 0.25],
+  "transitions": [
+    {
+      "current_state": "0",
+      "neighbor_state": "1",
+      "min_count": 2,
+      "counts": [2, 3, 4, 5, 6, 7, 8],
+      "next_state": "1"
+    },
+    {
+      "current_state": "1",
+      "neighbor_state": "2",
+      "min_count": 2,
+      "counts": [2, 3, 4, 5, 6, 7, 8],
+      "next_state": "2"
+    },
+    {
+      "current_state": "2",
+      "neighbor_state": "3",
+      "min_count": 2,
+      "counts": [2, 3, 4, 5, 6, 7, 8],
+      "next_state": "3"
+    },
+    {
+      "current_state": "3",
+      "neighbor_state": "0",
+      "min_count": 2,
+      "counts": [2, 3, 4, 5, 6, 7, 8],
+      "next_state": "0"
+    }
+  ]
+}

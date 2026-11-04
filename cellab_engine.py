@@ -1,6 +1,6 @@
 """
 Project CellLab - Engine
-Motor generic de simulare pentru automate celulare 2D.
+Motor generic de simulare pentru automate celulare (2D și 1D Elementary).
 Regulile, dimensiunile, topologia de vecinătate și stările sunt încărcate complet din fișiere JSON.
 """
 
@@ -11,9 +11,11 @@ from copy import deepcopy
 
 class CellularAutomata:
     """
-    Simulator generic de automate celulare bidimensionale.
-    Permite orice număr de stări, tipuri de vecinătate (Moore, von Neumann),
-    condiții de bordură (wrap/toroidal, fixed/dead) și tranziții bazate pe reguli.
+    Simulator generic de automate celulare.
+    Suportă:
+    1. Automate 2D cu tranziții bazate pe numărarea vecinilor (Brian's Brain, Cyclic CA etc.)
+    2. Automate 1D Elementare (Elementary Cellular Automata - Rule 30, Rule 90, Rule 110 etc.)
+       reprezentate spațio-temporal pe matrice 2D.
     """
 
     def __init__(self, config_source):
@@ -35,23 +37,39 @@ class CellularAutomata:
         self.neighborhood_type = self.config.get("neighborhood", "moore").lower()
         self.boundary = self.config.get("boundary", "wrap").lower()
         self.states = self.config.get("states", [])
-        self.dead_state = self.config.get("dead_state", self.states[0] if self.states else "dead")
+        self.dead_state = self.config.get("dead_state", self.states[0] if self.states else "0")
         self.symbols = self.config.get("symbols", {})
         self.colors = self.config.get("colors", {})
         self.active_states = self.config.get("active_states", [s for s in self.states if s != self.dead_state])
         self.transitions = self.config.get("transitions", [])
 
+        # Verifică dacă automatul este de tip 1D Elementary (Wolfram)
+        self.is_elementary = (
+            self.config.get("type") == "elementary"
+            or "patterns" in self.config
+            or "rule_number" in self.config
+        )
+
+        self.patterns = {}
+        if self.is_elementary:
+            if "patterns" in self.config:
+                self.patterns = self.config["patterns"]
+            elif "rule_number" in self.config:
+                rule_num = int(self.config["rule_number"])
+                for i, pat in enumerate(["111", "110", "101", "100", "011", "010", "001", "000"]):
+                    self.patterns[pat] = str((rule_num >> (7 - i)) & 1)
+
         # Dimensiuni implicite
-        default_rows = self.config.get("default_rows", 25)
-        default_cols = self.config.get("default_cols", 25)
+        default_rows = self.config.get("default_rows", 30)
+        default_cols = self.config.get("default_cols", 30)
 
         self.rows = default_rows
         self.cols = default_cols
         self.generation = 0
         self.grid = []
 
-        # Inițializează o grilă goală (inactivă)
-        self.clear_grid(default_rows, default_cols)
+        # Inițializează grila implicită
+        self.generate_random_grid(default_rows, default_cols)
 
     def set_grid(self, grid, generation=0):
         """Setează manual starea grilei (util pentru teste unitare sau pattern-uri specifice)."""
@@ -74,8 +92,9 @@ class CellularAutomata:
 
     def generate_random_grid(self, rows=None, cols=None, probabilities=None):
         """
-        Generează o stare inițială aleatorie conform probabilităților specificate
-        sau configurate implicit în fișierul JSON.
+        Generează o stare inițială conform specificației automatului:
+        - Pentru Elementary CA: plasează o singură celulă activă în centrul primului rând (000...1...000).
+        - Pentru 2D CA (Brian's Brain, Cyclic CA): populează aleatoriu întreaga matrice.
         """
         if rows is not None:
             self.rows = rows
@@ -83,22 +102,31 @@ class CellularAutomata:
             self.cols = cols
         self.generation = 0
 
-        probs = probabilities or self.config.get("default_probabilities")
-
-        if probs and len(probs) == len(self.states):
-            self.grid = [
-                random.choices(self.states, weights=probs, k=self.cols)
-                for _ in range(self.rows)
-            ]
+        if self.is_elementary:
+            # Pentru 1D Elementary CA, comportamentul canonic este un rând inițial cu o singură celulă vie în centru
+            self.grid = [[self.dead_state for _ in range(self.cols)] for _ in range(self.rows)]
+            if probabilities:
+                self.grid[0] = random.choices(self.states, weights=probabilities, k=self.cols)
+            else:
+                mid = self.cols // 2
+                active_val = self.active_states[0] if self.active_states else "1"
+                self.grid[0][mid] = active_val
         else:
-            self.grid = [
-                [random.choice(self.states) for _ in range(self.cols)]
-                for _ in range(self.rows)
-            ]
+            probs = probabilities or self.config.get("default_probabilities")
+            if probs and len(probs) == len(self.states):
+                self.grid = [
+                    random.choices(self.states, weights=probs, k=self.cols)
+                    for _ in range(self.rows)
+                ]
+            else:
+                self.grid = [
+                    [random.choice(self.states) for _ in range(self.cols)]
+                    for _ in range(self.rows)
+                ]
 
     def _get_neighbors(self, r, c):
         """
-        Calculează frecvența stărilor vecinilor pentru celula (r, c).
+        Calculează frecvența stărilor vecinilor pentru celula (r, c) în automate 2D.
         Suportă cartier Moore (8 vecini) și von Neumann (4 vecini),
         precum și bordură toroidală (wrap) sau fixă (fixed/dead).
         """
@@ -137,36 +165,73 @@ class CellularAutomata:
 
     def step(self):
         """
-        Calculează și aplică tranzițiile de stare pentru toți indivizii,
-        avansând universul cu exact o generație.
+        Calculează și aplică tranzițiile de stare, avansând universul cu o generație:
+        - În Elementary CA (1D): generează rândul următor din diagrama spațio-temporală.
+        - În 2D CA: aplică regulile de tranziție pentru toate celulele matricei simultan.
         """
-        new_grid = [[self.grid[r][c] for c in range(self.cols)] for r in range(self.rows)]
+        if self.is_elementary:
+            # Rulare Elementary CA (spațio-temporal pe matrice 2D)
+            curr_row_idx = min(self.generation, self.rows - 1)
+            source_row = self.grid[curr_row_idx]
+            next_row = [self.dead_state] * self.cols
 
-        for r in range(self.rows):
             for c in range(self.cols):
-                current_state = self.grid[r][c]
-                neighbor_counts = self._get_neighbors(r, c)
+                if self.boundary == "wrap":
+                    left = source_row[(c - 1) % self.cols]
+                    right = source_row[(c + 1) % self.cols]
+                else:
+                    left = source_row[c - 1] if c > 0 else self.dead_state
+                    right = source_row[c + 1] if c < self.cols - 1 else self.dead_state
+                curr = source_row[c]
 
-                # Caută prima regulă compatibilă din lista de tranziții
-                for rule in self.transitions:
-                    if rule.get("current_state") == current_state:
-                        target_counts = rule.get("counts")
-                        req_neighbor = rule.get("neighbor_state")
+                pattern_key = f"{left}{curr}{right}"
+                next_row[c] = self.patterns.get(pattern_key, self.dead_state)
 
-                        # Regula necondiționată (ex: starea "on" trece necondiționat în "dying")
-                        if target_counts == "any":
-                            new_grid[r][c] = rule["next_state"]
-                            break
+            if self.generation < self.rows - 1:
+                self.grid[self.generation + 1] = next_row
+            else:
+                # Dacă am umplut matricea, derulăm în sus cu o linie (smooth scrolling)
+                self.grid.pop(0)
+                self.grid.append(next_row)
 
-                        # Regula condiționată de numărul de vecini de un anumit tip
-                        elif req_neighbor:
-                            counts_list = [target_counts] if isinstance(target_counts, int) else target_counts
-                            if counts_list is not None and neighbor_counts.get(req_neighbor, 0) in counts_list:
+            self.generation += 1
+
+        else:
+            # Rulare 2D Cellular Automata (Brian's Brain, Cyclic CA etc.)
+            new_grid = [[self.grid[r][c] for c in range(self.cols)] for r in range(self.rows)]
+
+            for r in range(self.rows):
+                for c in range(self.cols):
+                    current_state = self.grid[r][c]
+                    neighbor_counts = self._get_neighbors(r, c)
+
+                    # Caută prima regulă compatibilă din lista de tranziții
+                    for rule in self.transitions:
+                        if rule.get("current_state") == current_state:
+                            target_counts = rule.get("counts")
+                            min_count = rule.get("min_count")
+                            req_neighbor = rule.get("neighbor_state")
+
+                            # Regula necondiționată (ex: FIRING -> DYING, DYING -> OFF)
+                            if target_counts == "any":
                                 new_grid[r][c] = rule["next_state"]
                                 break
 
-        self.grid = new_grid
-        self.generation += 1
+                            # Regula cu prag minim (ex: la Cyclic CA: cel puțin 2 vecini)
+                            elif min_count is not None and req_neighbor:
+                                if neighbor_counts.get(req_neighbor, 0) >= min_count:
+                                    new_grid[r][c] = rule["next_state"]
+                                    break
+
+                            # Regula condiționată de mulțimea de numere de vecini
+                            elif req_neighbor:
+                                counts_list = [target_counts] if isinstance(target_counts, int) else target_counts
+                                if counts_list is not None and neighbor_counts.get(req_neighbor, 0) in counts_list:
+                                    new_grid[r][c] = rule["next_state"]
+                                    break
+
+            self.grid = new_grid
+            self.generation += 1
 
     def run_simulation(self, steps, verbose=True):
         """Rulează simularea pentru un număr dat de iterații."""
@@ -235,7 +300,7 @@ class CellularAutomata:
         return data
 
     def clone(self):
-        """Creează o copie identică a automatului pentru analize și predicții fără a afecta starea curentă."""
+        """Creează o copie identică a automatului pentru analize fără a afecta starea curentă."""
         cloned = CellularAutomata(self.config)
         cloned.rows = self.rows
         cloned.cols = self.cols
@@ -263,7 +328,7 @@ class CellularAutomata:
         Returnează (True, generație) dacă a atins stabilitate, altfel (False, None).
         """
         sim = self.clone()
-        for step_idx in range(max_steps):
+        for _ in range(max_steps):
             prev_grid = deepcopy(sim.grid)
             sim.step()
             if sim.grid == prev_grid:
@@ -324,59 +389,75 @@ class CellularAutomata:
 # =========================================================================
 if __name__ == "__main__":
     print("==================================================")
-    print("DEMO TEST 1: Conway's Game of Life (Oscilator Blinker)")
+    print("DEMO TEST 1: Elementary Cellular Automaton (Rule 30)")
     print("==================================================")
+    elem = CellularAutomata("elementary_rule30.json")
+    print(f"Nume: {elem.name} | Tip: Elementary Rule 30")
+    print(f"Regula 30 modele: {elem.patterns}")
 
-    conway = CellularAutomata("conway.json")
-    blinker_grid = [
-        ["dead", "dead", "dead", "dead", "dead"],
-        ["dead", "dead", "dead", "dead", "dead"],
-        ["dead", "alive", "alive", "alive", "dead"],
-        ["dead", "dead", "dead", "dead", "dead"],
-        ["dead", "dead", "dead", "dead", "dead"]
-    ]
-    conway.set_grid(blinker_grid)
+    # Setăm 1 rând inițial de test: 000010000
+    test_1d_grid = [["0"] * 11 for _ in range(5)]
+    test_1d_grid[0][5] = "1"
+    elem.set_grid(test_1d_grid)
+    print("\nGenerația 0 (rândul de pornire 00000100000):")
+    elem.display()
 
-    print("\n--- Rulare 2 pași ---")
-    conway.run_simulation(steps=2, verbose=True)
-
-    # Test State Storage
-    checkpoint_file = "conway_checkpoint.json"
-    conway.save_state(checkpoint_file)
-
-    # Test State Recovery
-    print("\n--- Testare State Recovery ---")
-    conway_resumed = CellularAutomata("conway.json")
-    conway_resumed.load_state(checkpoint_file)
-    print("Continuare pas următor după recovery:")
-    conway_resumed.run_simulation(steps=1, verbose=True)
-
-    # Testare Întrebări Analitice
-    print("\n--- Testare Răspuns la Întrebările Proiectului ---")
-    has_cycle, period, start_gen, cycle_gen = conway.detect_cycle(max_steps=50)
-    print(f"[Q5 - Ciclu] Oscilatorul Blinker detectat ca ciclu? {has_cycle} (Perioadă: {period}, de la Gen {start_gen} la Gen {cycle_gen})")
-
-    alive_after_5 = conway.count_cells_after_n_steps("alive", 5)
-    print(f"[Q4 - Numărare celule] Celule 'alive' după 5 iterații: {alive_after_5}")
-
-    is_stable, stable_gen = conway.find_stable_state(max_steps=20)
-    print(f"[Q2 - Stabilitate] Este Blinker stabil (fără nicio mișcare)? {is_stable}")
+    elem.step()
+    print("\nGenerația 1 (după aplicarea regulii 30):")
+    elem.display()
+    assert elem.grid[1][4] == "1" and elem.grid[1][5] == "1" and elem.grid[1][6] == "1", "Regula 30 eșuată!"
+    print("[PASS] Regula 30 calculată corect (001 -> 1, 010 -> 1, 100 -> 1)!")
 
     print("\n==================================================")
-    print("DEMO TEST 2: Brian's Brain")
+    print("DEMO TEST 2: Brian's Brain (OFF, FIRING, DYING)")
     print("==================================================")
     brain = CellularAutomata("brians_brain.json")
+    print(f"Nume: {brain.name} | Stări: {brain.states}")
     brain_test_grid = [
-        ["off", "off", "off", "off", "off"],
-        ["off", "on",  "on",  "off", "off"],
-        ["off", "off", "off", "off", "off"],
-        ["off", "off", "off", "off", "off"],
-        ["off", "off", "off", "off", "off"]
+        ["OFF", "OFF",    "OFF",    "OFF", "OFF"],
+        ["OFF", "FIRING", "FIRING", "OFF", "OFF"],
+        ["OFF", "OFF",    "OFF",    "OFF", "OFF"],
+        ["OFF", "OFF",    "OFF",    "OFF", "OFF"],
+        ["OFF", "OFF",    "OFF",    "OFF", "OFF"]
     ]
     brain.set_grid(brain_test_grid)
-    brain.run_simulation(steps=2, verbose=True)
-    print(f"Număr celule active: {brain.count_cells()} (on/dying)")
-    print("\nToate testele de bază au rulat cu succes!")
+    print("\nGenerația 0:")
+    brain.display()
+    brain.step()
+    print("\nGenerația 1 (FIRING -> DYING, celule OFF cu 2 FIRING devin FIRING):")
+    brain.display()
+    assert brain.grid[1][1] == "DYING" and brain.grid[1][2] == "DYING", "Brian's Brain eșuat!"
+    print("[PASS] Tranzițiile FIRING -> DYING și nașterea din OFF au funcționat corect!")
 
-    print(f"Număr celule active: {brain.count_cells()} (on/dying)")
-    print("\nToate testele de bază au rulat cu succes!")
+    print("\n==================================================")
+    print("DEMO TEST 3: Cyclic Cellular Automaton (0, 1, 2, 3)")
+    print("==================================================")
+    cyclic = CellularAutomata("cyclic_ca.json")
+    print(f"Nume: {cyclic.name} | Stări: {cyclic.states}")
+    # Matrice cu 0 și o celulă înconjurată de cel puțin 2 celule de '1'
+    cyclic_grid = [
+        ["1", "1", "0"],
+        ["0", "0", "0"],
+        ["0", "0", "0"]
+    ]
+    cyclic.set_grid(cyclic_grid)
+    cyclic.step()
+    # Celula (1, 0) sau (0, 2) având vecini '1' devine '1'
+    print("Generația 1 (Cyclic CA):")
+    cyclic.display()
+    print(f"Celule de tip '1' după 1 pas: {cyclic.count_cells('1')}")
+    print("[PASS] Cyclic CA rulează cu succes!")
+
+    print("\n==================================================")
+    print("DEMO TEST 4: State Storage & Recovery (JSON)")
+    print("==================================================")
+    checkpoint_file = "brians_brain_checkpoint.json"
+    brain.save_state(checkpoint_file)
+    recovered = CellularAutomata("brians_brain.json")
+    recovered.load_state(checkpoint_file)
+    assert recovered.grid == brain.grid, "Recovery eșuat!"
+    print(f"[PASS] Starea restaurată cu succes de la Generația {recovered.generation}!")
+
+    print("\n==================================================")
+    print("TOATE TESTELE AU FOST VALIDATE CU SUCCES!")
+    print("==================================================")

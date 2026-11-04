@@ -1,0 +1,29 @@
+{
+  "name": "Elementary Cellular Automaton (Rule 30)",
+  "type": "elementary",
+  "rule_number": 30,
+  "boundary": "wrap",
+  "states": ["0", "1"],
+  "active_states": ["1"],
+  "dead_state": "0",
+  "symbols": {
+    "0": ". ",
+    "1": "■ "
+  },
+  "colors": {
+    "0": "#0F172A",
+    "1": "#F59E0B"
+  },
+  "default_rows": 35,
+  "default_cols": 51,
+  "patterns": {
+    "111": "0",
+    "110": "0",
+    "101": "0",
+    "100": "1",
+    "011": "1",
+    "010": "1",
+    "001": "1",
+    "000": "0"
+  }
+}

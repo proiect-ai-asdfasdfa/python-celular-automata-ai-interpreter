@@ -1,8 +1,11 @@
 """
 Project CellLab - Graphical User Interface (GUI)
 Interfață grafică completă dezvoltată cu Tkinter (Python Standard Library).
-Permite simularea interactivă a automatelor celulare, editarea celulelor,
-salvarea/încărcarea stărilor și interogarea întrebărilor analitice.
+Permite simularea interactivă a automatelor celulare:
+1. Elementary Cellular Automaton (Rule 30)
+2. Brian's Brain (OFF, FIRING, DYING)
+3. Cyclic Cellular Automaton (0, 1, 2, 3)
+și orice alt automat definit în format JSON.
 """
 
 import os
@@ -12,21 +15,21 @@ from cellab_engine import CellularAutomata
 
 
 class CellLabGUI:
-    """Aplicație GUI pentru simularea automatelor celulare 2D."""
+    """Aplicație GUI pentru simularea automatelor celulare."""
 
     def __init__(self, root):
         self.root = root
-        self.root.title("Project CellLab - 2D Cellular Automata Simulator")
-        self.root.geometry("920x820")
+        self.root.title("Project CellLab - Cellular Automata Simulator")
+        self.root.geometry("940x840")
         self.root.minsize(780, 700)
 
         # Stare simulare
         self.is_running = False
         self.sim_timer_id = None
-        self.speed_ms = 150  # interval de rulare implicit
+        self.speed_ms = 120  # interval de rulare implicit
 
         # Date grafice Canvas
-        self.canvas_width = 620
+        self.canvas_width = 640
         self.canvas_height = 580
         self.cell_rects = []
         self.last_grid_cache = []
@@ -35,10 +38,17 @@ class CellLabGUI:
         # Descoperire automată a tuturor fișierelor de configurare din folder
         self.config_files = self._scan_available_configs()
 
-        # Automatul curent
-        self.current_config_file = self.config_files.get("Conway's Game of Life", list(self.config_files.values())[0] if self.config_files else "conway.json")
+        # Prioritate automat inițial: Rule 30 sau Brian's Brain
+        default_choice = None
+        for preferred in ("Elementary Cellular Automaton (Rule 30)", "Brian's Brain", "Cyclic Cellular Automaton"):
+            if preferred in self.config_files:
+                default_choice = preferred
+                break
+        if not default_choice and self.config_files:
+            default_choice = list(self.config_files.keys())[0]
+
+        self.current_config_file = self.config_files.get(default_choice, "brians_brain.json")
         self.automata = CellularAutomata(self.current_config_file)
-        self.automata.generate_random_grid()
 
         # Construire interfață
         self._apply_theme()
@@ -63,21 +73,12 @@ class CellLabGUI:
                         import json
                         with open(full_path, "r", encoding="utf-8") as f:
                             data = json.load(f)
-                        if "states" in data and "transitions" in data:
+                        if "states" in data and ("transitions" in data or "patterns" in data or "rule_number" in data):
                             name = data.get("name", fname.replace(".json", "").replace("_", " ").title())
                             configs[name] = full_path
                     except Exception:
                         pass
         return configs
-        self._apply_theme()
-        self._build_top_panel()
-        self._build_canvas_panel()
-        self._build_control_panel()
-        self._build_status_bar()
-
-        # Desenare inițială
-        self._init_canvas_grid()
-        self._update_ui_stats()
 
     def _apply_theme(self):
         """Configurează stilurile TTK pentru un aspect curat și modern."""
@@ -115,14 +116,14 @@ class CellLabGUI:
             textvariable=self.automaton_var,
             values=list(self.config_files.keys()),
             state="readonly",
-            width=24,
+            width=28,
             font=("Segoe UI", 9)
         )
         self.selector_combo.pack(side=tk.LEFT, padx=(0, 10))
         self.selector_combo.bind("<<ComboboxSelected>>", self._on_automaton_changed)
 
         # Buton încărcare configurație JSON externă
-        btn_load_cfg = ttk.Button(top_frame, text="📂 Load JSON Config...", command=self._load_custom_config)
+        btn_load_cfg = ttk.Button(top_frame, text="📂 Load JSON...", command=self._load_custom_config)
         btn_load_cfg.pack(side=tk.LEFT, padx=(0, 15))
 
         # Badge-uri de informare
@@ -132,7 +133,7 @@ class CellLabGUI:
             font=("Segoe UI", 9, "italic"),
             foreground="#475569"
         )
-        self.info_badge.pack(side=tk.LEFT, padx=10)
+        self.info_badge.pack(side=tk.LEFT, padx=5)
 
         # Legendă stări (dreapta)
         self.legend_frame = ttk.Frame(top_frame)
@@ -155,7 +156,7 @@ class CellLabGUI:
         )
         self.canvas.pack(fill=tk.BOTH, expand=True)
 
-        # Evenimente de interacțiune directă cu mouse-ul
+        # Evenimente mouse
         self.canvas.bind("<Button-1>", self._on_canvas_click)
         self.canvas.bind("<B1-Motion>", self._on_canvas_drag)
         self.canvas.bind("<ButtonRelease-1>", self._on_canvas_release)
@@ -199,7 +200,7 @@ class CellLabGUI:
 
         self.speed_scale = ttk.Scale(
             row1,
-            from_=30,
+            from_=20,
             to=500,
             value=self.speed_ms,
             orient=tk.HORIZONTAL,
@@ -230,7 +231,7 @@ class CellLabGUI:
             row2,
             textvariable=self.preset_var,
             state="readonly",
-            width=18
+            width=22
         )
         self.preset_combo.pack(side=tk.LEFT, padx=(0, 8))
         self.preset_combo.bind("<<ComboboxSelected>>", self._on_preset_selected)
@@ -264,7 +265,7 @@ class CellLabGUI:
 
         self.lbl_message = ttk.Label(
             status_frame,
-            text="Gata. Fă click pe grilă pentru a desena manual sau apasă Play/Randomize.",
+            text="Gata. Click pe celule pentru editare manuală sau apasă Play/Randomize.",
             font=("Segoe UI", 9),
             foreground="#64748B"
         )
@@ -280,15 +281,15 @@ class CellLabGUI:
             return self.automata.colors[state]
 
         default_palette = {
-            "dead": "#0F172A", "alive": "#4ADE80",
+            "0": "#0F172A", "1": "#F59E0B", "2": "#10B981", "3": "#EF4444",
+            "OFF": "#0F172A", "FIRING": "#38BDF8", "DYING": "#EF4444",
             "off": "#0F172A", "on": "#38BDF8", "dying": "#EF4444",
-            "empty": "#020617", "head": "#38BDF8", "tail": "#EF4444", "conductor": "#FACC15"
+            "dead": "#0F172A", "alive": "#4ADE80"
         }
         if state in default_palette:
             return default_palette[state]
 
-        # Culoare deterministă generată dinamic pentru stări arbitrare
-        h = abs(hash(state)) % 0xFFFFFF
+        h = abs(hash(str(state))) % 0xFFFFFF
         return f"#{h:06X}"
 
     def _init_canvas_grid(self):
@@ -309,14 +310,13 @@ class CellLabGUI:
         if rows == 0 or cols == 0:
             return
 
-        cell_w = max(4, w // cols)
-        cell_h = max(4, h // rows)
+        cell_w = max(3, w // cols)
+        cell_h = max(3, h // rows)
         self.cell_size = min(cell_w, cell_h)
 
         self.offset_x = (w - cols * self.cell_size) // 2
         self.offset_y = (h - rows * self.cell_size) // 2
 
-        # Culoare fundal grilă adaptată după culoarea stării inactive
         bg_color = self._get_cell_color(self.automata.dead_state)
         self.canvas.configure(bg=bg_color)
         grid_border_color = "#334155" if bg_color.upper() in ("#0F172A", "#020617", "#000000", "#1E293B") else "#CBD5E1"
@@ -408,7 +408,7 @@ class CellLabGUI:
         self.drag_paint_state = None
 
     def _on_canvas_right_click(self, event):
-        """Click dreapta: resetează celula la starea inactivă (dead/off)."""
+        """Click dreapta: resetează celula la starea inactivă."""
         r, c = self._coords_to_cell(event.x, event.y)
         if r is not None and c is not None:
             dead_state = self.automata.dead_state
@@ -466,7 +466,7 @@ class CellLabGUI:
         self.automata.generate_random_grid()
         self._init_canvas_grid()
         self._update_ui_stats()
-        self.lbl_message.configure(text="Grilă reinițializată aleatoriu conform probabilităților din configurație.")
+        self.lbl_message.configure(text="Grilă reinițializată.")
 
     def clear_grid(self):
         """Golește complet grila (toate celulele devin inactive)."""
@@ -500,9 +500,7 @@ class CellLabGUI:
         try:
             self.automata = CellularAutomata(cfg_path)
             self.current_config_file = cfg_path
-            self.automata.generate_random_grid()
 
-            # Adaugă în lista dinamică dacă a fost încărcat din altă parte
             if self.automata.name not in self.config_files:
                 self.config_files[self.automata.name] = cfg_path
                 self.selector_combo.configure(values=list(self.config_files.keys()))
@@ -526,12 +524,14 @@ class CellLabGUI:
             self._switch_to_config(filepath)
 
     def _update_info_badge_and_legend(self):
-        """Afișează neighborhood, boundary și o legendă grafică de culori."""
-        neigh_text = "Moore (8)" if self.automata.neighborhood_type == "moore" else "von Neumann (4)"
+        """Afișează neighborhood/type, boundary și legenda de culori."""
+        if getattr(self.automata, "is_elementary", False):
+            neigh_text = "1D Elementary (Left, Center, Right)"
+        else:
+            neigh_text = "Moore (8)" if self.automata.neighborhood_type == "moore" else "von Neumann (4)"
         bound_text = "Wrap (toroidal)" if self.automata.boundary == "wrap" else "Bordură fixă"
-        self.info_badge.configure(text=f"Cartier: {neigh_text}  |  Bordură: {bound_text}")
+        self.info_badge.configure(text=f"Tip: {neigh_text}  |  Bordură: {bound_text}")
 
-        # Curăță vechea legendă
         for child in self.legend_frame.winfo_children():
             child.destroy()
 
@@ -540,7 +540,6 @@ class CellLabGUI:
             item_frame = ttk.Frame(self.legend_frame)
             item_frame.pack(side=tk.LEFT, padx=4)
 
-            # Pătrățel de culoare
             color_box = tk.Label(item_frame, bg=color, width=2, height=1, relief="ridge")
             color_box.pack(side=tk.LEFT, padx=(0, 2))
 
@@ -549,10 +548,12 @@ class CellLabGUI:
 
     def _update_preset_options(self):
         """Actualizează lista de pattern-uri cunoscute în funcție de automat."""
-        if "Conway" in self.automata.name:
-            presets = ["-- Alege pattern --", "Blinker (Oscilator p=2)", "Glider (Navă spațială)", "Beacon (Oscilator p=2)", "Block (Still Life)", "Pulsar (Oscilator p=3)"]
+        if "Elementary" in self.automata.name or getattr(self.automata, "is_elementary", False):
+            presets = ["-- Alege pattern --", "Single Center Seed (0..010..0)", "Random Row Seed", "Two Center Seeds (11)"]
         elif "Brian" in self.automata.name:
             presets = ["-- Alege pattern --", "Oscilator simplu", "Glider (Spaceship)", "Pattern Complex"]
+        elif "Cyclic" in self.automata.name:
+            presets = ["-- Alege pattern --", "Grilă Aleatorie (Spirale)", "Punct Central (Valuri)"]
         else:
             presets = ["-- Alege pattern --"]
 
@@ -560,7 +561,7 @@ class CellLabGUI:
         self.preset_var.set(presets[0])
 
     def _on_preset_selected(self, _event=None):
-        """Desenează un preset în centrul grilei."""
+        """Desenează un preset în grilă."""
         preset = self.preset_var.get()
         if preset.startswith("--"):
             return
@@ -572,51 +573,56 @@ class CellLabGUI:
         r_mid = self.automata.rows // 2
         c_mid = self.automata.cols // 2
 
-        if "Blinker" in preset:
-            # 3 celule pe orizontală
-            for dc in (-1, 0, 1):
-                if 0 <= c_mid + dc < self.automata.cols:
-                    self.automata.grid[r_mid][c_mid + dc] = "alive"
+        if "Elementary" in self.automata.name or getattr(self.automata, "is_elementary", False):
+            if "Single Center" in preset:
+                self.automata.grid[0][c_mid] = "1"
+            elif "Two Center" in preset:
+                self.automata.grid[0][c_mid] = "1"
+                if c_mid + 1 < self.automata.cols:
+                    self.automata.grid[0][c_mid + 1] = "1"
+            elif "Random Row" in preset:
+                import random
+                self.automata.grid[0] = [random.choice(self.automata.states) for _ in range(self.automata.cols)]
 
-        elif "Glider" in preset and "Conway" in self.automata.name:
-            # Glider clasic
-            coords = [(r_mid - 1, c_mid), (r_mid, c_mid + 1), (r_mid + 1, c_mid - 1), (r_mid + 1, c_mid), (r_mid + 1, c_mid + 1)]
-            for r, c in coords:
-                if 0 <= r < self.automata.rows and 0 <= c < self.automata.cols:
-                    self.automata.grid[r][c] = "alive"
+        elif "Brian" in self.automata.name:
+            if "Glider" in preset:
+                coords = [
+                    (r_mid, c_mid, "FIRING"), (r_mid, c_mid + 1, "FIRING"),
+                    (r_mid + 1, c_mid - 1, "FIRING"), (r_mid + 1, c_mid + 2, "FIRING"),
+                    (r_mid + 2, c_mid, "DYING"), (r_mid + 2, c_mid + 1, "DYING")
+                ]
+                for r, c, st in coords:
+                    if 0 <= r < self.automata.rows and 0 <= c < self.automata.cols:
+                        self.automata.grid[r][c] = st
+            elif "Oscilator" in preset:
+                coords = [
+                    (r_mid, c_mid - 1, "FIRING"), (r_mid, c_mid, "FIRING"), (r_mid, c_mid + 1, "OFF"),
+                    (r_mid + 1, c_mid - 1, "DYING"), (r_mid + 1, c_mid, "DYING")
+                ]
+                for r, c, st in coords:
+                    if 0 <= r < self.automata.rows and 0 <= c < self.automata.cols:
+                        self.automata.grid[r][c] = st
+            elif "Pattern Complex" in preset:
+                coords = [
+                    (r_mid - 1, c_mid, "FIRING"), (r_mid - 1, c_mid + 1, "FIRING"),
+                    (r_mid, c_mid - 1, "FIRING"), (r_mid, c_mid + 2, "FIRING"),
+                    (r_mid + 1, c_mid, "DYING"), (r_mid + 1, c_mid + 1, "DYING")
+                ]
+                for r, c, st in coords:
+                    if 0 <= r < self.automata.rows and 0 <= c < self.automata.cols:
+                        self.automata.grid[r][c] = st
 
-        elif "Beacon" in preset:
-            coords = [(r_mid - 1, c_mid - 1), (r_mid - 1, c_mid), (r_mid, c_mid - 1),
-                      (r_mid + 1, c_mid + 2), (r_mid + 2, c_mid + 1), (r_mid + 2, c_mid + 2)]
-            for r, c in coords:
-                if 0 <= r < self.automata.rows and 0 <= c < self.automata.cols:
-                    self.automata.grid[r][c] = "alive"
-
-        elif "Block" in preset:
-            coords = [(r_mid, c_mid), (r_mid, c_mid + 1), (r_mid + 1, c_mid), (r_mid + 1, c_mid + 1)]
-            for r, c in coords:
-                if 0 <= r < self.automata.rows and 0 <= c < self.automata.cols:
-                    self.automata.grid[r][c] = "alive"
-
-        elif "Glider" in preset and "Brian" in self.automata.name:
-            # Brian's Brain glider / spaceship
-            coords = [
-                (r_mid, c_mid, "on"), (r_mid, c_mid + 1, "on"),
-                (r_mid + 1, c_mid - 1, "on"), (r_mid + 1, c_mid + 2, "on"),
-                (r_mid + 2, c_mid, "dying"), (r_mid + 2, c_mid + 1, "dying")
-            ]
-            for r, c, st in coords:
-                if 0 <= r < self.automata.rows and 0 <= c < self.automata.cols:
-                    self.automata.grid[r][c] = st
-
-        elif "Oscilator" in preset and "Brian" in self.automata.name:
-            coords = [
-                (r_mid, c_mid - 1, "on"), (r_mid, c_mid, "on"), (r_mid, c_mid + 1, "off"),
-                (r_mid + 1, c_mid - 1, "dying"), (r_mid + 1, c_mid, "dying")
-            ]
-            for r, c, st in coords:
-                if 0 <= r < self.automata.rows and 0 <= c < self.automata.cols:
-                    self.automata.grid[r][c] = st
+        elif "Cyclic" in self.automata.name:
+            if "Grilă Aleatorie" in preset:
+                self.automata.generate_random_grid()
+            elif "Punct Central" in preset:
+                self.automata.clear_grid(state="0")
+                if 0 <= r_mid < self.automata.rows and 0 <= c_mid < self.automata.cols:
+                    self.automata.grid[r_mid][c_mid] = "1"
+                    if r_mid + 1 < self.automata.rows:
+                        self.automata.grid[r_mid + 1][c_mid] = "1"
+                    if c_mid + 1 < self.automata.cols:
+                        self.automata.grid[r_mid][c_mid + 1] = "1"
 
         self._init_canvas_grid()
         self._update_ui_stats()
@@ -631,7 +637,8 @@ class CellLabGUI:
         if self.is_running:
             self._pause_simulation()
 
-        initial_name = f"{self.automata.name.lower().replace(' ', '_')}_gen_{self.automata.generation}.json"
+        safe_name = self.automata.name.lower().replace(" ", "_").replace("(", "").replace(")", "")
+        initial_name = f"{safe_name}_gen_{self.automata.generation}.json"
         filepath = filedialog.asksaveasfilename(
             title="Salvare Stare Curentă (JSON)",
             defaultextension=".json",
@@ -641,7 +648,7 @@ class CellLabGUI:
         if filepath:
             try:
                 self.automata.save_state(filepath)
-                self.lbl_message.configure(text=f"[Salvat] Generația {self.automata.generation} salvată în {os.path.basename(filepath)}")
+                self.lbl_message.configure(text=f"[Salvat] Generația {self.automata.generation} salvată.")
                 messagebox.showinfo("Salvare Reușită", f"Starea curentă (Generația {self.automata.generation}) a fost salvată în:\n{filepath}")
             except Exception as e:
                 messagebox.showerror("Eroare la Salvare", str(e))
@@ -660,7 +667,6 @@ class CellLabGUI:
                 data = self.automata.load_state(filepath)
                 saved_automaton = data.get("automaton_name")
 
-                # Dacă starea aparține altui automat, verifică dacă putem comuta automat
                 if saved_automaton and saved_automaton != self.automata.name:
                     for name, cfg_file in self.config_files.items():
                         if name.lower() in saved_automaton.lower() or saved_automaton.lower() in name.lower():
@@ -684,7 +690,6 @@ class CellLabGUI:
         active_count = self.automata.count_cells()
         state_counts = self.automata.get_state_counts()
 
-        # Detaliu pe fiecare stare
         details = ", ".join(f"{s}: {count}" for s, count in state_counts.items())
 
         stats_text = (
@@ -700,14 +705,7 @@ class CellLabGUI:
     # =========================================================================
 
     def _open_analysis_dialog(self):
-        """
-        Fereastră de dialog dedicată celor 5 întrebări analitice din cerințe:
-        1. Care este starea după N iterații?
-        2. Când atinge sistemul o stare stabilă?
-        3. Apare vreodată o anumită configurație?
-        4. Câte celule de tipul X există după N iterații?
-        5. Intră simularea într-un ciclu?
-        """
+        """Fereastră de dialog dedicată întrebărilor analitice din proiect."""
         if self.is_running:
             self._pause_simulation()
 
@@ -840,8 +838,6 @@ class CellLabGUI:
         notebook.add(tab_cfg, text="Verificare Configurație (Q3)")
 
         ttk.Label(tab_cfg, text="Întrebarea 3: Apare vreodată o anumită configurație?", font=("Segoe UI", 10, "bold")).pack(anchor=tk.W, pady=(0, 8))
-        ttk.Label(tab_cfg, text="Încarcă un fișier JSON salvat anterior și verifică dacă acea configurație se va repeta.").pack(anchor=tk.W, pady=(0, 8))
-
         lbl_target_path = ttk.Label(tab_cfg, text="Niciun fișier țintă selectat.", foreground="#64748B")
         lbl_target_path.pack(anchor=tk.W, pady=4)
 
@@ -893,4 +889,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
