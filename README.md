@@ -143,10 +143,6 @@ python main.py
 ```bash
 python main.py --cli
 ```
-sau:
-```bash
-python -m cellab.cli_checks
-```
 
 ### Rularea Testelor:
 ```bash

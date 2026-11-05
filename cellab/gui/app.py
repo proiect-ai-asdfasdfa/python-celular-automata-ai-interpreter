@@ -62,8 +62,7 @@ class CellLabGUI(
         if not default_choice and self.config_files:
             default_choice = list(self.config_files.keys())[0]
 
-        self.current_config_file = self.config_files.get(default_choice, "brians_brain.json")
-        self.automata = CellularAutomata(self.current_config_file)
+        self.automata = CellularAutomata(self.config_files.get(default_choice, "brians_brain.json"))
 
         # Construire interfață
         self._apply_theme()
@@ -87,14 +86,5 @@ class CellLabGUI(
         self.root.configure(bg="#F1F5F9")
         style.configure("TFrame", background="#F1F5F9")
         style.configure("TLabel", background="#F1F5F9", font=("Segoe UI", 10))
-        style.configure("Title.TLabel", font=("Segoe UI", 12, "bold"), foreground="#0F172A")
         style.configure("Stats.TLabel", font=("Segoe UI", 10, "bold"), foreground="#1E293B")
         style.configure("TButton", font=("Segoe UI", 9, "bold"), padding=5)
-        style.configure("Accent.TButton", font=("Segoe UI", 10, "bold"), foreground="#FFFFFF", background="#2563EB")
-        style.configure("Stop.TButton", font=("Segoe UI", 10, "bold"), foreground="#FFFFFF", background="#DC2626")
-
-
-def main():
-    root = tk.Tk()
-    _app = CellLabGUI(root)
-    root.mainloop()

@@ -21,7 +21,7 @@ import unittest
 TESTS_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_DIR = os.path.dirname(TESTS_DIR)
 GOLDEN_DIR = os.path.join(TESTS_DIR, "golden")
-ENV = dict(os.environ, PYTHONIOENCODING="utf-8", PYTHONHASHSEED="1", PYTHONDONTWRITEBYTECODE="1", PYTHONPATH=PROJECT_DIR)
+ENV = dict(os.environ, PYTHONIOENCODING="utf-8", PYTHONHASHSEED="1", PYTHONDONTWRITEBYTECODE="1")
 
 
 def first_difference(expected, actual, path="$"):
@@ -72,9 +72,6 @@ class ScriptOutputTests(unittest.TestCase):
 
     def test_main_test_flag_output(self):
         self.assertEqual(self.run_python(os.path.join(PROJECT_DIR, "main.py"), "--test"), read_golden_text("cli_output.txt"))
-
-    def test_engine_demo_output(self):
-        self.assertEqual(self.run_python("-m", "cellab.cli_checks"), read_golden_text("engine_demo_output.txt"))
 
 
 class SnapshotTests(unittest.TestCase):

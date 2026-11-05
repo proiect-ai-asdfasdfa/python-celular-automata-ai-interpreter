@@ -41,7 +41,6 @@ class ConfigSelectMixin:
 
         try:
             self.automata = CellularAutomata(cfg_path)
-            self.current_config_file = cfg_path
 
             if self.automata.name not in self.config_files:
                 self.config_files[self.automata.name] = cfg_path

@@ -96,7 +96,7 @@ class CanvasMixin:
 
     def _coords_to_cell(self, event_x, event_y):
         """Transformă coordonatele pixel în indexul (r, c) din matrice."""
-        if not hasattr(self, "cell_size") or self.cell_size <= 0:
+        if not hasattr(self, "cell_size"):
             return None, None
         c = (event_x - self.offset_x) // self.cell_size
         r = (event_y - self.offset_y) // self.cell_size

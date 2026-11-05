@@ -179,7 +179,7 @@ class PanelsMixin:
 
     def _update_info_badge_and_legend(self):
         """Afișează neighborhood/type, boundary și legenda de culori."""
-        if getattr(self.automata, "is_elementary", False):
+        if self.automata.is_elementary:
             neigh_text = "1D Elementary (Left, Center, Right)"
         else:
             neigh_text = "Moore (8)" if self.automata.neighborhood_type == "moore" else "von Neumann (4)"

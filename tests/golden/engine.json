@@ -63,7 +63,6 @@
    "get_state_after_n_steps": "\nÎntrebarea 1: Care este starea după N iterații?\nReturnează matricea stării după N pași fără a modifica starea curentă.\n",
    "get_state_counts": "Returnează un dicționar cu distribuția curentă a tuturor stărilor.",
    "load_state": "\nState Recovery:\nRestaurează o stare salvată anterior și continuă simularea exact de la acea generație.\n",
-   "run_simulation": "Rulează simularea pentru un număr dat de iterații.",
    "save_state": "\nState Storage:\nSalvează starea lumii curente într-un fișier JSON (generație, dimensiuni, nume, matrice).\n",
    "set_grid": "Setează manual starea grilei (util pentru teste unitare sau pattern-uri specifice).",
    "step": "\nCalculează și aplică tranzițiile de stare, avansând universul cu o generație:\n- În Elementary CA (1D): generează rândul următor din diagrama spațio-temporală.\n- În 2D CA: aplică regulile de tranziție pentru toate celulele matricei simultan.\n"
@@ -83,7 +82,6 @@
    "get_state_after_n_steps": "(self, n)",
    "get_state_counts": "(self)",
    "load_state": "(self, filepath)",
-   "run_simulation": "(self, steps, verbose=True)",
    "save_state": "(self, filepath)",
    "set_grid": "(self, grid, generation=0)",
    "step": "(self)"
@@ -190,8 +188,7 @@
     true,
     5,
     5,
-    0,
-    null
+    0
    ],
    "counts_init": [
     217,
@@ -214,7 +211,6 @@
      "OFF": "#0F172A"
     },
     "cols": 30,
-    "config_path": "brians_brain.json",
     "dead_state": "OFF",
     "generation": 0,
     "grid": [
@@ -1485,8 +1481,6 @@
    ],
    "resume_equal": true,
    "rng_init": 0.7883137122349437,
-   "run_quiet": "",
-   "run_verbose": "\n--- Stare Inițială (Generația 0) ---\n. . . . . \n. F F . . \n. . . . . \n. . . . . \n. . . . . \n\n--- Generația 1 ---\n. F F . . \n. D D . . \n. F F . . \n. . . . . \n. . . . . \n\n--- Generația 2 ---\n. D D . . \nF . . F . \n. D D . . \n. F F . . \n. F F . . \n",
    "save_return": {
     "automaton_name": "Brian's Brain",
     "cols": 5,
@@ -1656,8 +1650,7 @@
     true,
     3,
     3,
-    0,
-    null
+    0
    ],
    "counts_init": [
     656,
@@ -1683,7 +1676,6 @@
      "3": "#EF4444"
     },
     "cols": 30,
-    "config_path": "cyclic_ca.json",
     "dead_state": "0",
     "generation": 0,
     "grid": [
@@ -2939,8 +2931,6 @@
    ],
    "resume_equal": true,
    "rng_init": 0.7883137122349437,
-   "run_quiet": "",
-   "run_verbose": "\n--- Stare Inițială (Generația 0) ---\n1 1 0 \n0 0 0 \n0 0 0 \n\n--- Generația 1 ---\n1 1 1 \n1 1 1 \n1 1 1 \n\n--- Generația 2 ---\n1 1 1 \n1 1 1 \n1 1 1 \n",
    "save_return": {
     "automaton_name": "Cyclic Cellular Automaton",
     "cols": 3,
@@ -3121,8 +3111,7 @@
     true,
     6,
     6,
-    0,
-    null
+    0
    ],
    "counts_init": [
     38,
@@ -3139,7 +3128,6 @@
     "boundary": "wrap",
     "colors": {},
     "cols": 12,
-    "config_path": null,
     "dead_state": "dead",
     "generation": 0,
     "grid": [
@@ -3656,8 +3644,6 @@
    ],
    "resume_equal": true,
    "rng_init": 0.2651294875559076,
-   "run_quiet": "",
-   "run_verbose": "\n--- Stare Inițială (Generația 0) ---\n. . . . . . \n. . # . . . \n. . # . . . \n. . # . . . \n. . . . . . \n. . . . . . \n\n--- Generația 1 ---\n. . . . . . \n. . . . . . \n. # # # . . \n. . . . . . \n. . . . . . \n. . . . . . \n\n--- Generația 2 ---\n. . . . . . \n. . # . . . \n. . # . . . \n. . # . . . \n. . . . . . \n. . . . . . \n",
    "save_return": {
     "automaton_name": "Game of Life (inline)",
     "cols": 6,
@@ -3871,8 +3857,7 @@
     true,
     6,
     6,
-    0,
-    null
+    0
    ],
    "counts_init": [
     38,
@@ -3889,7 +3874,6 @@
     "boundary": "fixed",
     "colors": {},
     "cols": 12,
-    "config_path": null,
     "dead_state": "dead",
     "generation": 0,
     "grid": [
@@ -4406,8 +4390,6 @@
    ],
    "resume_equal": true,
    "rng_init": 0.2651294875559076,
-   "run_quiet": "",
-   "run_verbose": "\n--- Stare Inițială (Generația 0) ---\n. . . . . . \n. . # . . . \n. . # . . . \n. . # . . . \n. . . . . . \n. . . . . . \n\n--- Generația 1 ---\n. . . . . . \n. . . . . . \n. . # . . . \n. . . . . . \n. . . . . . \n. . . . . . \n\n--- Generația 2 ---\n. . . . . . \n. . . . . . \n. . . . . . \n. . . . . . \n. . . . . . \n. . . . . . \n",
    "save_return": {
     "automaton_name": "Life VN fixed",
     "cols": 6,
@@ -4597,8 +4579,7 @@
     true,
     4,
     4,
-    0,
-    null
+    0
    ],
    "counts_init": [
     9,
@@ -4615,7 +4596,6 @@
     "boundary": "wrap",
     "colors": {},
     "cols": 4,
-    "config_path": null,
     "dead_state": "a",
     "generation": 0,
     "grid": [
@@ -4892,8 +4872,6 @@
    ],
    "resume_equal": true,
    "rng_init": 0.5310427544909715,
-   "run_quiet": "",
-   "run_verbose": "\n--- Stare Inițială (Generația 0) ---\nb b a b \na a a a \nb b a b \na a a a \n\n--- Generația 1 ---\nb b a b \na a a a \nb b a b \na a a a \n\n--- Generația 2 ---\nb b a b \na a a a \nb b a b \na a a a \n",
    "save_return": {
     "automaton_name": "Generic Cellular Automaton",
     "cols": 4,
@@ -5155,8 +5133,7 @@
     true,
     8,
     13,
-    0,
-    null
+    0
    ],
    "counts_init": [
     1,
@@ -5173,7 +5150,6 @@
     "boundary": "fixed",
     "colors": {},
     "cols": 13,
-    "config_path": null,
     "dead_state": "0",
     "generation": 0,
     "grid": [
@@ -5843,8 +5819,6 @@
    ],
    "resume_equal": true,
    "rng_init": 0.41661987254534116,
-   "run_quiet": "",
-   "run_verbose": "\n--- Stare Inițială (Generația 0) ---\n0 0 0 0 0 0 1 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 0 0 0 \n\n--- Generația 1 ---\n0 0 0 0 0 0 1 0 0 0 0 0 0 \n0 0 0 0 0 1 1 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 0 0 0 \n\n--- Generația 2 ---\n0 0 0 0 0 0 1 0 0 0 0 0 0 \n0 0 0 0 0 1 1 0 0 0 0 0 0 \n0 0 0 0 1 1 1 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 0 0 0 \n0 0 0 0 0 0 0 0 0 0 0 0 0 \n",
    "save_return": {
     "automaton_name": "Rule 110",
     "cols": 13,
@@ -6136,8 +6110,7 @@
     true,
     6,
     7,
-    0,
-    null
+    0
    ],
    "counts_init": [
     1,
@@ -6157,7 +6130,6 @@
      "1": "#F59E0B"
     },
     "cols": 51,
-    "config_path": "elementary_rule30.json",
     "dead_state": "0",
     "generation": 0,
     "grid": [
@@ -8367,8 +8339,6 @@
    ],
    "resume_equal": true,
    "rng_init": 0.41661987254534116,
-   "run_quiet": "",
-   "run_verbose": "\n--- Stare Inițială (Generația 0) ---\n. . . ■ . . . \n. . . . . . . \n. . . . . . . \n. . . . . . . \n. . . . . . . \n. . . . . . . \n\n--- Generația 1 ---\n. . . ■ . . . \n. . ■ ■ ■ . . \n. . . . . . . \n. . . . . . . \n. . . . . . . \n. . . . . . . \n\n--- Generația 2 ---\n. . . ■ . . . \n. . ■ ■ ■ . . \n. ■ ■ . . ■ . \n. . . . . . . \n. . . . . . . \n. . . . . . . \n",
    "save_return": {
     "automaton_name": "Elementary Cellular Automaton (Rule 30)",
     "cols": 7,

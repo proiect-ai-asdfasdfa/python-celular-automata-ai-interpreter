@@ -1,6 +1,6 @@
 """Characterization snapshot of the GUI, driven headlessly (hidden root, dialogs stubbed).
 Usage: characterize_gui.py <project_dir> <out.json>
-Uses the public names `cellab.gui.CellLabGUI`, `cellab.gui.main` and `main.main`."""
+Uses the public names `cellab.gui.CellLabGUI` and `main.main`."""
 import atexit, hashlib, json, os, random, shutil, sys, tempfile, types
 import tkinter as tk
 import tkinter.filedialog as fd
@@ -97,7 +97,7 @@ def find(w, cls, text=None):
 
 
 r = {"init_title": root.title(), "geometry_min": root.minsize(), "config_files": {k: norm(v) for k, v in app.config_files.items()},
-     "current_config": norm(app.current_config_file), "init_snapshot": snap("init"), "widget_tree": dump_widget(root), "scenarios": {}}
+     "init_snapshot": snap("init"), "widget_tree": dump_widget(root), "scenarios": {}}
 r["colors"] = [app._get_cell_color(s) for s in ("0", "1", "2", "3", "OFF", "FIRING", "DYING", "off", "on", "dying", "dead", "alive")]
 
 names = list(app.config_files)
@@ -182,14 +182,13 @@ r["messagebox_log"] = log
 r["dialog_kwargs"] = dialog_kwargs
 root.destroy()
 
-# Entry points: main.main() and cellab.gui.main() must build the app and enter mainloop once.
+# Entry point: main.main() must build the app and enter mainloop once.
 calls = []
 tk.Tk.mainloop = lambda self, n=0: calls.append(self.title())
 tk.Misc.mainloop = tk.Tk.mainloop
 import main as main_mod
 sys.argv = ["main.py"]
 main_mod.main(); tk._default_root.destroy()
-cellab.gui.main(); tk._default_root.destroy()
 r["entry_points"] = calls
 
 with open(out, "w", encoding="utf-8") as f:

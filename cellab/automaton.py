@@ -24,7 +24,7 @@ class CellularAutomata:
         Inițializează automatul fie dintr-o cale către un fișier JSON,
         fie direct dintr-un dicționar de configurare.
         """
-        self.config_path, self.config = load_config(config_source)
+        self.config = load_config(config_source)
 
         self.name = self.config.get("name", "Generic Cellular Automaton")
         self.neighborhood_type = self.config.get("neighborhood", "moore").lower()
@@ -109,10 +109,6 @@ class CellularAutomata:
             simulation.step_elementary(self)
         else:
             simulation.step_2d(self)
-
-    def run_simulation(self, steps, verbose=True):
-        """Rulează simularea pentru un număr dat de iterații."""
-        simulation.run_simulation(self, steps, verbose)
 
     def count_cells(self, state=None):
         """

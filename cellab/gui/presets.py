@@ -8,7 +8,7 @@ class PresetsMixin:
 
     def _update_preset_options(self):
         """Actualizează lista de pattern-uri cunoscute în funcție de automat."""
-        if "Elementary" in self.automata.name or getattr(self.automata, "is_elementary", False):
+        if "Elementary" in self.automata.name or self.automata.is_elementary:
             presets = ["-- Alege pattern --", "Single Center Seed (0..010..0)", "Random Row Seed", "Two Center Seeds (11)"]
         elif "Brian" in self.automata.name:
             presets = ["-- Alege pattern --", "Oscilator simplu", "Glider (Spaceship)", "Pattern Complex"]
@@ -33,7 +33,7 @@ class PresetsMixin:
         r_mid = self.automata.rows // 2
         c_mid = self.automata.cols // 2
 
-        if "Elementary" in self.automata.name or getattr(self.automata, "is_elementary", False):
+        if "Elementary" in self.automata.name or self.automata.is_elementary:
             if "Single Center" in preset:
                 self.automata.grid[0][c_mid] = "1"
             elif "Two Center" in preset:

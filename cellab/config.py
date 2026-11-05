@@ -6,14 +6,13 @@ from copy import deepcopy
 
 def load_config(config_source):
     """
-    Citește configurația fie dintr-o cale către un fișier JSON, fie dintr-un dicționar.
-    Returnează (config_path, config); config_path este None pentru dicționare.
+    Citește configurația fie dintr-o cale către un fișier JSON, fie dintr-un dicționar (copiat).
     """
     if isinstance(config_source, str):
         with open(config_source, "r", encoding="utf-8") as f:
-            return config_source, json.load(f)
+            return json.load(f)
     if isinstance(config_source, dict):
-        return None, deepcopy(config_source)
+        return deepcopy(config_source)
     raise ValueError("config_source trebuie să fie o cale (str) sau un dicționar (dict).")
 
 

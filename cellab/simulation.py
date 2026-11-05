@@ -35,19 +35,6 @@ def step_2d(automaton):
     automaton.generation += 1
 
 
-def run_simulation(automaton, steps, verbose=True):
-    """Rulează simularea pentru un număr dat de iterații."""
-    if verbose:
-        print(f"\n--- Stare Inițială (Generația {automaton.generation}) ---")
-        automaton.display()
-
-    for _ in range(steps):
-        automaton.step()
-        if verbose:
-            print(f"\n--- Generația {automaton.generation} ---")
-            automaton.display()
-
-
 def display(automaton):
     """Afișează matricea formatată în consolă folosind simbolurile din configurație."""
     for row in automaton.grid:

@@ -54,7 +54,7 @@ def captured(fn, *a, **k):
 
 def attrs(ca):
     return {k: getattr(ca, k) for k in ("name", "neighborhood_type", "boundary", "states", "dead_state", "symbols", "colors",
-            "active_states", "transitions", "is_elementary", "patterns", "rows", "cols", "generation", "config_path", "grid")}
+            "active_states", "transitions", "is_elementary", "patterns", "rows", "cols", "generation", "grid")}
 
 
 def scenario(key, src, tmp):
@@ -101,7 +101,7 @@ def scenario(key, src, tmp):
     r["unchanged"] = json.dumps(ca.grid) == before and ca.generation == 0
 
     # Clone copies state, including after set_grid.
-    c = ca.clone(); r["clone"] = [c.grid == ca.grid, c.rows, c.cols, c.generation, c.config_path]
+    c = ca.clone(); r["clone"] = [c.grid == ca.grid, c.rows, c.cols, c.generation]
 
     # Storage: exact bytes of the saved format and round trip.
     path = os.path.join(tmp, f"{key}.json")
@@ -115,14 +115,6 @@ def scenario(key, src, tmp):
     r["load"] = [loaded, attrs(other)["grid"], other.rows, other.cols, other.generation]
     other.step(); ca.step()
     r["resume_equal"] = other.grid == ca.grid
-
-    # Console rendering.
-    random.seed(5)
-    sim = CellularAutomata(src)
-    if key in FIXED:
-        sim.set_grid(FIXED[key])
-    r["run_verbose"] = captured(sim.run_simulation, 2)[1]
-    r["run_quiet"] = captured(sim.run_simulation, 2, verbose=False)[1]
     return r
 
 

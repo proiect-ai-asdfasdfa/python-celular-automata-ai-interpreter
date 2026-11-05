@@ -152,7 +152,6 @@
   ],
   "stats": "Generația: 1  |  Celule active: 389  |  Dimensiuni: 30x30  |  Distribuție stări: [OFF: 511, FIRING: 209, DYING: 180]"
  },
- "current_config": "<PROJECT>/elementary_rule30.json",
  "dialog_kwargs": [
   [
    "save",
@@ -332,7 +331,6 @@
   ]
  ],
  "entry_points": [
-  "Project CellLab - Cellular Automata Simulator",
   "Project CellLab - Cellular Automata Simulator"
  ],
  "external": {
