@@ -246,3 +246,38 @@ Un singur model "universal". Dacă amesteci datele de la toate automatele și î
 
 Pentru discuția de mâine, prezentați varianta 1. Este cel mai curat mod de a face experimentul cerut: nu îi dați nicio regulă explicită, îi dați doar stările matricei, iar rețeaua trebuie să deducă singură comportamentul. Evaluarea experimentului va fi pur și simplu un procent: cât la sută din matricea prezisă de rețea se suprapune perfect cu matricea generată de engine-ul vostru clasic.
 ```
+
+
+Prompt:
+Vreau să refactorizez acest proiect (CelLab – sistem de automate celulare, proiect de echipă la AI) fără să-i schimb comportamentul. Scopul este o structură modulară, cu fișiere separate pe funcționalități (de ex. reprezentarea/gestionarea stării lumii, definirea și aplicarea regulilor, simularea generațiilor, salvarea/încărcarea stării și parsing JSON, parsing-ul descrierii în limbaj natural, răspunsurile la întrebări – stare după N pași, stabilitate, cicluri, numărare celule –, interfața grafică).
+
+REGULI STRICTE (nu le încălca niciodată):
+1. NU rula `git add`, `git commit`, `git push`, `git stash`, `git reset`, `git checkout -- <fișier>`, `git rebase`, `git merge` sau orice altă comandă git care modifică repo-ul sau istoricul. Ai voie doar la comenzi git read-only: `git status`, `git diff`, `git log`, `git ls-files`.
+2. NU schimba logica sau comportamentul aplicației. Aceleași intrări trebuie să producă aceleași ieșiri, iar GUI-ul trebuie să funcționeze la fel. Fără funcționalități noi, fără „îmbunătățiri" de algoritm, fără schimbări de format la fișierele de date/JSON salvate.
+3. NU șterge fișiere și NU instala/upgrada dependențe fără să mă întrebi întâi.
+4. Nu modifica fișiere de date, dataset-uri, istoricul conversațiilor cu agenții sau documentația cerută la predare. Poți doar actualiza căile/importurile care le referă.
+5. Dacă ceva e ambiguu sau riscant, oprește-te și întreabă-mă.
+
+PAȘI:
+Pasul 1 – Analiză (fără să modifici nimic):
+- Explorează tot proiectul și explică-mi structura actuală: fișiere, ce face fiecare, dependențe între ele, punctul de intrare, cum se rulează aplicația și testele (dacă există).
+- Identifică problemele: fișiere prea mari, responsabilități amestecate, cod duplicat, importuri circulare.
+- Rulează aplicația/testele existente ca să stabilești o stare de referință (baseline). Dacă nu există teste, propune câteva teste minime de „caracterizare". Exemplu: rulezi Game of Life, Rule 30 și Brian's Brain N pași pe o stare inițială fixă și salvezi rezultatul, ca să compari după refactorizare.
+
+Pasul 2 – Plan:
+- Propune noua structură de foldere/fișiere (arbore) și spune exact ce cod se mută unde și de ce.
+- Împarte refactorizarea în pași mici, independenți, fiecare verificabil.
+- AȘTEAPTĂ aprobarea mea înainte să modifici ceva.
+
+Pasul 3 – Implementare incrementală:
+- Execută câte un pas din plan pe rând. După fiecare pas rulează aplicația/testele și compară cu baseline-ul. Dacă ceva nu mai merge, repară înainte să continui.
+- Actualizează toate importurile și căile, inclusiv pentru fișierele de date.
+- Păstrează numele publice ale funcțiilor/claselor pe care le folosesc și colegii, sau lasă un alias de compatibilitate și spune-mi.
+- După fiecare pas, rezumă-mi pe scurt ce s-a schimbat.
+
+Pasul 4 – Final:
+- Rulează din nou totul și confirmă că rezultatele sunt identice cu baseline-ul.
+- Arată-mi `git status` și un rezumat al lui `git diff --stat`, ca să pot revizui și face eu commit-ul.
+- Actualizează README-ul (dacă există) cu noua structură și instrucțiunile de rulare, dacă s-au schimbat.
+
+
