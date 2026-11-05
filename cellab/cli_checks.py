@@ -96,7 +96,7 @@ def run_cli_tests():
 
 
 def run_engine_demo():
-    """Rulează demo-ul motorului (`python cellab_engine.py`)."""
+    """Rulează demo-ul motorului (`python -m cellab.cli_checks`)."""
     print("==================================================")
     print("DEMO TEST 1: Elementary Cellular Automaton (Rule 30)")
     print("==================================================")
@@ -170,3 +170,7 @@ def run_engine_demo():
     print("\n==================================================")
     print("TOATE TESTELE AU FOST VALIDATE CU SUCCES!")
     print("==================================================")
+
+
+if __name__ == "__main__":
+    run_engine_demo()

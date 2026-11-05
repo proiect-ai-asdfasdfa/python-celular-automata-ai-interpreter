@@ -1,6 +1,6 @@
 """Characterization snapshot of the GUI, driven headlessly (hidden root, dialogs stubbed).
 Usage: characterize_gui.py <project_dir> <out.json>
-Uses the public names `cellab_gui.CellLabGUI` and `main.main`, so it runs unchanged after the refactor."""
+Uses the public names `cellab.gui.CellLabGUI`, `cellab.gui.main` and `main.main`."""
 import atexit, hashlib, json, os, random, shutil, sys, tempfile, types
 import tkinter as tk
 import tkinter.filedialog as fd
@@ -35,11 +35,11 @@ fd.askopenfilename = _ask(open_queue, "open")
 fd.asksaveasfilename = _ask(save_queue, "save")
 tk.Toplevel.grab_set = lambda self: None  # hidden parent cannot take a grab
 
-import cellab_gui
+import cellab.gui
 
 root = tk.Tk()
 root.withdraw()
-app = cellab_gui.CellLabGUI(root)
+app = cellab.gui.CellLabGUI(root)
 
 
 def dump_widget(w):
@@ -182,14 +182,14 @@ r["messagebox_log"] = log
 r["dialog_kwargs"] = dialog_kwargs
 root.destroy()
 
-# Entry points: main.main() and cellab_gui.main() must build the app and enter mainloop once.
+# Entry points: main.main() and cellab.gui.main() must build the app and enter mainloop once.
 calls = []
 tk.Tk.mainloop = lambda self, n=0: calls.append(self.title())
 tk.Misc.mainloop = tk.Tk.mainloop
 import main as main_mod
 sys.argv = ["main.py"]
 main_mod.main(); tk._default_root.destroy()
-cellab_gui.main(); tk._default_root.destroy()
+cellab.gui.main(); tk._default_root.destroy()
 r["entry_points"] = calls
 
 with open(out, "w", encoding="utf-8") as f:

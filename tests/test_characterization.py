@@ -21,7 +21,7 @@ import unittest
 TESTS_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_DIR = os.path.dirname(TESTS_DIR)
 GOLDEN_DIR = os.path.join(TESTS_DIR, "golden")
-ENV = dict(os.environ, PYTHONIOENCODING="utf-8", PYTHONHASHSEED="1", PYTHONDONTWRITEBYTECODE="1")
+ENV = dict(os.environ, PYTHONIOENCODING="utf-8", PYTHONHASHSEED="1", PYTHONDONTWRITEBYTECODE="1", PYTHONPATH=PROJECT_DIR)
 
 
 def first_difference(expected, actual, path="$"):
@@ -55,12 +55,12 @@ def read_golden_text(name):
 class ScriptOutputTests(unittest.TestCase):
     """Scripturile scriu un checkpoint în directorul curent, deci rulează într-un director temporar."""
 
-    def run_script(self, script, *args):
+    def run_python(self, *args):
         with tempfile.TemporaryDirectory() as cwd:
             for config in glob.glob(os.path.join(PROJECT_DIR, "*.json")):
                 shutil.copy(config, cwd)
             result = subprocess.run(
-                [sys.executable, os.path.join(PROJECT_DIR, script), *args],
+                [sys.executable, *args],
                 cwd=cwd, env=ENV, capture_output=True, encoding="utf-8",
             )
             self.assertTrue(os.path.exists(os.path.join(cwd, "brians_brain_checkpoint.json")))
@@ -68,13 +68,13 @@ class ScriptOutputTests(unittest.TestCase):
         return result.stdout
 
     def test_main_cli_output(self):
-        self.assertEqual(self.run_script("main.py", "--cli"), read_golden_text("cli_output.txt"))
+        self.assertEqual(self.run_python(os.path.join(PROJECT_DIR, "main.py"), "--cli"), read_golden_text("cli_output.txt"))
 
     def test_main_test_flag_output(self):
-        self.assertEqual(self.run_script("main.py", "--test"), read_golden_text("cli_output.txt"))
+        self.assertEqual(self.run_python(os.path.join(PROJECT_DIR, "main.py"), "--test"), read_golden_text("cli_output.txt"))
 
     def test_engine_demo_output(self):
-        self.assertEqual(self.run_script("cellab_engine.py"), read_golden_text("engine_demo_output.txt"))
+        self.assertEqual(self.run_python("-m", "cellab.cli_checks"), read_golden_text("engine_demo_output.txt"))
 
 
 class SnapshotTests(unittest.TestCase):

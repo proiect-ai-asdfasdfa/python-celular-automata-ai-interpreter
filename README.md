@@ -11,8 +11,6 @@ Proiectul separă complet logica de calcul matematic/algoritmic de interfața gr
 ```text
 python-celular-automata-ai-interpreter/
 ├── main.py                 # Punctul principal de lansare (GUI sau verificări CLI)
-├── cellab_engine.py        # Alias de compatibilitate pentru motor + demo CLI
-├── cellab_gui.py           # Alias de compatibilitate pentru GUI
 ├── elementary_rule30.json  # Configurația pentru Elementary Cellular Automaton (Rule 30)
 ├── brians_brain.json       # Configurația pentru Brian's Brain (OFF, FIRING, DYING)
 ├── cyclic_ca.json          # Configurația pentru Cyclic Cellular Automaton (0, 1, 2, 3)
@@ -140,10 +138,6 @@ Motorul include metode algoritmice gata implementate pentru cele 5 întrebări d
 ```bash
 python main.py
 ```
-sau:
-```bash
-python cellab_gui.py
-```
 
 ### Rularea Suitei de Teste Automate (CLI):
 ```bash
@@ -151,7 +145,7 @@ python main.py --cli
 ```
 sau:
 ```bash
-python cellab_engine.py
+python -m cellab.cli_checks
 ```
 
 ### Rularea Testelor:

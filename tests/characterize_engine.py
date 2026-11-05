@@ -1,11 +1,11 @@
 """Characterization snapshot of the engine. Usage: characterize_engine.py <project_dir> <out.json>
-Only uses the public import names (`cellab_engine.CellularAutomata`), so it runs unchanged after the refactor."""
+Uses the public import `cellab.CellularAutomata`."""
 import contextlib, hashlib, inspect, io, json, os, random, sys, tempfile
 
 project, out = os.path.abspath(sys.argv[1]), os.path.abspath(sys.argv[2])
 sys.path.insert(0, project)
 os.chdir(project)
-from cellab_engine import CellularAutomata
+from cellab import CellularAutomata
 
 LIFE = {
     "name": "Game of Life (inline)", "neighborhood": "moore", "boundary": "wrap",

@@ -4,7 +4,7 @@ import os
 import tempfile
 import unittest
 
-from cellab_engine import CellularAutomata
+from cellab import CellularAutomata
 
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
