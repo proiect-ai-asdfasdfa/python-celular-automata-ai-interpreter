@@ -9,13 +9,33 @@ Sistem generic de simulare și analiză a automatelor celulare, dezvoltat în Py
 Proiectul separă complet logica de calcul matematic/algoritmic de interfața grafică utilizator:
 
 ```text
-ai/
-├── cellab_engine.py       # Motorul generic de simulare (2D și 1D Elementary) și analize algoritmice
-├── cellab_gui.py          # Interfața grafică interactivă (Tkinter Canvas)
-├── main.py                # Punctul principal de lansare (GUI sau CLI test suite)
-├── elementary_rule30.json # Configurația pentru Elementary Cellular Automaton (Rule 30)
-├── brians_brain.json      # Configurația pentru Brian's Brain (OFF, FIRING, DYING)
-└── cyclic_ca.json         # Configurația pentru Cyclic Cellular Automaton (0, 1, 2, 3)
+python-celular-automata-ai-interpreter/
+├── main.py                 # Punctul principal de lansare (GUI sau verificări CLI)
+├── cellab_engine.py        # Alias de compatibilitate pentru motor + demo CLI
+├── cellab_gui.py           # Alias de compatibilitate pentru GUI
+├── elementary_rule30.json  # Configurația pentru Elementary Cellular Automaton (Rule 30)
+├── brians_brain.json       # Configurația pentru Brian's Brain (OFF, FIRING, DYING)
+├── cyclic_ca.json          # Configurația pentru Cyclic Cellular Automaton (0, 1, 2, 3)
+├── cellab/
+│   ├── automaton.py        # Clasa CellularAutomata (API-ul public al motorului)
+│   ├── config.py           # Citirea configurației JSON, detectarea automatelor 1D
+│   ├── world.py            # Crearea grilelor și numărarea celulelor
+│   ├── rules.py            # Vecinătăți și aplicarea regulilor de tranziție
+│   ├── simulation.py       # Simularea generațiilor și afișarea în consolă
+│   ├── storage.py          # Salvarea și restaurarea stării (JSON)
+│   ├── analysis.py         # Răspunsurile la întrebările Q1-Q5
+│   ├── cli_checks.py       # Verificările din linia de comandă
+│   ├── paths.py            # Căile proiectului
+│   └── gui/
+│       ├── app.py          # Clasa CellLabGUI și tema interfeței
+│       ├── panels.py       # Panourile ferestrei și etichetele
+│       ├── canvas.py       # Randarea grilei și interacțiunea cu mouse-ul
+│       ├── controls.py     # Play/Pause, Step, Randomize, Clear, viteză
+│       ├── config_select.py # Scanarea configurațiilor și schimbarea automatului
+│       ├── presets.py      # Modelele predefinite
+│       ├── state_dialogs.py # Dialogurile Save/Load
+│       └── analysis_dialog.py # Fereastra cu întrebările Q1-Q5
+└── tests/                  # Teste și rezultate de referință (golden/)
 ```
 
 > **Notă:** Proiectul utilizează **exclusiv biblioteca standard Python** (`json`, `tkinter`, `random`, `copy`, `os`, `sys`). Nu necesită pachete externe instalate prin `pip`.
@@ -84,7 +104,7 @@ Niciun comportament specific nu este hardcodat în codul Python. Fiecare fișier
 
 ## 5. Interfața Grafică Interactivă Tkinter (Cerința 3)
 
-Construită în `cellab_gui.py`:
+Construită în pachetul `cellab/gui/`:
 * **Canvas interactiv**:
   * Fiecare celulă este colorată conform stării ei.
   * **Editare manuală**: Click stânga pe o celulă pentru a-i schimba starea, **drag** cu mouse-ul pentru a desena liber, click dreapta pentru resetare la starea inactivă.
@@ -132,4 +152,9 @@ python main.py --cli
 sau:
 ```bash
 python cellab_engine.py
+```
+
+### Rularea Testelor:
+```bash
+python -m unittest
 ```

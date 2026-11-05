@@ -1,0 +1,60 @@
+==================================================
+DEMO TEST 1: Elementary Cellular Automaton (Rule 30)
+==================================================
+Nume: Elementary Cellular Automaton (Rule 30) | Tip: Elementary Rule 30
+Regula 30 modele: {'111': '0', '110': '0', '101': '0', '100': '1', '011': '1', '010': '1', '001': '1', '000': '0'}
+
+Generația 0 (rândul de pornire 00000100000):
+. . . . . ■ . . . . . 
+. . . . . . . . . . . 
+. . . . . . . . . . . 
+. . . . . . . . . . . 
+. . . . . . . . . . . 
+
+Generația 1 (după aplicarea regulii 30):
+. . . . . ■ . . . . . 
+. . . . ■ ■ ■ . . . . 
+. . . . . . . . . . . 
+. . . . . . . . . . . 
+. . . . . . . . . . . 
+[PASS] Regula 30 calculată corect (001 -> 1, 010 -> 1, 100 -> 1)!
+
+==================================================
+DEMO TEST 2: Brian's Brain (OFF, FIRING, DYING)
+==================================================
+Nume: Brian's Brain | Stări: ['OFF', 'FIRING', 'DYING']
+
+Generația 0:
+. . . . . 
+. F F . . 
+. . . . . 
+. . . . . 
+. . . . . 
+
+Generația 1 (FIRING -> DYING, celule OFF cu 2 FIRING devin FIRING):
+. F F . . 
+. D D . . 
+. F F . . 
+. . . . . 
+. . . . . 
+[PASS] Tranzițiile FIRING -> DYING și nașterea din OFF au funcționat corect!
+
+==================================================
+DEMO TEST 3: Cyclic Cellular Automaton (0, 1, 2, 3)
+==================================================
+Nume: Cyclic Cellular Automaton | Stări: ['0', '1', '2', '3']
+Generația 1 (Cyclic CA):
+1 1 1 
+1 1 1 
+1 1 1 
+Celule de tip '1' după 1 pas: 9
+[PASS] Cyclic CA rulează cu succes!
+
+==================================================
+DEMO TEST 4: State Storage & Recovery (JSON)
+==================================================
+[PASS] Starea restaurată cu succes de la Generația 1!
+
+==================================================
+TOATE TESTELE AU FOST VALIDATE CU SUCCES!
+==================================================

@@ -1,0 +1,64 @@
+==========================================================
+ PROJECT CELLLAB - TESTARE AUTOMATIZATĂ DELIVERABLE 2
+==========================================================
+
+[1] Inițializare Elementary Cellular Automaton (Rule 30)...
+    Nume: Elementary Cellular Automaton (Rule 30) | Tip: 1D Elementary | Regula 30
+    Stări: ['0', '1'] | Vecinătate: (stânga, centru, dreapta)
+    Generația 0 (000000010000000):
+. . . . . . . ■ . . . . . . . 
+. . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . 
+    Generația 1 (după aplicarea regulii 30):
+. . . . . . . ■ . . . . . . . 
+. . . . . . ■ ■ ■ . . . . . . 
+. . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . 
+    [PASS] Regula 30 calculată corect (111->0, 100->1, 011->1, 001->1)!
+
+[2] Inițializare Brian's Brain...
+    Nume: Brian's Brain
+    Stări posibile: ['OFF', 'FIRING', 'DYING'] | Cartier: moore
+    Generația 0:
+. . . . . 
+. F F . . 
+. . . . . 
+. . . . . 
+. . . . . 
+    Generația 1 (FIRING -> DYING, OFF cu 2 FIRING devine FIRING):
+. F F . . 
+. D D . . 
+. F F . . 
+. . . . . 
+. . . . . 
+    [PASS] Celule active Brian's Brain: 6 (FIRING + DYING)
+
+[3] Inițializare Cyclic Cellular Automaton...
+    Nume: Cyclic Cellular Automaton | Stări: ['0', '1', '2', '3']
+    Regulă: x -> (x + 1) mod 4 dacă cel puțin 2 vecini au (x + 1) mod 4
+    Generația 0:
+1 1 0 
+0 0 0 
+0 0 0 
+    Generația 1 (propagare cyclic):
+1 1 1 
+1 1 1 
+1 1 1 
+    [PASS] Tranzițiile ciclice produc tipare corecte!
+
+[4] Testare State Storage & Recovery (JSON)...
+    Stare salvată în 'brians_brain_checkpoint.json'.
+    Stare recuperată cu succes. Generație reluată: 1
+    [PASS] Grid-ul recuperat este identic cu cel salvat.
+
+[5] Testare Răspuns la Întrebările Proiectului...
+    Q5 (Ciclu): Ciclu detectat? True | Perioadă: 1 (de la Gen 15 la Gen 16)
+    Q4 (Numărare stări): Celule 'DYING' după 2 pași: 6
+    Q2 (Stabilitate): A atins stabilitate totală? False
+
+==========================================================
+ TOATE TESTELE DELIVERABLE 2 AU FOST VALIDATE CU SUCCES!
+==========================================================

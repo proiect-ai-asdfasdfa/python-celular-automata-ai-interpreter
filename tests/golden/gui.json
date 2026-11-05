@@ -1,0 +1,6853 @@
+{
+ "bad_config": {
+  "badge": "Tip: von Neumann (4)  |  Bordură: Bordură fixă",
+  "canvas": [
+   "1e597617cd9def969cdcc54b0c1d02c886fb558d37558bdf3f532182cee84998",
+   25,
+   "#111111"
+  ],
+  "cols": 5,
+  "generation": 0,
+  "grid_sha": "1ce11b1696917139fb0b98cb4b0e0ec31cbf1414f82226665b914d089102bc4c",
+  "label": "bad config",
+  "legend": [
+   "#111111",
+   "x",
+   "#222222",
+   "y",
+   "#333333",
+   "mystery"
+  ],
+  "message": "Automat încărcat: External",
+  "name": "External",
+  "play": [
+   "▶ Play",
+   "#2563EB"
+  ],
+  "preset": "-- Alege pattern --",
+  "preset_values": [
+   "-- Alege pattern --"
+  ],
+  "rows": 5,
+  "running": false,
+  "selector": "External",
+  "selector_values": [
+   "Brian's Brain",
+   "Cyclic Cellular Automaton",
+   "Elementary Cellular Automaton (Rule 30)",
+   "External"
+  ],
+  "speed": [
+   120,
+   "120 ms"
+  ],
+  "stats": "Generația: 0  |  Celule active: 14  |  Dimensiuni: 5x5  |  Distribuție stări: [x: 11, y: 4, mystery: 10]"
+ },
+ "bad_state": {
+  "badge": "Tip: von Neumann (4)  |  Bordură: Bordură fixă",
+  "canvas": [
+   "1e597617cd9def969cdcc54b0c1d02c886fb558d37558bdf3f532182cee84998",
+   25,
+   "#111111"
+  ],
+  "cols": 5,
+  "generation": 0,
+  "grid_sha": "1ce11b1696917139fb0b98cb4b0e0ec31cbf1414f82226665b914d089102bc4c",
+  "label": "bad state",
+  "legend": [
+   "#111111",
+   "x",
+   "#222222",
+   "y",
+   "#333333",
+   "mystery"
+  ],
+  "message": "Automat încărcat: External",
+  "name": "External",
+  "play": [
+   "▶ Play",
+   "#2563EB"
+  ],
+  "preset": "-- Alege pattern --",
+  "preset_values": [
+   "-- Alege pattern --"
+  ],
+  "rows": 5,
+  "running": false,
+  "selector": "External",
+  "selector_values": [
+   "Brian's Brain",
+   "Cyclic Cellular Automaton",
+   "Elementary Cellular Automaton (Rule 30)",
+   "External"
+  ],
+  "speed": [
+   120,
+   "120 ms"
+  ],
+  "stats": "Generația: 0  |  Celule active: 14  |  Dimensiuni: 5x5  |  Distribuție stări: [x: 11, y: 4, mystery: 10]"
+ },
+ "colors": [
+  "#0F172A",
+  "#F59E0B",
+  "#10B981",
+  "#EF4444",
+  "#0F172A",
+  "#38BDF8",
+  "#EF4444",
+  "#0F172A",
+  "#38BDF8",
+  "#EF4444",
+  "#0F172A",
+  "#4ADE80"
+ ],
+ "config_files": {
+  "Brian's Brain": "<PROJECT>/brians_brain.json",
+  "Cyclic Cellular Automaton": "<PROJECT>/cyclic_ca.json",
+  "Elementary Cellular Automaton (Rule 30)": "<PROJECT>/elementary_rule30.json"
+ },
+ "cross_load": {
+  "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+  "canvas": [
+   "7d83f7a4a1c023d5278ec4ab421d96d7b13ca91e7a5ab49478d7e3337fc98a80",
+   900,
+   "#0F172A"
+  ],
+  "cols": 30,
+  "generation": 1,
+  "grid_sha": "a9dcd3d7fc10d0e75bf1ecc9cf12e239c505538ac65d7336b7ae112beb5e16ed",
+  "label": "cross load",
+  "legend": [
+   "#0F172A",
+   "OFF",
+   "#38BDF8",
+   "FIRING",
+   "#EF4444",
+   "DYING"
+  ],
+  "message": "[Restaurat] Reluat cu succes de la Generația 1.",
+  "name": "Brian's Brain",
+  "play": [
+   "▶ Play",
+   "#2563EB"
+  ],
+  "preset": "-- Alege pattern --",
+  "preset_values": [
+   "-- Alege pattern --",
+   "Oscilator simplu",
+   "Glider (Spaceship)",
+   "Pattern Complex"
+  ],
+  "rows": 30,
+  "running": false,
+  "selector": "Brian's Brain",
+  "selector_values": [
+   "Brian's Brain",
+   "Cyclic Cellular Automaton",
+   "Elementary Cellular Automaton (Rule 30)"
+  ],
+  "speed": [
+   120,
+   "120 ms"
+  ],
+  "stats": "Generația: 1  |  Celule active: 389  |  Dimensiuni: 30x30  |  Distribuție stări: [OFF: 511, FIRING: 209, DYING: 180]"
+ },
+ "current_config": "<PROJECT>/elementary_rule30.json",
+ "dialog_kwargs": [
+  [
+   "save",
+   {
+    "defaultextension": ".json",
+    "filetypes": "[('JSON Files', '*.json'), ('All Files', '*.*')]",
+    "initialfile": "brian's_brain_gen_0.json",
+    "title": "Salvare Stare Curentă (JSON)"
+   }
+  ],
+  [
+   "open",
+   {
+    "filetypes": "[('JSON Files', '*.json'), ('All Files', '*.*')]",
+    "title": "Încărcare Stare Salvată (JSON)"
+   }
+  ],
+  [
+   "save",
+   {
+    "defaultextension": ".json",
+    "filetypes": "[('JSON Files', '*.json'), ('All Files', '*.*')]",
+    "initialfile": "brian's_brain_gen_0.json",
+    "title": "Salvare Stare Curentă (JSON)"
+   }
+  ],
+  [
+   "open",
+   {
+    "filetypes": "[('JSON Files', '*.json'), ('All Files', '*.*')]",
+    "title": "Încărcare Stare Salvată (JSON)"
+   }
+  ],
+  [
+   "open",
+   {
+    "filetypes": "[('JSON Files', '*.json')]"
+   }
+  ],
+  [
+   "open",
+   {
+    "filetypes": "[('JSON Files', '*.json')]"
+   }
+  ],
+  [
+   "save",
+   {
+    "defaultextension": ".json",
+    "filetypes": "[('JSON Files', '*.json'), ('All Files', '*.*')]",
+    "initialfile": "cyclic_cellular_automaton_gen_0.json",
+    "title": "Salvare Stare Curentă (JSON)"
+   }
+  ],
+  [
+   "open",
+   {
+    "filetypes": "[('JSON Files', '*.json'), ('All Files', '*.*')]",
+    "title": "Încărcare Stare Salvată (JSON)"
+   }
+  ],
+  [
+   "save",
+   {
+    "defaultextension": ".json",
+    "filetypes": "[('JSON Files', '*.json'), ('All Files', '*.*')]",
+    "initialfile": "cyclic_cellular_automaton_gen_0.json",
+    "title": "Salvare Stare Curentă (JSON)"
+   }
+  ],
+  [
+   "open",
+   {
+    "filetypes": "[('JSON Files', '*.json'), ('All Files', '*.*')]",
+    "title": "Încărcare Stare Salvată (JSON)"
+   }
+  ],
+  [
+   "open",
+   {
+    "filetypes": "[('JSON Files', '*.json')]"
+   }
+  ],
+  [
+   "open",
+   {
+    "filetypes": "[('JSON Files', '*.json')]"
+   }
+  ],
+  [
+   "save",
+   {
+    "defaultextension": ".json",
+    "filetypes": "[('JSON Files', '*.json'), ('All Files', '*.*')]",
+    "initialfile": "elementary_cellular_automaton_rule_30_gen_0.json",
+    "title": "Salvare Stare Curentă (JSON)"
+   }
+  ],
+  [
+   "open",
+   {
+    "filetypes": "[('JSON Files', '*.json'), ('All Files', '*.*')]",
+    "title": "Încărcare Stare Salvată (JSON)"
+   }
+  ],
+  [
+   "save",
+   {
+    "defaultextension": ".json",
+    "filetypes": "[('JSON Files', '*.json'), ('All Files', '*.*')]",
+    "initialfile": "elementary_cellular_automaton_rule_30_gen_0.json",
+    "title": "Salvare Stare Curentă (JSON)"
+   }
+  ],
+  [
+   "open",
+   {
+    "filetypes": "[('JSON Files', '*.json'), ('All Files', '*.*')]",
+    "title": "Încărcare Stare Salvată (JSON)"
+   }
+  ],
+  [
+   "open",
+   {
+    "filetypes": "[('JSON Files', '*.json')]"
+   }
+  ],
+  [
+   "open",
+   {
+    "filetypes": "[('JSON Files', '*.json')]"
+   }
+  ],
+  [
+   "save",
+   {
+    "defaultextension": ".json",
+    "filetypes": "[('JSON Files', '*.json'), ('All Files', '*.*')]",
+    "initialfile": "brian's_brain_gen_1.json",
+    "title": "Salvare Stare Curentă (JSON)"
+   }
+  ],
+  [
+   "open",
+   {
+    "filetypes": "[('JSON Files', '*.json'), ('All Files', '*.*')]",
+    "title": "Încărcare Stare Salvată (JSON)"
+   }
+  ],
+  [
+   "open",
+   {
+    "filetypes": "[('JSON Files', '*.json'), ('All Files', '*.*')]",
+    "title": "Alege fișier de configurare automat (JSON)"
+   }
+  ],
+  [
+   "open",
+   {
+    "filetypes": "[('JSON Files', '*.json'), ('All Files', '*.*')]",
+    "title": "Alege fișier de configurare automat (JSON)"
+   }
+  ],
+  [
+   "open",
+   {
+    "filetypes": "[('JSON Files', '*.json'), ('All Files', '*.*')]",
+    "title": "Încărcare Stare Salvată (JSON)"
+   }
+  ],
+  [
+   "open",
+   {
+    "filetypes": "[('JSON Files', '*.json'), ('All Files', '*.*')]",
+    "title": "Alege fișier de configurare automat (JSON)"
+   }
+  ]
+ ],
+ "entry_points": [
+  "Project CellLab - Cellular Automata Simulator",
+  "Project CellLab - Cellular Automata Simulator"
+ ],
+ "external": {
+  "badge": "Tip: von Neumann (4)  |  Bordură: Bordură fixă",
+  "canvas": [
+   "1e597617cd9def969cdcc54b0c1d02c886fb558d37558bdf3f532182cee84998",
+   25,
+   "#111111"
+  ],
+  "cols": 5,
+  "generation": 0,
+  "grid_sha": "1ce11b1696917139fb0b98cb4b0e0ec31cbf1414f82226665b914d089102bc4c",
+  "label": "external",
+  "legend": [
+   "#111111",
+   "x",
+   "#222222",
+   "y",
+   "#333333",
+   "mystery"
+  ],
+  "message": "Automat încărcat: External",
+  "name": "External",
+  "play": [
+   "▶ Play",
+   "#2563EB"
+  ],
+  "preset": "-- Alege pattern --",
+  "preset_values": [
+   "-- Alege pattern --"
+  ],
+  "rows": 5,
+  "running": false,
+  "selector": "External",
+  "selector_values": [
+   "Brian's Brain",
+   "Cyclic Cellular Automaton",
+   "Elementary Cellular Automaton (Rule 30)",
+   "External"
+  ],
+  "speed": [
+   120,
+   "120 ms"
+  ],
+  "stats": "Generația: 0  |  Celule active: 14  |  Dimensiuni: 5x5  |  Distribuție stări: [x: 11, y: 4, mystery: 10]"
+ },
+ "external_cfg": {
+  "Brian's Brain": "<PROJECT>/brians_brain.json",
+  "Cyclic Cellular Automaton": "<PROJECT>/cyclic_ca.json",
+  "Elementary Cellular Automaton (Rule 30)": "<PROJECT>/elementary_rule30.json",
+  "External": "<TMP>/ext.json"
+ },
+ "geometry_min": [
+  780,
+  700
+ ],
+ "init_snapshot": {
+  "badge": "Tip: 1D Elementary (Left, Center, Right)  |  Bordură: Wrap (toroidal)",
+  "canvas": [
+   "a2c1e61bb6c7ef152a07b4da6a46b4050a3fff26ac4d9fdd7ed1332304ed323c",
+   1785,
+   "#0F172A"
+  ],
+  "cols": 51,
+  "generation": 0,
+  "grid_sha": "61ea82cee99782c3d387e3d49381a87184dd874bf06b6a73b7ec79500853baa1",
+  "label": "init",
+  "legend": [
+   "#0F172A",
+   "0",
+   "#F59E0B",
+   "1"
+  ],
+  "message": "Gata. Click pe celule pentru editare manuală sau apasă Play/Randomize.",
+  "name": "Elementary Cellular Automaton (Rule 30)",
+  "play": [
+   "▶ Play",
+   "#2563EB"
+  ],
+  "preset": "-- Alege pattern --",
+  "preset_values": [
+   "-- Alege pattern --",
+   "Single Center Seed (0..010..0)",
+   "Random Row Seed",
+   "Two Center Seeds (11)"
+  ],
+  "rows": 35,
+  "running": false,
+  "selector": "Elementary Cellular Automaton (Rule 30)",
+  "selector_values": [
+   "Brian's Brain",
+   "Cyclic Cellular Automaton",
+   "Elementary Cellular Automaton (Rule 30)"
+  ],
+  "speed": [
+   120,
+   "120 ms"
+  ],
+  "stats": "Generația: 0  |  Celule active: 1  |  Dimensiuni: 35x51  |  Distribuție stări: [0: 1784, 1: 1]"
+ },
+ "init_title": "Project CellLab - Cellular Automata Simulator",
+ "messagebox_log": [
+  [
+   "showinfo",
+   "Salvare Reușită",
+   "Starea curentă (Generația 0) a fost salvată în:\n<TMP>/state_0.json"
+  ],
+  [
+   "showinfo",
+   "Restaurare Reușită",
+   "Simularea a fost restaurată de la Generația 0."
+  ],
+  [
+   "showwarning",
+   "Atenție",
+   "Te rog alege mai întâi un fișier JSON țintă."
+  ],
+  [
+   "showerror",
+   "Eroare",
+   "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+  ],
+  [
+   "showerror",
+   "Eroare",
+   "invalid literal for int() with base 10: 'abc'"
+  ],
+  [
+   "showinfo",
+   "Salvare Reușită",
+   "Starea curentă (Generația 0) a fost salvată în:\n<TMP>/state_1.json"
+  ],
+  [
+   "showinfo",
+   "Restaurare Reușită",
+   "Simularea a fost restaurată de la Generația 0."
+  ],
+  [
+   "showwarning",
+   "Atenție",
+   "Te rog alege mai întâi un fișier JSON țintă."
+  ],
+  [
+   "showerror",
+   "Eroare",
+   "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+  ],
+  [
+   "showerror",
+   "Eroare",
+   "invalid literal for int() with base 10: 'abc'"
+  ],
+  [
+   "showinfo",
+   "Salvare Reușită",
+   "Starea curentă (Generația 0) a fost salvată în:\n<TMP>/state_2.json"
+  ],
+  [
+   "showinfo",
+   "Restaurare Reușită",
+   "Simularea a fost restaurată de la Generația 0."
+  ],
+  [
+   "showwarning",
+   "Atenție",
+   "Te rog alege mai întâi un fișier JSON țintă."
+  ],
+  [
+   "showerror",
+   "Eroare",
+   "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+  ],
+  [
+   "showerror",
+   "Eroare",
+   "invalid literal for int() with base 10: 'abc'"
+  ],
+  [
+   "showinfo",
+   "Salvare Reușită",
+   "Starea curentă (Generația 1) a fost salvată în:\n<TMP>/cross.json"
+  ],
+  [
+   "showinfo",
+   "Restaurare Reușită",
+   "Simularea a fost restaurată de la Generația 1."
+  ],
+  [
+   "showerror",
+   "Eroare la încărcarea configurației",
+   "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+  ],
+  [
+   "showerror",
+   "Eroare la Restaurare",
+   "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+  ]
+ ],
+ "scenarios": {
+  "Brian's Brain": [
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "bd0ee6d7ca847cb16a75c9b7e1a43baf38c6b8311fded1022716841daad2a858",
+     900,
+     "#0F172A"
+    ],
+    "cols": 30,
+    "generation": 0,
+    "grid_sha": "4f63433078b42b83792dcace8acf5b14232f61c431b3e32812693cdd1162cac7",
+    "label": "switched",
+    "legend": [
+     "#0F172A",
+     "OFF",
+     "#38BDF8",
+     "FIRING",
+     "#EF4444",
+     "DYING"
+    ],
+    "message": "Automat încărcat: Brian's Brain",
+    "name": "Brian's Brain",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "-- Alege pattern --",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Oscilator simplu",
+     "Glider (Spaceship)",
+     "Pattern Complex"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Brian's Brain",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 240  |  Dimensiuni: 30x30  |  Distribuție stări: [OFF: 660, FIRING: 192, DYING: 48]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "9481c8e9ee22f1861ba8890852095fcc1d68979c565f8f4c30339e45e24ace11",
+     900,
+     "#0F172A"
+    ],
+    "cols": 30,
+    "generation": 3,
+    "grid_sha": "d2425f787b20ffed8636933ab76f4975d62ac397a6142567e1ad846d76e5337f",
+    "label": "3 steps",
+    "legend": [
+     "#0F172A",
+     "OFF",
+     "#38BDF8",
+     "FIRING",
+     "#EF4444",
+     "DYING"
+    ],
+    "message": "Avansat la generația 3.",
+    "name": "Brian's Brain",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "-- Alege pattern --",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Oscilator simplu",
+     "Glider (Spaceship)",
+     "Pattern Complex"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Brian's Brain",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 3  |  Celule active: 280  |  Dimensiuni: 30x30  |  Distribuție stări: [OFF: 620, FIRING: 133, DYING: 147]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "11534ba622b8d5bab13165e44240ba63945fd651c1cf4c2637e660558a1d7e48",
+     900,
+     "#0F172A"
+    ],
+    "cols": 30,
+    "generation": 0,
+    "grid_sha": "1d6e9733586b88f7f1a0aeffd458b6f0b635107e60f683f0db7278c3e1b3dbe7",
+    "label": "randomized",
+    "legend": [
+     "#0F172A",
+     "OFF",
+     "#38BDF8",
+     "FIRING",
+     "#EF4444",
+     "DYING"
+    ],
+    "message": "Grilă reinițializată.",
+    "name": "Brian's Brain",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "-- Alege pattern --",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Oscilator simplu",
+     "Glider (Spaceship)",
+     "Pattern Complex"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Brian's Brain",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 218  |  Dimensiuni: 30x30  |  Distribuție stări: [OFF: 682, FIRING: 175, DYING: 43]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "90edf124bf0c3c2478f82791a372bc2fe9c0a6b11b7f28b4ecd0eeed47db1e79",
+     900,
+     "#0F172A"
+    ],
+    "cols": 30,
+    "generation": 1,
+    "grid_sha": "2641f016e0dc540d03dae92f26e865281b0b24f27cd1583472c896b3a9cdc89f",
+    "label": "playing",
+    "legend": [
+     "#0F172A",
+     "OFF",
+     "#38BDF8",
+     "FIRING",
+     "#EF4444",
+     "DYING"
+    ],
+    "message": "Simulare în rulare...",
+    "name": "Brian's Brain",
+    "play": [
+     "⏸ Pause",
+     "#DC2626"
+    ],
+    "preset": "-- Alege pattern --",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Oscilator simplu",
+     "Glider (Spaceship)",
+     "Pattern Complex"
+    ],
+    "rows": 30,
+    "running": true,
+    "selector": "Brian's Brain",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 1  |  Celule active: 401  |  Dimensiuni: 30x30  |  Distribuție stări: [OFF: 499, FIRING: 226, DYING: 175]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "90edf124bf0c3c2478f82791a372bc2fe9c0a6b11b7f28b4ecd0eeed47db1e79",
+     900,
+     "#0F172A"
+    ],
+    "cols": 30,
+    "generation": 1,
+    "grid_sha": "2641f016e0dc540d03dae92f26e865281b0b24f27cd1583472c896b3a9cdc89f",
+    "label": "paused",
+    "legend": [
+     "#0F172A",
+     "OFF",
+     "#38BDF8",
+     "FIRING",
+     "#EF4444",
+     "DYING"
+    ],
+    "message": "Simulare pusă pe pauză.",
+    "name": "Brian's Brain",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "-- Alege pattern --",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Oscilator simplu",
+     "Glider (Spaceship)",
+     "Pattern Complex"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Brian's Brain",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 1  |  Celule active: 401  |  Dimensiuni: 30x30  |  Distribuție stări: [OFF: 499, FIRING: 226, DYING: 175]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "90edf124bf0c3c2478f82791a372bc2fe9c0a6b11b7f28b4ecd0eeed47db1e79",
+     900,
+     "#0F172A"
+    ],
+    "cols": 30,
+    "generation": 1,
+    "grid_sha": "2641f016e0dc540d03dae92f26e865281b0b24f27cd1583472c896b3a9cdc89f",
+    "label": "speed",
+    "legend": [
+     "#0F172A",
+     "OFF",
+     "#38BDF8",
+     "FIRING",
+     "#EF4444",
+     "DYING"
+    ],
+    "message": "Simulare pusă pe pauză.",
+    "name": "Brian's Brain",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "-- Alege pattern --",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Oscilator simplu",
+     "Glider (Spaceship)",
+     "Pattern Complex"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Brian's Brain",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     250,
+     "250 ms"
+    ],
+    "stats": "Generația: 1  |  Celule active: 401  |  Dimensiuni: 30x30  |  Distribuție stări: [OFF: 499, FIRING: 226, DYING: 175]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "90edf124bf0c3c2478f82791a372bc2fe9c0a6b11b7f28b4ecd0eeed47db1e79",
+     900,
+     "#0F172A"
+    ],
+    "cols": 30,
+    "generation": 1,
+    "grid_sha": "2641f016e0dc540d03dae92f26e865281b0b24f27cd1583472c896b3a9cdc89f",
+    "label": "preset -- Alege pattern --",
+    "legend": [
+     "#0F172A",
+     "OFF",
+     "#38BDF8",
+     "FIRING",
+     "#EF4444",
+     "DYING"
+    ],
+    "message": "Simulare pusă pe pauză.",
+    "name": "Brian's Brain",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "-- Alege pattern --",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Oscilator simplu",
+     "Glider (Spaceship)",
+     "Pattern Complex"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Brian's Brain",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 1  |  Celule active: 401  |  Dimensiuni: 30x30  |  Distribuție stări: [OFF: 499, FIRING: 226, DYING: 175]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "30fd0c79fac1cbcad2835697d5de284b8e2527a1cc491a9763482ba559a45fee",
+     900,
+     "#0F172A"
+    ],
+    "cols": 30,
+    "generation": 2,
+    "grid_sha": "489cf2eefc6b6b61bf9f39cc845ae6848e72bf15c79825f35405f1f5232e2942",
+    "label": "preset -- Alege pattern -- +1",
+    "legend": [
+     "#0F172A",
+     "OFF",
+     "#38BDF8",
+     "FIRING",
+     "#EF4444",
+     "DYING"
+    ],
+    "message": "Avansat la generația 2.",
+    "name": "Brian's Brain",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "-- Alege pattern --",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Oscilator simplu",
+     "Glider (Spaceship)",
+     "Pattern Complex"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Brian's Brain",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 2  |  Celule active: 376  |  Dimensiuni: 30x30  |  Distribuție stări: [OFF: 524, FIRING: 150, DYING: 226]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "556c76d7e44d147565afbf0ca3ecbfcbba7b8ed43109fe4e22744cb9437004fc",
+     900,
+     "#0F172A"
+    ],
+    "cols": 30,
+    "generation": 0,
+    "grid_sha": "3bc23e8284d70a2e909a91af5925aaf82eff6069bf7cdf2e475c613063643706",
+    "label": "preset Oscilator simplu",
+    "legend": [
+     "#0F172A",
+     "OFF",
+     "#38BDF8",
+     "FIRING",
+     "#EF4444",
+     "DYING"
+    ],
+    "message": "Preset aplicat: Oscilator simplu",
+    "name": "Brian's Brain",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Oscilator simplu",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Oscilator simplu",
+     "Glider (Spaceship)",
+     "Pattern Complex"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Brian's Brain",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 4  |  Dimensiuni: 30x30  |  Distribuție stări: [OFF: 896, FIRING: 2, DYING: 2]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "99e44308c110378ee7f12d5fc573dc8706d052f1c3acd6190eaa1c68aeac5897",
+     900,
+     "#0F172A"
+    ],
+    "cols": 30,
+    "generation": 1,
+    "grid_sha": "60de1045c6e44f3b0048a862c045450e804f4199573f9fed9c7056d56440ee88",
+    "label": "preset Oscilator simplu +1",
+    "legend": [
+     "#0F172A",
+     "OFF",
+     "#38BDF8",
+     "FIRING",
+     "#EF4444",
+     "DYING"
+    ],
+    "message": "Avansat la generația 1.",
+    "name": "Brian's Brain",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Oscilator simplu",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Oscilator simplu",
+     "Glider (Spaceship)",
+     "Pattern Complex"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Brian's Brain",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 1  |  Celule active: 4  |  Dimensiuni: 30x30  |  Distribuție stări: [OFF: 896, FIRING: 2, DYING: 2]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "20b5421802decb55c155e622e2e4172323ddee471f3c6d4bd5c554de113a7025",
+     900,
+     "#0F172A"
+    ],
+    "cols": 30,
+    "generation": 0,
+    "grid_sha": "41a443e2c980a5e295e31c6de1c8293ef1a3de2725ca7a3c2193e80a54ccd7bf",
+    "label": "preset Glider (Spaceship)",
+    "legend": [
+     "#0F172A",
+     "OFF",
+     "#38BDF8",
+     "FIRING",
+     "#EF4444",
+     "DYING"
+    ],
+    "message": "Preset aplicat: Glider (Spaceship)",
+    "name": "Brian's Brain",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Glider (Spaceship)",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Oscilator simplu",
+     "Glider (Spaceship)",
+     "Pattern Complex"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Brian's Brain",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 6  |  Dimensiuni: 30x30  |  Distribuție stări: [OFF: 894, FIRING: 4, DYING: 2]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "33cced7b8cee56d9c32d5a5712b6a88552a14516f9c27d3782bca8a170421cc1",
+     900,
+     "#0F172A"
+    ],
+    "cols": 30,
+    "generation": 1,
+    "grid_sha": "2f4b15ff060fedd08e8b194229c18243a6cebcd03420524a91b26d5c00bb6ac5",
+    "label": "preset Glider (Spaceship) +1",
+    "legend": [
+     "#0F172A",
+     "OFF",
+     "#38BDF8",
+     "FIRING",
+     "#EF4444",
+     "DYING"
+    ],
+    "message": "Avansat la generația 1.",
+    "name": "Brian's Brain",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Glider (Spaceship)",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Oscilator simplu",
+     "Glider (Spaceship)",
+     "Pattern Complex"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Brian's Brain",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 1  |  Celule active: 8  |  Dimensiuni: 30x30  |  Distribuție stări: [OFF: 892, FIRING: 4, DYING: 4]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "2adbd499bfeefd23133b92a300b57c9fec1c60eb5088f0d0de198bd29fd76160",
+     900,
+     "#0F172A"
+    ],
+    "cols": 30,
+    "generation": 0,
+    "grid_sha": "0854d7344c85043983ca9b90ebc2bd1d767b843f5e4cfe7c41d358b6aa84e21f",
+    "label": "preset Pattern Complex",
+    "legend": [
+     "#0F172A",
+     "OFF",
+     "#38BDF8",
+     "FIRING",
+     "#EF4444",
+     "DYING"
+    ],
+    "message": "Preset aplicat: Pattern Complex",
+    "name": "Brian's Brain",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Pattern Complex",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Oscilator simplu",
+     "Glider (Spaceship)",
+     "Pattern Complex"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Brian's Brain",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 6  |  Dimensiuni: 30x30  |  Distribuție stări: [OFF: 894, FIRING: 4, DYING: 2]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "f538ec3c30f8a269913fdb7ddf8a9ac100ed1379cc974466f0c28edfda1d278c",
+     900,
+     "#0F172A"
+    ],
+    "cols": 30,
+    "generation": 1,
+    "grid_sha": "634488fe92810b1e8a7b27cf02cc33f3e5674a2c78e6d2ff0e67168b4a690483",
+    "label": "preset Pattern Complex +1",
+    "legend": [
+     "#0F172A",
+     "OFF",
+     "#38BDF8",
+     "FIRING",
+     "#EF4444",
+     "DYING"
+    ],
+    "message": "Avansat la generația 1.",
+    "name": "Brian's Brain",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Pattern Complex",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Oscilator simplu",
+     "Glider (Spaceship)",
+     "Pattern Complex"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Brian's Brain",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 1  |  Celule active: 8  |  Dimensiuni: 30x30  |  Distribuție stări: [OFF: 892, FIRING: 4, DYING: 4]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "62bc8c4dbbd64428af646420ded3a8fc24ea0531909ff25106a775da0004e89e",
+     900,
+     "#0F172A"
+    ],
+    "cols": 30,
+    "generation": 0,
+    "grid_sha": "828494d34c3a400823a5a1a7bdb064fb2e36d6907a8c4da8ec1ba379c4ba3f1d",
+    "label": "cleared",
+    "legend": [
+     "#0F172A",
+     "OFF",
+     "#38BDF8",
+     "FIRING",
+     "#EF4444",
+     "DYING"
+    ],
+    "message": "Grilă curățată.",
+    "name": "Brian's Brain",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Pattern Complex",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Oscilator simplu",
+     "Glider (Spaceship)",
+     "Pattern Complex"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Brian's Brain",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 0  |  Dimensiuni: 30x30  |  Distribuție stări: [OFF: 900, FIRING: 0, DYING: 0]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "5d688bd640590b99f7338fa4c766479930442d07963e176114ddbb21e87183ac",
+     900,
+     "#0F172A"
+    ],
+    "cols": 30,
+    "generation": 0,
+    "grid_sha": "f496fe575a38ca3874d746fe4a9737b0a7bfe15abc28a497d5b7f1199ccff5c0",
+    "label": "click",
+    "legend": [
+     "#0F172A",
+     "OFF",
+     "#38BDF8",
+     "FIRING",
+     "#EF4444",
+     "DYING"
+    ],
+    "message": "Grilă curățată.",
+    "name": "Brian's Brain",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Pattern Complex",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Oscilator simplu",
+     "Glider (Spaceship)",
+     "Pattern Complex"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Brian's Brain",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 1  |  Dimensiuni: 30x30  |  Distribuție stări: [OFF: 899, FIRING: 1, DYING: 0]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "0e32103929303fe064913cb921e5da425ba0deb7400b16edbf85bf77a86de6c5",
+     900,
+     "#0F172A"
+    ],
+    "cols": 30,
+    "generation": 0,
+    "grid_sha": "61cab00ee1464f2079235566194058b32d6dadd77b15103932b8564b2aea71be",
+    "label": "click2",
+    "legend": [
+     "#0F172A",
+     "OFF",
+     "#38BDF8",
+     "FIRING",
+     "#EF4444",
+     "DYING"
+    ],
+    "message": "Grilă curățată.",
+    "name": "Brian's Brain",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Pattern Complex",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Oscilator simplu",
+     "Glider (Spaceship)",
+     "Pattern Complex"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Brian's Brain",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 1  |  Dimensiuni: 30x30  |  Distribuție stări: [OFF: 899, FIRING: 0, DYING: 1]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "c3c39511d7b18a6529b2c2a02809952109767030011e4528db42f1d36a173c58",
+     900,
+     "#0F172A"
+    ],
+    "cols": 30,
+    "generation": 0,
+    "grid_sha": "a969d41a9776396de6c28e4c885f3d07da014958fd8f67e56099e9c58f923801",
+    "label": "drag",
+    "legend": [
+     "#0F172A",
+     "OFF",
+     "#38BDF8",
+     "FIRING",
+     "#EF4444",
+     "DYING"
+    ],
+    "message": "Grilă curățată.",
+    "name": "Brian's Brain",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Pattern Complex",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Oscilator simplu",
+     "Glider (Spaceship)",
+     "Pattern Complex"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Brian's Brain",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 2  |  Dimensiuni: 30x30  |  Distribuție stări: [OFF: 898, FIRING: 0, DYING: 2]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "c3c39511d7b18a6529b2c2a02809952109767030011e4528db42f1d36a173c58",
+     900,
+     "#0F172A"
+    ],
+    "cols": 30,
+    "generation": 0,
+    "grid_sha": "a969d41a9776396de6c28e4c885f3d07da014958fd8f67e56099e9c58f923801",
+    "label": "drag after release",
+    "legend": [
+     "#0F172A",
+     "OFF",
+     "#38BDF8",
+     "FIRING",
+     "#EF4444",
+     "DYING"
+    ],
+    "message": "Grilă curățată.",
+    "name": "Brian's Brain",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Pattern Complex",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Oscilator simplu",
+     "Glider (Spaceship)",
+     "Pattern Complex"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Brian's Brain",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 2  |  Dimensiuni: 30x30  |  Distribuție stări: [OFF: 898, FIRING: 0, DYING: 2]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "658da5cc1b8461e036fdf2256516fedeedb12380ed4d7fa583e6f6a90cf0f710",
+     900,
+     "#0F172A"
+    ],
+    "cols": 30,
+    "generation": 0,
+    "grid_sha": "b8b6dc73d341b72dd6357af88c7f75d4bf36eb4095d028c4548f9f48e2ba61bf",
+    "label": "right click",
+    "legend": [
+     "#0F172A",
+     "OFF",
+     "#38BDF8",
+     "FIRING",
+     "#EF4444",
+     "DYING"
+    ],
+    "message": "Grilă curățată.",
+    "name": "Brian's Brain",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Pattern Complex",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Oscilator simplu",
+     "Glider (Spaceship)",
+     "Pattern Complex"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Brian's Brain",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 1  |  Dimensiuni: 30x30  |  Distribuție stări: [OFF: 899, FIRING: 0, DYING: 1]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "658da5cc1b8461e036fdf2256516fedeedb12380ed4d7fa583e6f6a90cf0f710",
+     900,
+     "#0F172A"
+    ],
+    "cols": 30,
+    "generation": 0,
+    "grid_sha": "b8b6dc73d341b72dd6357af88c7f75d4bf36eb4095d028c4548f9f48e2ba61bf",
+    "label": "click outside",
+    "legend": [
+     "#0F172A",
+     "OFF",
+     "#38BDF8",
+     "FIRING",
+     "#EF4444",
+     "DYING"
+    ],
+    "message": "Grilă curățată.",
+    "name": "Brian's Brain",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Pattern Complex",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Oscilator simplu",
+     "Glider (Spaceship)",
+     "Pattern Complex"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Brian's Brain",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 1  |  Dimensiuni: 30x30  |  Distribuție stări: [OFF: 899, FIRING: 0, DYING: 1]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "271a7d7a80926768a02a833bffbdb19c6b39ac85806415f6ff513023af1344e9",
+     900,
+     "#0F172A"
+    ],
+    "cols": 30,
+    "generation": 0,
+    "grid_sha": "b8b6dc73d341b72dd6357af88c7f75d4bf36eb4095d028c4548f9f48e2ba61bf",
+    "label": "resize",
+    "legend": [
+     "#0F172A",
+     "OFF",
+     "#38BDF8",
+     "FIRING",
+     "#EF4444",
+     "DYING"
+    ],
+    "message": "Grilă curățată.",
+    "name": "Brian's Brain",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Pattern Complex",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Oscilator simplu",
+     "Glider (Spaceship)",
+     "Pattern Complex"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Brian's Brain",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 1  |  Dimensiuni: 30x30  |  Distribuție stări: [OFF: 899, FIRING: 0, DYING: 1]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "271a7d7a80926768a02a833bffbdb19c6b39ac85806415f6ff513023af1344e9",
+     900,
+     "#0F172A"
+    ],
+    "cols": 30,
+    "generation": 0,
+    "grid_sha": "b8b6dc73d341b72dd6357af88c7f75d4bf36eb4095d028c4548f9f48e2ba61bf",
+    "label": "resize ignored",
+    "legend": [
+     "#0F172A",
+     "OFF",
+     "#38BDF8",
+     "FIRING",
+     "#EF4444",
+     "DYING"
+    ],
+    "message": "Grilă curățată.",
+    "name": "Brian's Brain",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Pattern Complex",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Oscilator simplu",
+     "Glider (Spaceship)",
+     "Pattern Complex"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Brian's Brain",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 1  |  Dimensiuni: 30x30  |  Distribuție stări: [OFF: 899, FIRING: 0, DYING: 1]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "e0c418ca1aca354a73281c7d8ce7ca69f54d60293af25fef7937902c002d59fc",
+     900,
+     "#0F172A"
+    ],
+    "cols": 30,
+    "generation": 0,
+    "grid_sha": "b8b6dc73d341b72dd6357af88c7f75d4bf36eb4095d028c4548f9f48e2ba61bf",
+    "label": "saved",
+    "legend": [
+     "#0F172A",
+     "OFF",
+     "#38BDF8",
+     "FIRING",
+     "#EF4444",
+     "DYING"
+    ],
+    "message": "[Salvat] Generația 0 salvată.",
+    "name": "Brian's Brain",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Pattern Complex",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Oscilator simplu",
+     "Glider (Spaceship)",
+     "Pattern Complex"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Brian's Brain",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 1  |  Dimensiuni: 30x30  |  Distribuție stări: [OFF: 899, FIRING: 0, DYING: 1]"
+   },
+   [
+    "saved_sha",
+    "3526a665689557ebef663dc81f417aa3378360fed6ba4e317b89d26162f2acdf"
+   ],
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "43f2d3070be687bb1da496cff709bdd7a02a3da0421fb5eed81d900cbae2cb1d",
+     900,
+     "#0F172A"
+    ],
+    "cols": 30,
+    "generation": 0,
+    "grid_sha": "b8b6dc73d341b72dd6357af88c7f75d4bf36eb4095d028c4548f9f48e2ba61bf",
+    "label": "loaded",
+    "legend": [
+     "#0F172A",
+     "OFF",
+     "#38BDF8",
+     "FIRING",
+     "#EF4444",
+     "DYING"
+    ],
+    "message": "[Restaurat] Reluat cu succes de la Generația 0.",
+    "name": "Brian's Brain",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Pattern Complex",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Oscilator simplu",
+     "Glider (Spaceship)",
+     "Pattern Complex"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Brian's Brain",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 1  |  Dimensiuni: 30x30  |  Distribuție stări: [OFF: 899, FIRING: 0, DYING: 1]"
+   },
+   [
+    "analysis_labels",
+    [
+     "Întrebarea 1 & 4: Analiză după N Iterații",
+     "Număr iterații N:",
+     "Celule de tipul X:",
+     "[Rezultat Q1 & Q4]\n• Generație viitoare: 10\n• Număr celule de tip 'FIRING' după 10 iterații: 0",
+     "Întrebarea 2: Când atinge sistemul o stare stabilă?",
+     "O stare este stabilă dacă generația următoare este identică cu cea curentă.",
+     "Limită maximă de pași:",
+     "[Rezultat Q2] Sistemul atinge o stare STABILĂ la generația 2!\n(Nicio modificare nu va mai surveni).",
+     "Întrebarea 5: Intră simularea într-un ciclu repetitiv?",
+     "Detectează oscilatori și cicluri periodice comparând amprenta matricelor.",
+     "Limită maximă de pași:",
+     "[Rezultat Q5] CICLU DETECTAT!\n• Perioada ciclului: 1\n• Ciclul a început la generația: 1\n• Repetarea a fost confirmată la generația: 2",
+     "Întrebarea 3: Apare vreodată o anumită configurație?",
+     "Fișier țintă: state_0.json (30x30)",
+     "[Rezultat Q3] Configurația NU apare în următoarele 500 de generații."
+    ],
+    "tree",
+    {
+     "bg": "SystemButtonFace",
+     "binds": [],
+     "children": [
+      {
+       "binds": [],
+       "children": [
+        {
+         "binds": [],
+         "children": [
+          {
+           "binds": [],
+           "children": [],
+           "class": "TLabel",
+           "font": "{Segoe UI} 10 bold",
+           "foreground": "",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "(0, 10)",
+            "side": "top"
+           },
+           "path": ".!toplevel.!notebook.!frame.!label",
+           "pytype": "Label",
+           "relief": "",
+           "state": "normal",
+           "style": "",
+           "text": "Întrebarea 1 & 4: Analiză după N Iterații",
+           "width": ""
+          },
+          {
+           "binds": [],
+           "children": [
+            {
+             "binds": [],
+             "children": [],
+             "class": "TLabel",
+             "font": "",
+             "foreground": "",
+             "pack": {
+              "anchor": "center",
+              "expand": "0",
+              "fill": "none",
+              "ipadx": "0",
+              "ipady": "0",
+              "padx": "(0, 6)",
+              "pady": "0",
+              "side": "left"
+             },
+             "path": ".!toplevel.!notebook.!frame.!frame.!label",
+             "pytype": "Label",
+             "relief": "",
+             "state": "normal",
+             "style": "",
+             "text": "Număr iterații N:",
+             "width": ""
+            },
+            {
+             "binds": [],
+             "children": [],
+             "class": "TEntry",
+             "font": "TkTextFont",
+             "foreground": "",
+             "pack": {
+              "anchor": "center",
+              "expand": "0",
+              "fill": "none",
+              "ipadx": "0",
+              "ipady": "0",
+              "padx": "0",
+              "pady": "0",
+              "side": "left"
+             },
+             "path": ".!toplevel.!notebook.!frame.!frame.!entry",
+             "pytype": "Entry",
+             "state": "normal",
+             "style": "",
+             "text": "",
+             "width": "8"
+            }
+           ],
+           "class": "TFrame",
+           "pack": {
+            "anchor": "center",
+            "expand": "0",
+            "fill": "x",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "4",
+            "side": "top"
+           },
+           "path": ".!toplevel.!notebook.!frame.!frame",
+           "pytype": "Frame",
+           "relief": "",
+           "style": "",
+           "width": "0"
+          },
+          {
+           "binds": [],
+           "children": [
+            {
+             "binds": [],
+             "children": [],
+             "class": "TLabel",
+             "font": "",
+             "foreground": "",
+             "pack": {
+              "anchor": "center",
+              "expand": "0",
+              "fill": "none",
+              "ipadx": "0",
+              "ipady": "0",
+              "padx": "(0, 6)",
+              "pady": "0",
+              "side": "left"
+             },
+             "path": ".!toplevel.!notebook.!frame.!frame2.!label",
+             "pytype": "Label",
+             "relief": "",
+             "state": "normal",
+             "style": "",
+             "text": "Celule de tipul X:",
+             "width": ""
+            },
+            {
+             "binds": [],
+             "children": [],
+             "class": "TCombobox",
+             "font": "TkTextFont",
+             "foreground": "",
+             "pack": {
+              "anchor": "center",
+              "expand": "0",
+              "fill": "none",
+              "ipadx": "0",
+              "ipady": "0",
+              "padx": "0",
+              "pady": "0",
+              "side": "left"
+             },
+             "path": ".!toplevel.!notebook.!frame.!frame2.!combobox",
+             "pytype": "Combobox",
+             "state": "readonly",
+             "style": "",
+             "text": "",
+             "values": "('OFF', 'FIRING', 'DYING')",
+             "width": "10"
+            }
+           ],
+           "class": "TFrame",
+           "pack": {
+            "anchor": "center",
+            "expand": "0",
+            "fill": "x",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "4",
+            "side": "top"
+           },
+           "path": ".!toplevel.!notebook.!frame.!frame2",
+           "pytype": "Frame",
+           "relief": "",
+           "style": "",
+           "width": "0"
+          },
+          {
+           "binds": [],
+           "children": [],
+           "class": "TLabel",
+           "font": "",
+           "foreground": "#475569",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "10",
+            "side": "top"
+           },
+           "path": ".!toplevel.!notebook.!frame.!label2",
+           "pytype": "Label",
+           "relief": "",
+           "state": "normal",
+           "style": "",
+           "text": "Apasă 'Calculează' pentru a obține răspunsul.",
+           "width": ""
+          },
+          {
+           "binds": [],
+           "children": [],
+           "class": "TButton",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "0",
+            "side": "top"
+           },
+           "path": ".!toplevel.!notebook.!frame.!button",
+           "pytype": "Button",
+           "state": "normal",
+           "style": "",
+           "text": "Calculează Q1 & Q4",
+           "width": ""
+          }
+         ],
+         "class": "TFrame",
+         "path": ".!toplevel.!notebook.!frame",
+         "pytype": "Frame",
+         "relief": "",
+         "style": "",
+         "width": "0"
+        },
+        {
+         "binds": [],
+         "children": [
+          {
+           "binds": [],
+           "children": [],
+           "class": "TLabel",
+           "font": "{Segoe UI} 10 bold",
+           "foreground": "",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "(0, 10)",
+            "side": "top"
+           },
+           "path": ".!toplevel.!notebook.!frame2.!label",
+           "pytype": "Label",
+           "relief": "",
+           "state": "normal",
+           "style": "",
+           "text": "Întrebarea 2: Când atinge sistemul o stare stabilă?",
+           "width": ""
+          },
+          {
+           "binds": [],
+           "children": [],
+           "class": "TLabel",
+           "font": "",
+           "foreground": "",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "(0, 8)",
+            "side": "top"
+           },
+           "path": ".!toplevel.!notebook.!frame2.!label2",
+           "pytype": "Label",
+           "relief": "",
+           "state": "normal",
+           "style": "",
+           "text": "O stare este stabilă dacă generația următoare este identică cu cea curentă.",
+           "width": ""
+          },
+          {
+           "binds": [],
+           "children": [
+            {
+             "binds": [],
+             "children": [],
+             "class": "TLabel",
+             "font": "",
+             "foreground": "",
+             "pack": {
+              "anchor": "center",
+              "expand": "0",
+              "fill": "none",
+              "ipadx": "0",
+              "ipady": "0",
+              "padx": "(0, 6)",
+              "pady": "0",
+              "side": "left"
+             },
+             "path": ".!toplevel.!notebook.!frame2.!frame.!label",
+             "pytype": "Label",
+             "relief": "",
+             "state": "normal",
+             "style": "",
+             "text": "Limită maximă de pași:",
+             "width": ""
+            },
+            {
+             "binds": [],
+             "children": [],
+             "class": "TEntry",
+             "font": "TkTextFont",
+             "foreground": "",
+             "pack": {
+              "anchor": "center",
+              "expand": "0",
+              "fill": "none",
+              "ipadx": "0",
+              "ipady": "0",
+              "padx": "0",
+              "pady": "0",
+              "side": "left"
+             },
+             "path": ".!toplevel.!notebook.!frame2.!frame.!entry",
+             "pytype": "Entry",
+             "state": "normal",
+             "style": "",
+             "text": "",
+             "width": "8"
+            }
+           ],
+           "class": "TFrame",
+           "pack": {
+            "anchor": "center",
+            "expand": "0",
+            "fill": "x",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "4",
+            "side": "top"
+           },
+           "path": ".!toplevel.!notebook.!frame2.!frame",
+           "pytype": "Frame",
+           "relief": "",
+           "style": "",
+           "width": "0"
+          },
+          {
+           "binds": [],
+           "children": [],
+           "class": "TLabel",
+           "font": "",
+           "foreground": "#475569",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "10",
+            "side": "top"
+           },
+           "path": ".!toplevel.!notebook.!frame2.!label3",
+           "pytype": "Label",
+           "relief": "",
+           "state": "normal",
+           "style": "",
+           "text": "Apasă 'Verifică Stabilitate'.",
+           "width": ""
+          },
+          {
+           "binds": [],
+           "children": [],
+           "class": "TButton",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "0",
+            "side": "top"
+           },
+           "path": ".!toplevel.!notebook.!frame2.!button",
+           "pytype": "Button",
+           "state": "normal",
+           "style": "",
+           "text": "Verifică Stabilitate Q2",
+           "width": ""
+          }
+         ],
+         "class": "TFrame",
+         "path": ".!toplevel.!notebook.!frame2",
+         "pytype": "Frame",
+         "relief": "",
+         "style": "",
+         "width": "0"
+        },
+        {
+         "binds": [],
+         "children": [
+          {
+           "binds": [],
+           "children": [],
+           "class": "TLabel",
+           "font": "{Segoe UI} 10 bold",
+           "foreground": "",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "(0, 10)",
+            "side": "top"
+           },
+           "path": ".!toplevel.!notebook.!frame3.!label",
+           "pytype": "Label",
+           "relief": "",
+           "state": "normal",
+           "style": "",
+           "text": "Întrebarea 5: Intră simularea într-un ciclu repetitiv?",
+           "width": ""
+          },
+          {
+           "binds": [],
+           "children": [],
+           "class": "TLabel",
+           "font": "",
+           "foreground": "",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "(0, 8)",
+            "side": "top"
+           },
+           "path": ".!toplevel.!notebook.!frame3.!label2",
+           "pytype": "Label",
+           "relief": "",
+           "state": "normal",
+           "style": "",
+           "text": "Detectează oscilatori și cicluri periodice comparând amprenta matricelor.",
+           "width": ""
+          },
+          {
+           "binds": [],
+           "children": [
+            {
+             "binds": [],
+             "children": [],
+             "class": "TLabel",
+             "font": "",
+             "foreground": "",
+             "pack": {
+              "anchor": "center",
+              "expand": "0",
+              "fill": "none",
+              "ipadx": "0",
+              "ipady": "0",
+              "padx": "(0, 6)",
+              "pady": "0",
+              "side": "left"
+             },
+             "path": ".!toplevel.!notebook.!frame3.!frame.!label",
+             "pytype": "Label",
+             "relief": "",
+             "state": "normal",
+             "style": "",
+             "text": "Limită maximă de pași:",
+             "width": ""
+            },
+            {
+             "binds": [],
+             "children": [],
+             "class": "TEntry",
+             "font": "TkTextFont",
+             "foreground": "",
+             "pack": {
+              "anchor": "center",
+              "expand": "0",
+              "fill": "none",
+              "ipadx": "0",
+              "ipady": "0",
+              "padx": "0",
+              "pady": "0",
+              "side": "left"
+             },
+             "path": ".!toplevel.!notebook.!frame3.!frame.!entry",
+             "pytype": "Entry",
+             "state": "normal",
+             "style": "",
+             "text": "",
+             "width": "8"
+            }
+           ],
+           "class": "TFrame",
+           "pack": {
+            "anchor": "center",
+            "expand": "0",
+            "fill": "x",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "4",
+            "side": "top"
+           },
+           "path": ".!toplevel.!notebook.!frame3.!frame",
+           "pytype": "Frame",
+           "relief": "",
+           "style": "",
+           "width": "0"
+          },
+          {
+           "binds": [],
+           "children": [],
+           "class": "TLabel",
+           "font": "",
+           "foreground": "#475569",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "10",
+            "side": "top"
+           },
+           "path": ".!toplevel.!notebook.!frame3.!label3",
+           "pytype": "Label",
+           "relief": "",
+           "state": "normal",
+           "style": "",
+           "text": "Apasă 'Detectează Ciclu'.",
+           "width": ""
+          },
+          {
+           "binds": [],
+           "children": [],
+           "class": "TButton",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "0",
+            "side": "top"
+           },
+           "path": ".!toplevel.!notebook.!frame3.!button",
+           "pytype": "Button",
+           "state": "normal",
+           "style": "",
+           "text": "Detectează Ciclu Q5",
+           "width": ""
+          }
+         ],
+         "class": "TFrame",
+         "path": ".!toplevel.!notebook.!frame3",
+         "pytype": "Frame",
+         "relief": "",
+         "style": "",
+         "width": "0"
+        },
+        {
+         "binds": [],
+         "children": [
+          {
+           "binds": [],
+           "children": [],
+           "class": "TLabel",
+           "font": "{Segoe UI} 10 bold",
+           "foreground": "",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "(0, 8)",
+            "side": "top"
+           },
+           "path": ".!toplevel.!notebook.!frame4.!label",
+           "pytype": "Label",
+           "relief": "",
+           "state": "normal",
+           "style": "",
+           "text": "Întrebarea 3: Apare vreodată o anumită configurație?",
+           "width": ""
+          },
+          {
+           "binds": [],
+           "children": [],
+           "class": "TLabel",
+           "font": "",
+           "foreground": "#64748B",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "4",
+            "side": "top"
+           },
+           "path": ".!toplevel.!notebook.!frame4.!label2",
+           "pytype": "Label",
+           "relief": "",
+           "state": "normal",
+           "style": "",
+           "text": "Niciun fișier țintă selectat.",
+           "width": ""
+          },
+          {
+           "binds": [],
+           "children": [],
+           "class": "TButton",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "4",
+            "side": "top"
+           },
+           "path": ".!toplevel.!notebook.!frame4.!button",
+           "pytype": "Button",
+           "state": "normal",
+           "style": "",
+           "text": "Alege Configurație Țintă (JSON)...",
+           "width": ""
+          },
+          {
+           "binds": [],
+           "children": [],
+           "class": "TLabel",
+           "font": "",
+           "foreground": "#475569",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "10",
+            "side": "top"
+           },
+           "path": ".!toplevel.!notebook.!frame4.!label3",
+           "pytype": "Label",
+           "relief": "",
+           "state": "normal",
+           "style": "",
+           "text": "",
+           "width": ""
+          },
+          {
+           "binds": [],
+           "children": [],
+           "class": "TButton",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "0",
+            "side": "top"
+           },
+           "path": ".!toplevel.!notebook.!frame4.!button2",
+           "pytype": "Button",
+           "state": "normal",
+           "style": "",
+           "text": "Verifică Configurația Q3",
+           "width": ""
+          }
+         ],
+         "class": "TFrame",
+         "path": ".!toplevel.!notebook.!frame4",
+         "pytype": "Frame",
+         "relief": "",
+         "style": "",
+         "width": "0"
+        }
+       ],
+       "class": "TNotebook",
+       "pack": {
+        "anchor": "center",
+        "expand": "1",
+        "fill": "both",
+        "ipadx": "0",
+        "ipady": "0",
+        "padx": "10",
+        "pady": "10",
+        "side": "top"
+       },
+       "path": ".!toplevel.!notebook",
+       "pytype": "Notebook",
+       "style": "",
+       "width": "0"
+      }
+     ],
+     "class": "Toplevel",
+     "path": ".!toplevel",
+     "pytype": "Toplevel",
+     "relief": "flat",
+     "width": "0"
+    },
+    "title",
+    "CellLab - Întrebări Analitice Automate",
+    "geom",
+    "1x1"
+   ]
+  ],
+  "Cyclic Cellular Automaton": [
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "3dd18795334f4d3d74c2bd4f9cd443abeefe5de5bb9f1e62d41f9fd69f7fabd3",
+     900,
+     "#3B82F6"
+    ],
+    "cols": 30,
+    "generation": 0,
+    "grid_sha": "db0804d1626c164eac4e5cfd940ebe165e22c1c468a0b8ede83a5b840d35caa9",
+    "label": "switched",
+    "legend": [
+     "#3B82F6",
+     "0",
+     "#10B981",
+     "1",
+     "#F59E0B",
+     "2",
+     "#EF4444",
+     "3"
+    ],
+    "message": "Automat încărcat: Cyclic Cellular Automaton",
+    "name": "Cyclic Cellular Automaton",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "-- Alege pattern --",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Grilă Aleatorie (Spirale)",
+     "Punct Central (Valuri)"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Cyclic Cellular Automaton",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 674  |  Dimensiuni: 30x30  |  Distribuție stări: [0: 226, 1: 223, 2: 211, 3: 240]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "e71c4b4e82e6ab0a325a8c36102cd3eab8e9b90f84e3e577e4c3e3e211f2abb6",
+     900,
+     "#3B82F6"
+    ],
+    "cols": 30,
+    "generation": 3,
+    "grid_sha": "d206c7b945d08cc7319631b510eee3a673896336fc85d8e7d4e6e0d00ca2673e",
+    "label": "3 steps",
+    "legend": [
+     "#3B82F6",
+     "0",
+     "#10B981",
+     "1",
+     "#F59E0B",
+     "2",
+     "#EF4444",
+     "3"
+    ],
+    "message": "Avansat la generația 3.",
+    "name": "Cyclic Cellular Automaton",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "-- Alege pattern --",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Grilă Aleatorie (Spirale)",
+     "Punct Central (Valuri)"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Cyclic Cellular Automaton",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 3  |  Celule active: 717  |  Dimensiuni: 30x30  |  Distribuție stări: [0: 183, 1: 277, 2: 218, 3: 222]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "963423182558b06b15888e340938ee5ab52100816f1f519459674abf1a3262cc",
+     900,
+     "#3B82F6"
+    ],
+    "cols": 30,
+    "generation": 0,
+    "grid_sha": "200ea746b336fd0e83471deb27ed1b99cfdc019583367ef525e98ebfb14caaf4",
+    "label": "randomized",
+    "legend": [
+     "#3B82F6",
+     "0",
+     "#10B981",
+     "1",
+     "#F59E0B",
+     "2",
+     "#EF4444",
+     "3"
+    ],
+    "message": "Grilă reinițializată.",
+    "name": "Cyclic Cellular Automaton",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "-- Alege pattern --",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Grilă Aleatorie (Spirale)",
+     "Punct Central (Valuri)"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Cyclic Cellular Automaton",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 676  |  Dimensiuni: 30x30  |  Distribuție stări: [0: 224, 1: 223, 2: 235, 3: 218]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "6c9ad4ed06b30326f0f4766705b75481a84914440d3e5d66af5b1095f0ec14b6",
+     900,
+     "#3B82F6"
+    ],
+    "cols": 30,
+    "generation": 1,
+    "grid_sha": "62e6d5f3356c80b81f653202705294ae3b24afa8982539cf8f584db530fec320",
+    "label": "playing",
+    "legend": [
+     "#3B82F6",
+     "0",
+     "#10B981",
+     "1",
+     "#F59E0B",
+     "2",
+     "#EF4444",
+     "3"
+    ],
+    "message": "Simulare în rulare...",
+    "name": "Cyclic Cellular Automaton",
+    "play": [
+     "⏸ Pause",
+     "#DC2626"
+    ],
+    "preset": "-- Alege pattern --",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Grilă Aleatorie (Spirale)",
+     "Punct Central (Valuri)"
+    ],
+    "rows": 30,
+    "running": true,
+    "selector": "Cyclic Cellular Automaton",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 1  |  Celule active: 677  |  Dimensiuni: 30x30  |  Distribuție stări: [0: 223, 1: 226, 2: 217, 3: 234]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "6c9ad4ed06b30326f0f4766705b75481a84914440d3e5d66af5b1095f0ec14b6",
+     900,
+     "#3B82F6"
+    ],
+    "cols": 30,
+    "generation": 1,
+    "grid_sha": "62e6d5f3356c80b81f653202705294ae3b24afa8982539cf8f584db530fec320",
+    "label": "paused",
+    "legend": [
+     "#3B82F6",
+     "0",
+     "#10B981",
+     "1",
+     "#F59E0B",
+     "2",
+     "#EF4444",
+     "3"
+    ],
+    "message": "Simulare pusă pe pauză.",
+    "name": "Cyclic Cellular Automaton",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "-- Alege pattern --",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Grilă Aleatorie (Spirale)",
+     "Punct Central (Valuri)"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Cyclic Cellular Automaton",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 1  |  Celule active: 677  |  Dimensiuni: 30x30  |  Distribuție stări: [0: 223, 1: 226, 2: 217, 3: 234]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "6c9ad4ed06b30326f0f4766705b75481a84914440d3e5d66af5b1095f0ec14b6",
+     900,
+     "#3B82F6"
+    ],
+    "cols": 30,
+    "generation": 1,
+    "grid_sha": "62e6d5f3356c80b81f653202705294ae3b24afa8982539cf8f584db530fec320",
+    "label": "speed",
+    "legend": [
+     "#3B82F6",
+     "0",
+     "#10B981",
+     "1",
+     "#F59E0B",
+     "2",
+     "#EF4444",
+     "3"
+    ],
+    "message": "Simulare pusă pe pauză.",
+    "name": "Cyclic Cellular Automaton",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "-- Alege pattern --",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Grilă Aleatorie (Spirale)",
+     "Punct Central (Valuri)"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Cyclic Cellular Automaton",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     250,
+     "250 ms"
+    ],
+    "stats": "Generația: 1  |  Celule active: 677  |  Dimensiuni: 30x30  |  Distribuție stări: [0: 223, 1: 226, 2: 217, 3: 234]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "6c9ad4ed06b30326f0f4766705b75481a84914440d3e5d66af5b1095f0ec14b6",
+     900,
+     "#3B82F6"
+    ],
+    "cols": 30,
+    "generation": 1,
+    "grid_sha": "62e6d5f3356c80b81f653202705294ae3b24afa8982539cf8f584db530fec320",
+    "label": "preset -- Alege pattern --",
+    "legend": [
+     "#3B82F6",
+     "0",
+     "#10B981",
+     "1",
+     "#F59E0B",
+     "2",
+     "#EF4444",
+     "3"
+    ],
+    "message": "Simulare pusă pe pauză.",
+    "name": "Cyclic Cellular Automaton",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "-- Alege pattern --",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Grilă Aleatorie (Spirale)",
+     "Punct Central (Valuri)"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Cyclic Cellular Automaton",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 1  |  Celule active: 677  |  Dimensiuni: 30x30  |  Distribuție stări: [0: 223, 1: 226, 2: 217, 3: 234]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "bd5451a46639d52a6694a4dfd120386db31dca2ef614fe5e8617aef290b7fd20",
+     900,
+     "#3B82F6"
+    ],
+    "cols": 30,
+    "generation": 2,
+    "grid_sha": "2771c373ed6ac0c57866953aab30312a9b9b4a4353f928a3237e8eff1965514b",
+    "label": "preset -- Alege pattern -- +1",
+    "legend": [
+     "#3B82F6",
+     "0",
+     "#10B981",
+     "1",
+     "#F59E0B",
+     "2",
+     "#EF4444",
+     "3"
+    ],
+    "message": "Avansat la generația 2.",
+    "name": "Cyclic Cellular Automaton",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "-- Alege pattern --",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Grilă Aleatorie (Spirale)",
+     "Punct Central (Valuri)"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Cyclic Cellular Automaton",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 2  |  Celule active: 669  |  Dimensiuni: 30x30  |  Distribuție stări: [0: 231, 1: 229, 2: 202, 3: 238]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "3fb166762fa34a226901047f781e40308aef83ddbc602c413c47973ca2ddb139",
+     900,
+     "#3B82F6"
+    ],
+    "cols": 30,
+    "generation": 0,
+    "grid_sha": "fecf9ca84688557d275ed5d00af883072ab4a25438b6803b81a3dece3ca223cd",
+    "label": "preset Grilă Aleatorie (Spirale)",
+    "legend": [
+     "#3B82F6",
+     "0",
+     "#10B981",
+     "1",
+     "#F59E0B",
+     "2",
+     "#EF4444",
+     "3"
+    ],
+    "message": "Preset aplicat: Grilă Aleatorie (Spirale)",
+    "name": "Cyclic Cellular Automaton",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Grilă Aleatorie (Spirale)",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Grilă Aleatorie (Spirale)",
+     "Punct Central (Valuri)"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Cyclic Cellular Automaton",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 673  |  Dimensiuni: 30x30  |  Distribuție stări: [0: 227, 1: 200, 2: 238, 3: 235]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "6d8ff49a856cc67e50bf9fab9da72627dbe1e1b24460ec65c917f4e0aaf57c0d",
+     900,
+     "#3B82F6"
+    ],
+    "cols": 30,
+    "generation": 1,
+    "grid_sha": "14839cad8158101f6e6918cc3efe0972338ee19a97c67949edb281e9f40c1dac",
+    "label": "preset Grilă Aleatorie (Spirale) +1",
+    "legend": [
+     "#3B82F6",
+     "0",
+     "#10B981",
+     "1",
+     "#F59E0B",
+     "2",
+     "#EF4444",
+     "3"
+    ],
+    "message": "Avansat la generația 1.",
+    "name": "Cyclic Cellular Automaton",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Grilă Aleatorie (Spirale)",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Grilă Aleatorie (Spirale)",
+     "Punct Central (Valuri)"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Cyclic Cellular Automaton",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 1  |  Celule active: 659  |  Dimensiuni: 30x30  |  Distribuție stări: [0: 241, 1: 205, 2: 210, 3: 244]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "e5eaea7f6304fdd46ffba2c8040568176d44fd0a38fa628ccc710ad6f20e653b",
+     900,
+     "#3B82F6"
+    ],
+    "cols": 30,
+    "generation": 0,
+    "grid_sha": "0a724e5f9891e2b5a116f89a17e9d6176a07813bceb6ba50bed67ed33d99749d",
+    "label": "preset Punct Central (Valuri)",
+    "legend": [
+     "#3B82F6",
+     "0",
+     "#10B981",
+     "1",
+     "#F59E0B",
+     "2",
+     "#EF4444",
+     "3"
+    ],
+    "message": "Preset aplicat: Punct Central (Valuri)",
+    "name": "Cyclic Cellular Automaton",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Punct Central (Valuri)",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Grilă Aleatorie (Spirale)",
+     "Punct Central (Valuri)"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Cyclic Cellular Automaton",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 3  |  Dimensiuni: 30x30  |  Distribuție stări: [0: 897, 1: 3, 2: 0, 3: 0]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "641ac52be6ca072956d2c949eada09bb8ab25e7b89a16484db3edac2900cb5d9",
+     900,
+     "#3B82F6"
+    ],
+    "cols": 30,
+    "generation": 1,
+    "grid_sha": "ba3e501bcc9c89a5adcbcbafacd48ade00eb490da8ecbe0e6f66415f558639ad",
+    "label": "preset Punct Central (Valuri) +1",
+    "legend": [
+     "#3B82F6",
+     "0",
+     "#10B981",
+     "1",
+     "#F59E0B",
+     "2",
+     "#EF4444",
+     "3"
+    ],
+    "message": "Avansat la generația 1.",
+    "name": "Cyclic Cellular Automaton",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Punct Central (Valuri)",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Grilă Aleatorie (Spirale)",
+     "Punct Central (Valuri)"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Cyclic Cellular Automaton",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 1  |  Celule active: 8  |  Dimensiuni: 30x30  |  Distribuție stări: [0: 892, 1: 8, 2: 0, 3: 0]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "0c7130e00dcde145153a11a46ad5c9d48eaafbaf68dde04a6ce8e4ae4cdf3a77",
+     900,
+     "#3B82F6"
+    ],
+    "cols": 30,
+    "generation": 0,
+    "grid_sha": "248c1be268167d34f3b8dfb0bb9913e923bb23321f4a9abeaff1975bf5a7dc6d",
+    "label": "cleared",
+    "legend": [
+     "#3B82F6",
+     "0",
+     "#10B981",
+     "1",
+     "#F59E0B",
+     "2",
+     "#EF4444",
+     "3"
+    ],
+    "message": "Grilă curățată.",
+    "name": "Cyclic Cellular Automaton",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Punct Central (Valuri)",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Grilă Aleatorie (Spirale)",
+     "Punct Central (Valuri)"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Cyclic Cellular Automaton",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 0  |  Dimensiuni: 30x30  |  Distribuție stări: [0: 900, 1: 0, 2: 0, 3: 0]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "329d90898d3a404c6e914e90f35ab2d3a34b0b3837813bfc96544e9cf7f13a05",
+     900,
+     "#3B82F6"
+    ],
+    "cols": 30,
+    "generation": 0,
+    "grid_sha": "1e971c8bb7cdca3f621a8bcd8cf67e94b8a1dec4d2b682d36e194e2962ea1e9e",
+    "label": "click",
+    "legend": [
+     "#3B82F6",
+     "0",
+     "#10B981",
+     "1",
+     "#F59E0B",
+     "2",
+     "#EF4444",
+     "3"
+    ],
+    "message": "Grilă curățată.",
+    "name": "Cyclic Cellular Automaton",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Punct Central (Valuri)",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Grilă Aleatorie (Spirale)",
+     "Punct Central (Valuri)"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Cyclic Cellular Automaton",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 1  |  Dimensiuni: 30x30  |  Distribuție stări: [0: 899, 1: 1, 2: 0, 3: 0]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "5439c469b2e3b4b00cbe7e66cfb9a21d37bb705fa67269b321432a4c18e1f213",
+     900,
+     "#3B82F6"
+    ],
+    "cols": 30,
+    "generation": 0,
+    "grid_sha": "bd8a263036a496d83fc7282fa07ada5fab2522ad70b8de15e8bdf0d8e8da7299",
+    "label": "click2",
+    "legend": [
+     "#3B82F6",
+     "0",
+     "#10B981",
+     "1",
+     "#F59E0B",
+     "2",
+     "#EF4444",
+     "3"
+    ],
+    "message": "Grilă curățată.",
+    "name": "Cyclic Cellular Automaton",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Punct Central (Valuri)",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Grilă Aleatorie (Spirale)",
+     "Punct Central (Valuri)"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Cyclic Cellular Automaton",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 1  |  Dimensiuni: 30x30  |  Distribuție stări: [0: 899, 1: 0, 2: 1, 3: 0]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "f97596f610bd4e9e934262f5f38a6eb6cbffaf69165cf2c378b572fc93ec81fb",
+     900,
+     "#3B82F6"
+    ],
+    "cols": 30,
+    "generation": 0,
+    "grid_sha": "67249cbce9e04bcf6c66af0556e0ee52662d044da142aa4331be5c6d009e25c7",
+    "label": "drag",
+    "legend": [
+     "#3B82F6",
+     "0",
+     "#10B981",
+     "1",
+     "#F59E0B",
+     "2",
+     "#EF4444",
+     "3"
+    ],
+    "message": "Grilă curățată.",
+    "name": "Cyclic Cellular Automaton",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Punct Central (Valuri)",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Grilă Aleatorie (Spirale)",
+     "Punct Central (Valuri)"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Cyclic Cellular Automaton",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 2  |  Dimensiuni: 30x30  |  Distribuție stări: [0: 898, 1: 0, 2: 2, 3: 0]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "f97596f610bd4e9e934262f5f38a6eb6cbffaf69165cf2c378b572fc93ec81fb",
+     900,
+     "#3B82F6"
+    ],
+    "cols": 30,
+    "generation": 0,
+    "grid_sha": "67249cbce9e04bcf6c66af0556e0ee52662d044da142aa4331be5c6d009e25c7",
+    "label": "drag after release",
+    "legend": [
+     "#3B82F6",
+     "0",
+     "#10B981",
+     "1",
+     "#F59E0B",
+     "2",
+     "#EF4444",
+     "3"
+    ],
+    "message": "Grilă curățată.",
+    "name": "Cyclic Cellular Automaton",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Punct Central (Valuri)",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Grilă Aleatorie (Spirale)",
+     "Punct Central (Valuri)"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Cyclic Cellular Automaton",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 2  |  Dimensiuni: 30x30  |  Distribuție stări: [0: 898, 1: 0, 2: 2, 3: 0]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "1f454d64885e67c931b98f6adf30b8886cea8b6d9b5b4fcdf8ab220bbf64d6f4",
+     900,
+     "#3B82F6"
+    ],
+    "cols": 30,
+    "generation": 0,
+    "grid_sha": "330e0b9cb17bcdc636ad6efa7c0c84a31debf25c3a60cc7777fc173d49936a09",
+    "label": "right click",
+    "legend": [
+     "#3B82F6",
+     "0",
+     "#10B981",
+     "1",
+     "#F59E0B",
+     "2",
+     "#EF4444",
+     "3"
+    ],
+    "message": "Grilă curățată.",
+    "name": "Cyclic Cellular Automaton",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Punct Central (Valuri)",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Grilă Aleatorie (Spirale)",
+     "Punct Central (Valuri)"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Cyclic Cellular Automaton",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 1  |  Dimensiuni: 30x30  |  Distribuție stări: [0: 899, 1: 0, 2: 1, 3: 0]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "1f454d64885e67c931b98f6adf30b8886cea8b6d9b5b4fcdf8ab220bbf64d6f4",
+     900,
+     "#3B82F6"
+    ],
+    "cols": 30,
+    "generation": 0,
+    "grid_sha": "330e0b9cb17bcdc636ad6efa7c0c84a31debf25c3a60cc7777fc173d49936a09",
+    "label": "click outside",
+    "legend": [
+     "#3B82F6",
+     "0",
+     "#10B981",
+     "1",
+     "#F59E0B",
+     "2",
+     "#EF4444",
+     "3"
+    ],
+    "message": "Grilă curățată.",
+    "name": "Cyclic Cellular Automaton",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Punct Central (Valuri)",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Grilă Aleatorie (Spirale)",
+     "Punct Central (Valuri)"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Cyclic Cellular Automaton",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 1  |  Dimensiuni: 30x30  |  Distribuție stări: [0: 899, 1: 0, 2: 1, 3: 0]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "b7fe305c9fd346777ba22595aa5e028e9a3c2e6e32bc8f0dc5288fee30a0ef86",
+     900,
+     "#3B82F6"
+    ],
+    "cols": 30,
+    "generation": 0,
+    "grid_sha": "330e0b9cb17bcdc636ad6efa7c0c84a31debf25c3a60cc7777fc173d49936a09",
+    "label": "resize",
+    "legend": [
+     "#3B82F6",
+     "0",
+     "#10B981",
+     "1",
+     "#F59E0B",
+     "2",
+     "#EF4444",
+     "3"
+    ],
+    "message": "Grilă curățată.",
+    "name": "Cyclic Cellular Automaton",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Punct Central (Valuri)",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Grilă Aleatorie (Spirale)",
+     "Punct Central (Valuri)"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Cyclic Cellular Automaton",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 1  |  Dimensiuni: 30x30  |  Distribuție stări: [0: 899, 1: 0, 2: 1, 3: 0]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "b7fe305c9fd346777ba22595aa5e028e9a3c2e6e32bc8f0dc5288fee30a0ef86",
+     900,
+     "#3B82F6"
+    ],
+    "cols": 30,
+    "generation": 0,
+    "grid_sha": "330e0b9cb17bcdc636ad6efa7c0c84a31debf25c3a60cc7777fc173d49936a09",
+    "label": "resize ignored",
+    "legend": [
+     "#3B82F6",
+     "0",
+     "#10B981",
+     "1",
+     "#F59E0B",
+     "2",
+     "#EF4444",
+     "3"
+    ],
+    "message": "Grilă curățată.",
+    "name": "Cyclic Cellular Automaton",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Punct Central (Valuri)",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Grilă Aleatorie (Spirale)",
+     "Punct Central (Valuri)"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Cyclic Cellular Automaton",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 1  |  Dimensiuni: 30x30  |  Distribuție stări: [0: 899, 1: 0, 2: 1, 3: 0]"
+   },
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "a8c913636464795a88ebb8162392c26c31e8dff11ded76c04979401e0ec4d36b",
+     900,
+     "#3B82F6"
+    ],
+    "cols": 30,
+    "generation": 0,
+    "grid_sha": "330e0b9cb17bcdc636ad6efa7c0c84a31debf25c3a60cc7777fc173d49936a09",
+    "label": "saved",
+    "legend": [
+     "#3B82F6",
+     "0",
+     "#10B981",
+     "1",
+     "#F59E0B",
+     "2",
+     "#EF4444",
+     "3"
+    ],
+    "message": "[Salvat] Generația 0 salvată.",
+    "name": "Cyclic Cellular Automaton",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Punct Central (Valuri)",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Grilă Aleatorie (Spirale)",
+     "Punct Central (Valuri)"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Cyclic Cellular Automaton",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 1  |  Dimensiuni: 30x30  |  Distribuție stări: [0: 899, 1: 0, 2: 1, 3: 0]"
+   },
+   [
+    "saved_sha",
+    "87ae7e443ed9a2364fbf0683084117bf978bed14633643e8d491d6138129d905"
+   ],
+   {
+    "badge": "Tip: Moore (8)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "41e5e9794f8980e017e9effcb822e9a5c84fee585ea1540952b61be502ea908c",
+     900,
+     "#3B82F6"
+    ],
+    "cols": 30,
+    "generation": 0,
+    "grid_sha": "330e0b9cb17bcdc636ad6efa7c0c84a31debf25c3a60cc7777fc173d49936a09",
+    "label": "loaded",
+    "legend": [
+     "#3B82F6",
+     "0",
+     "#10B981",
+     "1",
+     "#F59E0B",
+     "2",
+     "#EF4444",
+     "3"
+    ],
+    "message": "[Restaurat] Reluat cu succes de la Generația 0.",
+    "name": "Cyclic Cellular Automaton",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Punct Central (Valuri)",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Grilă Aleatorie (Spirale)",
+     "Punct Central (Valuri)"
+    ],
+    "rows": 30,
+    "running": false,
+    "selector": "Cyclic Cellular Automaton",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 1  |  Dimensiuni: 30x30  |  Distribuție stări: [0: 899, 1: 0, 2: 1, 3: 0]"
+   },
+   [
+    "analysis_labels",
+    [
+     "Întrebarea 1 & 4: Analiză după N Iterații",
+     "Număr iterații N:",
+     "Celule de tipul X:",
+     "[Rezultat Q1 & Q4]\n• Generație viitoare: 10\n• Număr celule de tip '1' după 10 iterații: 0",
+     "Întrebarea 2: Când atinge sistemul o stare stabilă?",
+     "O stare este stabilă dacă generația următoare este identică cu cea curentă.",
+     "Limită maximă de pași:",
+     "[Rezultat Q2] Sistemul atinge o stare STABILĂ la generația 2!\n(Nicio modificare nu va mai surveni).",
+     "Întrebarea 5: Intră simularea într-un ciclu repetitiv?",
+     "Detectează oscilatori și cicluri periodice comparând amprenta matricelor.",
+     "Limită maximă de pași:",
+     "[Rezultat Q5] CICLU DETECTAT!\n• Perioada ciclului: 1\n• Ciclul a început la generația: 1\n• Repetarea a fost confirmată la generația: 2",
+     "Întrebarea 3: Apare vreodată o anumită configurație?",
+     "Fișier țintă: state_1.json (30x30)",
+     "[Rezultat Q3] Configurația NU apare în următoarele 500 de generații."
+    ],
+    "tree",
+    {
+     "bg": "SystemButtonFace",
+     "binds": [],
+     "children": [
+      {
+       "binds": [],
+       "children": [
+        {
+         "binds": [],
+         "children": [
+          {
+           "binds": [],
+           "children": [],
+           "class": "TLabel",
+           "font": "{Segoe UI} 10 bold",
+           "foreground": "",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "(0, 10)",
+            "side": "top"
+           },
+           "path": ".!toplevel2.!notebook.!frame.!label",
+           "pytype": "Label",
+           "relief": "",
+           "state": "normal",
+           "style": "",
+           "text": "Întrebarea 1 & 4: Analiză după N Iterații",
+           "width": ""
+          },
+          {
+           "binds": [],
+           "children": [
+            {
+             "binds": [],
+             "children": [],
+             "class": "TLabel",
+             "font": "",
+             "foreground": "",
+             "pack": {
+              "anchor": "center",
+              "expand": "0",
+              "fill": "none",
+              "ipadx": "0",
+              "ipady": "0",
+              "padx": "(0, 6)",
+              "pady": "0",
+              "side": "left"
+             },
+             "path": ".!toplevel2.!notebook.!frame.!frame.!label",
+             "pytype": "Label",
+             "relief": "",
+             "state": "normal",
+             "style": "",
+             "text": "Număr iterații N:",
+             "width": ""
+            },
+            {
+             "binds": [],
+             "children": [],
+             "class": "TEntry",
+             "font": "TkTextFont",
+             "foreground": "",
+             "pack": {
+              "anchor": "center",
+              "expand": "0",
+              "fill": "none",
+              "ipadx": "0",
+              "ipady": "0",
+              "padx": "0",
+              "pady": "0",
+              "side": "left"
+             },
+             "path": ".!toplevel2.!notebook.!frame.!frame.!entry",
+             "pytype": "Entry",
+             "state": "normal",
+             "style": "",
+             "text": "",
+             "width": "8"
+            }
+           ],
+           "class": "TFrame",
+           "pack": {
+            "anchor": "center",
+            "expand": "0",
+            "fill": "x",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "4",
+            "side": "top"
+           },
+           "path": ".!toplevel2.!notebook.!frame.!frame",
+           "pytype": "Frame",
+           "relief": "",
+           "style": "",
+           "width": "0"
+          },
+          {
+           "binds": [],
+           "children": [
+            {
+             "binds": [],
+             "children": [],
+             "class": "TLabel",
+             "font": "",
+             "foreground": "",
+             "pack": {
+              "anchor": "center",
+              "expand": "0",
+              "fill": "none",
+              "ipadx": "0",
+              "ipady": "0",
+              "padx": "(0, 6)",
+              "pady": "0",
+              "side": "left"
+             },
+             "path": ".!toplevel2.!notebook.!frame.!frame2.!label",
+             "pytype": "Label",
+             "relief": "",
+             "state": "normal",
+             "style": "",
+             "text": "Celule de tipul X:",
+             "width": ""
+            },
+            {
+             "binds": [],
+             "children": [],
+             "class": "TCombobox",
+             "font": "TkTextFont",
+             "foreground": "",
+             "pack": {
+              "anchor": "center",
+              "expand": "0",
+              "fill": "none",
+              "ipadx": "0",
+              "ipady": "0",
+              "padx": "0",
+              "pady": "0",
+              "side": "left"
+             },
+             "path": ".!toplevel2.!notebook.!frame.!frame2.!combobox",
+             "pytype": "Combobox",
+             "state": "readonly",
+             "style": "",
+             "text": "",
+             "values": "('0', '1', '2', '3')",
+             "width": "10"
+            }
+           ],
+           "class": "TFrame",
+           "pack": {
+            "anchor": "center",
+            "expand": "0",
+            "fill": "x",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "4",
+            "side": "top"
+           },
+           "path": ".!toplevel2.!notebook.!frame.!frame2",
+           "pytype": "Frame",
+           "relief": "",
+           "style": "",
+           "width": "0"
+          },
+          {
+           "binds": [],
+           "children": [],
+           "class": "TLabel",
+           "font": "",
+           "foreground": "#475569",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "10",
+            "side": "top"
+           },
+           "path": ".!toplevel2.!notebook.!frame.!label2",
+           "pytype": "Label",
+           "relief": "",
+           "state": "normal",
+           "style": "",
+           "text": "Apasă 'Calculează' pentru a obține răspunsul.",
+           "width": ""
+          },
+          {
+           "binds": [],
+           "children": [],
+           "class": "TButton",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "0",
+            "side": "top"
+           },
+           "path": ".!toplevel2.!notebook.!frame.!button",
+           "pytype": "Button",
+           "state": "normal",
+           "style": "",
+           "text": "Calculează Q1 & Q4",
+           "width": ""
+          }
+         ],
+         "class": "TFrame",
+         "path": ".!toplevel2.!notebook.!frame",
+         "pytype": "Frame",
+         "relief": "",
+         "style": "",
+         "width": "0"
+        },
+        {
+         "binds": [],
+         "children": [
+          {
+           "binds": [],
+           "children": [],
+           "class": "TLabel",
+           "font": "{Segoe UI} 10 bold",
+           "foreground": "",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "(0, 10)",
+            "side": "top"
+           },
+           "path": ".!toplevel2.!notebook.!frame2.!label",
+           "pytype": "Label",
+           "relief": "",
+           "state": "normal",
+           "style": "",
+           "text": "Întrebarea 2: Când atinge sistemul o stare stabilă?",
+           "width": ""
+          },
+          {
+           "binds": [],
+           "children": [],
+           "class": "TLabel",
+           "font": "",
+           "foreground": "",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "(0, 8)",
+            "side": "top"
+           },
+           "path": ".!toplevel2.!notebook.!frame2.!label2",
+           "pytype": "Label",
+           "relief": "",
+           "state": "normal",
+           "style": "",
+           "text": "O stare este stabilă dacă generația următoare este identică cu cea curentă.",
+           "width": ""
+          },
+          {
+           "binds": [],
+           "children": [
+            {
+             "binds": [],
+             "children": [],
+             "class": "TLabel",
+             "font": "",
+             "foreground": "",
+             "pack": {
+              "anchor": "center",
+              "expand": "0",
+              "fill": "none",
+              "ipadx": "0",
+              "ipady": "0",
+              "padx": "(0, 6)",
+              "pady": "0",
+              "side": "left"
+             },
+             "path": ".!toplevel2.!notebook.!frame2.!frame.!label",
+             "pytype": "Label",
+             "relief": "",
+             "state": "normal",
+             "style": "",
+             "text": "Limită maximă de pași:",
+             "width": ""
+            },
+            {
+             "binds": [],
+             "children": [],
+             "class": "TEntry",
+             "font": "TkTextFont",
+             "foreground": "",
+             "pack": {
+              "anchor": "center",
+              "expand": "0",
+              "fill": "none",
+              "ipadx": "0",
+              "ipady": "0",
+              "padx": "0",
+              "pady": "0",
+              "side": "left"
+             },
+             "path": ".!toplevel2.!notebook.!frame2.!frame.!entry",
+             "pytype": "Entry",
+             "state": "normal",
+             "style": "",
+             "text": "",
+             "width": "8"
+            }
+           ],
+           "class": "TFrame",
+           "pack": {
+            "anchor": "center",
+            "expand": "0",
+            "fill": "x",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "4",
+            "side": "top"
+           },
+           "path": ".!toplevel2.!notebook.!frame2.!frame",
+           "pytype": "Frame",
+           "relief": "",
+           "style": "",
+           "width": "0"
+          },
+          {
+           "binds": [],
+           "children": [],
+           "class": "TLabel",
+           "font": "",
+           "foreground": "#475569",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "10",
+            "side": "top"
+           },
+           "path": ".!toplevel2.!notebook.!frame2.!label3",
+           "pytype": "Label",
+           "relief": "",
+           "state": "normal",
+           "style": "",
+           "text": "Apasă 'Verifică Stabilitate'.",
+           "width": ""
+          },
+          {
+           "binds": [],
+           "children": [],
+           "class": "TButton",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "0",
+            "side": "top"
+           },
+           "path": ".!toplevel2.!notebook.!frame2.!button",
+           "pytype": "Button",
+           "state": "normal",
+           "style": "",
+           "text": "Verifică Stabilitate Q2",
+           "width": ""
+          }
+         ],
+         "class": "TFrame",
+         "path": ".!toplevel2.!notebook.!frame2",
+         "pytype": "Frame",
+         "relief": "",
+         "style": "",
+         "width": "0"
+        },
+        {
+         "binds": [],
+         "children": [
+          {
+           "binds": [],
+           "children": [],
+           "class": "TLabel",
+           "font": "{Segoe UI} 10 bold",
+           "foreground": "",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "(0, 10)",
+            "side": "top"
+           },
+           "path": ".!toplevel2.!notebook.!frame3.!label",
+           "pytype": "Label",
+           "relief": "",
+           "state": "normal",
+           "style": "",
+           "text": "Întrebarea 5: Intră simularea într-un ciclu repetitiv?",
+           "width": ""
+          },
+          {
+           "binds": [],
+           "children": [],
+           "class": "TLabel",
+           "font": "",
+           "foreground": "",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "(0, 8)",
+            "side": "top"
+           },
+           "path": ".!toplevel2.!notebook.!frame3.!label2",
+           "pytype": "Label",
+           "relief": "",
+           "state": "normal",
+           "style": "",
+           "text": "Detectează oscilatori și cicluri periodice comparând amprenta matricelor.",
+           "width": ""
+          },
+          {
+           "binds": [],
+           "children": [
+            {
+             "binds": [],
+             "children": [],
+             "class": "TLabel",
+             "font": "",
+             "foreground": "",
+             "pack": {
+              "anchor": "center",
+              "expand": "0",
+              "fill": "none",
+              "ipadx": "0",
+              "ipady": "0",
+              "padx": "(0, 6)",
+              "pady": "0",
+              "side": "left"
+             },
+             "path": ".!toplevel2.!notebook.!frame3.!frame.!label",
+             "pytype": "Label",
+             "relief": "",
+             "state": "normal",
+             "style": "",
+             "text": "Limită maximă de pași:",
+             "width": ""
+            },
+            {
+             "binds": [],
+             "children": [],
+             "class": "TEntry",
+             "font": "TkTextFont",
+             "foreground": "",
+             "pack": {
+              "anchor": "center",
+              "expand": "0",
+              "fill": "none",
+              "ipadx": "0",
+              "ipady": "0",
+              "padx": "0",
+              "pady": "0",
+              "side": "left"
+             },
+             "path": ".!toplevel2.!notebook.!frame3.!frame.!entry",
+             "pytype": "Entry",
+             "state": "normal",
+             "style": "",
+             "text": "",
+             "width": "8"
+            }
+           ],
+           "class": "TFrame",
+           "pack": {
+            "anchor": "center",
+            "expand": "0",
+            "fill": "x",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "4",
+            "side": "top"
+           },
+           "path": ".!toplevel2.!notebook.!frame3.!frame",
+           "pytype": "Frame",
+           "relief": "",
+           "style": "",
+           "width": "0"
+          },
+          {
+           "binds": [],
+           "children": [],
+           "class": "TLabel",
+           "font": "",
+           "foreground": "#475569",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "10",
+            "side": "top"
+           },
+           "path": ".!toplevel2.!notebook.!frame3.!label3",
+           "pytype": "Label",
+           "relief": "",
+           "state": "normal",
+           "style": "",
+           "text": "Apasă 'Detectează Ciclu'.",
+           "width": ""
+          },
+          {
+           "binds": [],
+           "children": [],
+           "class": "TButton",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "0",
+            "side": "top"
+           },
+           "path": ".!toplevel2.!notebook.!frame3.!button",
+           "pytype": "Button",
+           "state": "normal",
+           "style": "",
+           "text": "Detectează Ciclu Q5",
+           "width": ""
+          }
+         ],
+         "class": "TFrame",
+         "path": ".!toplevel2.!notebook.!frame3",
+         "pytype": "Frame",
+         "relief": "",
+         "style": "",
+         "width": "0"
+        },
+        {
+         "binds": [],
+         "children": [
+          {
+           "binds": [],
+           "children": [],
+           "class": "TLabel",
+           "font": "{Segoe UI} 10 bold",
+           "foreground": "",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "(0, 8)",
+            "side": "top"
+           },
+           "path": ".!toplevel2.!notebook.!frame4.!label",
+           "pytype": "Label",
+           "relief": "",
+           "state": "normal",
+           "style": "",
+           "text": "Întrebarea 3: Apare vreodată o anumită configurație?",
+           "width": ""
+          },
+          {
+           "binds": [],
+           "children": [],
+           "class": "TLabel",
+           "font": "",
+           "foreground": "#64748B",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "4",
+            "side": "top"
+           },
+           "path": ".!toplevel2.!notebook.!frame4.!label2",
+           "pytype": "Label",
+           "relief": "",
+           "state": "normal",
+           "style": "",
+           "text": "Niciun fișier țintă selectat.",
+           "width": ""
+          },
+          {
+           "binds": [],
+           "children": [],
+           "class": "TButton",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "4",
+            "side": "top"
+           },
+           "path": ".!toplevel2.!notebook.!frame4.!button",
+           "pytype": "Button",
+           "state": "normal",
+           "style": "",
+           "text": "Alege Configurație Țintă (JSON)...",
+           "width": ""
+          },
+          {
+           "binds": [],
+           "children": [],
+           "class": "TLabel",
+           "font": "",
+           "foreground": "#475569",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "10",
+            "side": "top"
+           },
+           "path": ".!toplevel2.!notebook.!frame4.!label3",
+           "pytype": "Label",
+           "relief": "",
+           "state": "normal",
+           "style": "",
+           "text": "",
+           "width": ""
+          },
+          {
+           "binds": [],
+           "children": [],
+           "class": "TButton",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "0",
+            "side": "top"
+           },
+           "path": ".!toplevel2.!notebook.!frame4.!button2",
+           "pytype": "Button",
+           "state": "normal",
+           "style": "",
+           "text": "Verifică Configurația Q3",
+           "width": ""
+          }
+         ],
+         "class": "TFrame",
+         "path": ".!toplevel2.!notebook.!frame4",
+         "pytype": "Frame",
+         "relief": "",
+         "style": "",
+         "width": "0"
+        }
+       ],
+       "class": "TNotebook",
+       "pack": {
+        "anchor": "center",
+        "expand": "1",
+        "fill": "both",
+        "ipadx": "0",
+        "ipady": "0",
+        "padx": "10",
+        "pady": "10",
+        "side": "top"
+       },
+       "path": ".!toplevel2.!notebook",
+       "pytype": "Notebook",
+       "style": "",
+       "width": "0"
+      }
+     ],
+     "class": "Toplevel",
+     "path": ".!toplevel2",
+     "pytype": "Toplevel",
+     "relief": "flat",
+     "width": "0"
+    },
+    "title",
+    "CellLab - Întrebări Analitice Automate",
+    "geom",
+    "1x1"
+   ]
+  ],
+  "Elementary Cellular Automaton (Rule 30)": [
+   {
+    "badge": "Tip: 1D Elementary (Left, Center, Right)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "cdc14f15f07462cf513ad832873abb6defa6b6e69117aa581d3638ea04f310bc",
+     1785,
+     "#0F172A"
+    ],
+    "cols": 51,
+    "generation": 0,
+    "grid_sha": "61ea82cee99782c3d387e3d49381a87184dd874bf06b6a73b7ec79500853baa1",
+    "label": "switched",
+    "legend": [
+     "#0F172A",
+     "0",
+     "#F59E0B",
+     "1"
+    ],
+    "message": "Automat încărcat: Elementary Cellular Automaton (Rule 30)",
+    "name": "Elementary Cellular Automaton (Rule 30)",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "-- Alege pattern --",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Single Center Seed (0..010..0)",
+     "Random Row Seed",
+     "Two Center Seeds (11)"
+    ],
+    "rows": 35,
+    "running": false,
+    "selector": "Elementary Cellular Automaton (Rule 30)",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 1  |  Dimensiuni: 35x51  |  Distribuție stări: [0: 1784, 1: 1]"
+   },
+   {
+    "badge": "Tip: 1D Elementary (Left, Center, Right)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "9f49fab1a37924c9d73b6594325cea40a558fa5ca5966a9790203352248b3220",
+     1785,
+     "#0F172A"
+    ],
+    "cols": 51,
+    "generation": 3,
+    "grid_sha": "ef868eeb584ef3097e1ec3a32c5c14b4e81d6680a3ae56ef9373aac09281dd8d",
+    "label": "3 steps",
+    "legend": [
+     "#0F172A",
+     "0",
+     "#F59E0B",
+     "1"
+    ],
+    "message": "Avansat la generația 3.",
+    "name": "Elementary Cellular Automaton (Rule 30)",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "-- Alege pattern --",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Single Center Seed (0..010..0)",
+     "Random Row Seed",
+     "Two Center Seeds (11)"
+    ],
+    "rows": 35,
+    "running": false,
+    "selector": "Elementary Cellular Automaton (Rule 30)",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 3  |  Celule active: 13  |  Dimensiuni: 35x51  |  Distribuție stări: [0: 1772, 1: 13]"
+   },
+   {
+    "badge": "Tip: 1D Elementary (Left, Center, Right)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "94fb53b4bcad6cd85cb7c5eafc9acebdaa47d761e25cd193c2a4962fdaa30576",
+     1785,
+     "#0F172A"
+    ],
+    "cols": 51,
+    "generation": 0,
+    "grid_sha": "61ea82cee99782c3d387e3d49381a87184dd874bf06b6a73b7ec79500853baa1",
+    "label": "randomized",
+    "legend": [
+     "#0F172A",
+     "0",
+     "#F59E0B",
+     "1"
+    ],
+    "message": "Grilă reinițializată.",
+    "name": "Elementary Cellular Automaton (Rule 30)",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "-- Alege pattern --",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Single Center Seed (0..010..0)",
+     "Random Row Seed",
+     "Two Center Seeds (11)"
+    ],
+    "rows": 35,
+    "running": false,
+    "selector": "Elementary Cellular Automaton (Rule 30)",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 1  |  Dimensiuni: 35x51  |  Distribuție stări: [0: 1784, 1: 1]"
+   },
+   {
+    "badge": "Tip: 1D Elementary (Left, Center, Right)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "57ba3381dd6d95f9655707addfb4a24a75e081c52438ca6417d248f3c6e2d35b",
+     1785,
+     "#0F172A"
+    ],
+    "cols": 51,
+    "generation": 1,
+    "grid_sha": "358dee4ed1e47696a2c5fa02db72e1919200283b8791585daef974d741ae81c3",
+    "label": "playing",
+    "legend": [
+     "#0F172A",
+     "0",
+     "#F59E0B",
+     "1"
+    ],
+    "message": "Simulare în rulare...",
+    "name": "Elementary Cellular Automaton (Rule 30)",
+    "play": [
+     "⏸ Pause",
+     "#DC2626"
+    ],
+    "preset": "-- Alege pattern --",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Single Center Seed (0..010..0)",
+     "Random Row Seed",
+     "Two Center Seeds (11)"
+    ],
+    "rows": 35,
+    "running": true,
+    "selector": "Elementary Cellular Automaton (Rule 30)",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 1  |  Celule active: 4  |  Dimensiuni: 35x51  |  Distribuție stări: [0: 1781, 1: 4]"
+   },
+   {
+    "badge": "Tip: 1D Elementary (Left, Center, Right)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "57ba3381dd6d95f9655707addfb4a24a75e081c52438ca6417d248f3c6e2d35b",
+     1785,
+     "#0F172A"
+    ],
+    "cols": 51,
+    "generation": 1,
+    "grid_sha": "358dee4ed1e47696a2c5fa02db72e1919200283b8791585daef974d741ae81c3",
+    "label": "paused",
+    "legend": [
+     "#0F172A",
+     "0",
+     "#F59E0B",
+     "1"
+    ],
+    "message": "Simulare pusă pe pauză.",
+    "name": "Elementary Cellular Automaton (Rule 30)",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "-- Alege pattern --",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Single Center Seed (0..010..0)",
+     "Random Row Seed",
+     "Two Center Seeds (11)"
+    ],
+    "rows": 35,
+    "running": false,
+    "selector": "Elementary Cellular Automaton (Rule 30)",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 1  |  Celule active: 4  |  Dimensiuni: 35x51  |  Distribuție stări: [0: 1781, 1: 4]"
+   },
+   {
+    "badge": "Tip: 1D Elementary (Left, Center, Right)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "57ba3381dd6d95f9655707addfb4a24a75e081c52438ca6417d248f3c6e2d35b",
+     1785,
+     "#0F172A"
+    ],
+    "cols": 51,
+    "generation": 1,
+    "grid_sha": "358dee4ed1e47696a2c5fa02db72e1919200283b8791585daef974d741ae81c3",
+    "label": "speed",
+    "legend": [
+     "#0F172A",
+     "0",
+     "#F59E0B",
+     "1"
+    ],
+    "message": "Simulare pusă pe pauză.",
+    "name": "Elementary Cellular Automaton (Rule 30)",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "-- Alege pattern --",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Single Center Seed (0..010..0)",
+     "Random Row Seed",
+     "Two Center Seeds (11)"
+    ],
+    "rows": 35,
+    "running": false,
+    "selector": "Elementary Cellular Automaton (Rule 30)",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     250,
+     "250 ms"
+    ],
+    "stats": "Generația: 1  |  Celule active: 4  |  Dimensiuni: 35x51  |  Distribuție stări: [0: 1781, 1: 4]"
+   },
+   {
+    "badge": "Tip: 1D Elementary (Left, Center, Right)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "57ba3381dd6d95f9655707addfb4a24a75e081c52438ca6417d248f3c6e2d35b",
+     1785,
+     "#0F172A"
+    ],
+    "cols": 51,
+    "generation": 1,
+    "grid_sha": "358dee4ed1e47696a2c5fa02db72e1919200283b8791585daef974d741ae81c3",
+    "label": "preset -- Alege pattern --",
+    "legend": [
+     "#0F172A",
+     "0",
+     "#F59E0B",
+     "1"
+    ],
+    "message": "Simulare pusă pe pauză.",
+    "name": "Elementary Cellular Automaton (Rule 30)",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "-- Alege pattern --",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Single Center Seed (0..010..0)",
+     "Random Row Seed",
+     "Two Center Seeds (11)"
+    ],
+    "rows": 35,
+    "running": false,
+    "selector": "Elementary Cellular Automaton (Rule 30)",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 1  |  Celule active: 4  |  Dimensiuni: 35x51  |  Distribuție stări: [0: 1781, 1: 4]"
+   },
+   {
+    "badge": "Tip: 1D Elementary (Left, Center, Right)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "2e7b7b82c5f00b65c18d4733b0b4d9e61f71f0f3b84f5c5292d35c0b3d42d45f",
+     1785,
+     "#0F172A"
+    ],
+    "cols": 51,
+    "generation": 2,
+    "grid_sha": "a4362babd1c3dcd87afc95febd79f76f0deb7f9bb45fe5f0c27c14013936cc01",
+    "label": "preset -- Alege pattern -- +1",
+    "legend": [
+     "#0F172A",
+     "0",
+     "#F59E0B",
+     "1"
+    ],
+    "message": "Avansat la generația 2.",
+    "name": "Elementary Cellular Automaton (Rule 30)",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "-- Alege pattern --",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Single Center Seed (0..010..0)",
+     "Random Row Seed",
+     "Two Center Seeds (11)"
+    ],
+    "rows": 35,
+    "running": false,
+    "selector": "Elementary Cellular Automaton (Rule 30)",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 2  |  Celule active: 7  |  Dimensiuni: 35x51  |  Distribuție stări: [0: 1778, 1: 7]"
+   },
+   {
+    "badge": "Tip: 1D Elementary (Left, Center, Right)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "e4644a36fbddb3b2e11a093a0ad7822682dfc844d8395c518b2948a50b5ae182",
+     1785,
+     "#0F172A"
+    ],
+    "cols": 51,
+    "generation": 0,
+    "grid_sha": "61ea82cee99782c3d387e3d49381a87184dd874bf06b6a73b7ec79500853baa1",
+    "label": "preset Single Center Seed (0..010..0)",
+    "legend": [
+     "#0F172A",
+     "0",
+     "#F59E0B",
+     "1"
+    ],
+    "message": "Preset aplicat: Single Center Seed (0..010..0)",
+    "name": "Elementary Cellular Automaton (Rule 30)",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Single Center Seed (0..010..0)",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Single Center Seed (0..010..0)",
+     "Random Row Seed",
+     "Two Center Seeds (11)"
+    ],
+    "rows": 35,
+    "running": false,
+    "selector": "Elementary Cellular Automaton (Rule 30)",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 1  |  Dimensiuni: 35x51  |  Distribuție stări: [0: 1784, 1: 1]"
+   },
+   {
+    "badge": "Tip: 1D Elementary (Left, Center, Right)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "173e4f232cfe5ef5abe9ff231299df6bef30a4198eb7af92a584dc4fcee38523",
+     1785,
+     "#0F172A"
+    ],
+    "cols": 51,
+    "generation": 1,
+    "grid_sha": "358dee4ed1e47696a2c5fa02db72e1919200283b8791585daef974d741ae81c3",
+    "label": "preset Single Center Seed (0..010..0) +1",
+    "legend": [
+     "#0F172A",
+     "0",
+     "#F59E0B",
+     "1"
+    ],
+    "message": "Avansat la generația 1.",
+    "name": "Elementary Cellular Automaton (Rule 30)",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Single Center Seed (0..010..0)",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Single Center Seed (0..010..0)",
+     "Random Row Seed",
+     "Two Center Seeds (11)"
+    ],
+    "rows": 35,
+    "running": false,
+    "selector": "Elementary Cellular Automaton (Rule 30)",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 1  |  Celule active: 4  |  Dimensiuni: 35x51  |  Distribuție stări: [0: 1781, 1: 4]"
+   },
+   {
+    "badge": "Tip: 1D Elementary (Left, Center, Right)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "1403154555116f6ce3e93d6d36951dfaa338f86400ab3c339d77b650294112c8",
+     1785,
+     "#0F172A"
+    ],
+    "cols": 51,
+    "generation": 0,
+    "grid_sha": "2d991ff129f509699d7675153e3568b09d72327e2f822abc72043ef39ff322b8",
+    "label": "preset Random Row Seed",
+    "legend": [
+     "#0F172A",
+     "0",
+     "#F59E0B",
+     "1"
+    ],
+    "message": "Preset aplicat: Random Row Seed",
+    "name": "Elementary Cellular Automaton (Rule 30)",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Random Row Seed",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Single Center Seed (0..010..0)",
+     "Random Row Seed",
+     "Two Center Seeds (11)"
+    ],
+    "rows": 35,
+    "running": false,
+    "selector": "Elementary Cellular Automaton (Rule 30)",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 29  |  Dimensiuni: 35x51  |  Distribuție stări: [0: 1756, 1: 29]"
+   },
+   {
+    "badge": "Tip: 1D Elementary (Left, Center, Right)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "3341a3d57020a7b7f50faddce7a7162b0e1a8fffa95698262c8a885b7f9cab0f",
+     1785,
+     "#0F172A"
+    ],
+    "cols": 51,
+    "generation": 1,
+    "grid_sha": "8dac35ac8a529ee8f861dc7701d7397c0d626d883fbc8b85723e2c7ec2c329e6",
+    "label": "preset Random Row Seed +1",
+    "legend": [
+     "#0F172A",
+     "0",
+     "#F59E0B",
+     "1"
+    ],
+    "message": "Avansat la generația 1.",
+    "name": "Elementary Cellular Automaton (Rule 30)",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Random Row Seed",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Single Center Seed (0..010..0)",
+     "Random Row Seed",
+     "Two Center Seeds (11)"
+    ],
+    "rows": 35,
+    "running": false,
+    "selector": "Elementary Cellular Automaton (Rule 30)",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 1  |  Celule active: 53  |  Dimensiuni: 35x51  |  Distribuție stări: [0: 1732, 1: 53]"
+   },
+   {
+    "badge": "Tip: 1D Elementary (Left, Center, Right)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "43cee494a32814f24bfb16ed02f1a6d330a03e46971ad7bf7a7d80508c0c753b",
+     1785,
+     "#0F172A"
+    ],
+    "cols": 51,
+    "generation": 0,
+    "grid_sha": "524efa92c1eff7a0411834dfd32970999ba8d4d6d48baa7dfd5256b9419074bf",
+    "label": "preset Two Center Seeds (11)",
+    "legend": [
+     "#0F172A",
+     "0",
+     "#F59E0B",
+     "1"
+    ],
+    "message": "Preset aplicat: Two Center Seeds (11)",
+    "name": "Elementary Cellular Automaton (Rule 30)",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Two Center Seeds (11)",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Single Center Seed (0..010..0)",
+     "Random Row Seed",
+     "Two Center Seeds (11)"
+    ],
+    "rows": 35,
+    "running": false,
+    "selector": "Elementary Cellular Automaton (Rule 30)",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 2  |  Dimensiuni: 35x51  |  Distribuție stări: [0: 1783, 1: 2]"
+   },
+   {
+    "badge": "Tip: 1D Elementary (Left, Center, Right)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "50de81e20d5323c17642da52b848a9e9f2dafdf29ce3040359ad705f7d806392",
+     1785,
+     "#0F172A"
+    ],
+    "cols": 51,
+    "generation": 1,
+    "grid_sha": "8bc517cafee62a544040c274559ef10d518bf816b92675d3e75b10284053bea9",
+    "label": "preset Two Center Seeds (11) +1",
+    "legend": [
+     "#0F172A",
+     "0",
+     "#F59E0B",
+     "1"
+    ],
+    "message": "Avansat la generația 1.",
+    "name": "Elementary Cellular Automaton (Rule 30)",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Two Center Seeds (11)",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Single Center Seed (0..010..0)",
+     "Random Row Seed",
+     "Two Center Seeds (11)"
+    ],
+    "rows": 35,
+    "running": false,
+    "selector": "Elementary Cellular Automaton (Rule 30)",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 1  |  Celule active: 5  |  Dimensiuni: 35x51  |  Distribuție stări: [0: 1780, 1: 5]"
+   },
+   {
+    "badge": "Tip: 1D Elementary (Left, Center, Right)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "41ba45fc9b42c178274cddc91ae0bf9f7d12562236bac42390b69cc03fc29ffe",
+     1785,
+     "#0F172A"
+    ],
+    "cols": 51,
+    "generation": 0,
+    "grid_sha": "e3d43784df10f4a2c49291ea37c244c012439c51e14d593d31348611d074af04",
+    "label": "cleared",
+    "legend": [
+     "#0F172A",
+     "0",
+     "#F59E0B",
+     "1"
+    ],
+    "message": "Grilă curățată.",
+    "name": "Elementary Cellular Automaton (Rule 30)",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Two Center Seeds (11)",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Single Center Seed (0..010..0)",
+     "Random Row Seed",
+     "Two Center Seeds (11)"
+    ],
+    "rows": 35,
+    "running": false,
+    "selector": "Elementary Cellular Automaton (Rule 30)",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 0  |  Dimensiuni: 35x51  |  Distribuție stări: [0: 1785, 1: 0]"
+   },
+   {
+    "badge": "Tip: 1D Elementary (Left, Center, Right)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "1647aed92ef02195a613a64d901901eecfa848de6f89fcecaf35feb84e2a0e9d",
+     1785,
+     "#0F172A"
+    ],
+    "cols": 51,
+    "generation": 0,
+    "grid_sha": "31fb3cd96077066f4e1d81b7ffb9dfc7ddb8b8e06044f41712330c319e3c59c4",
+    "label": "click",
+    "legend": [
+     "#0F172A",
+     "0",
+     "#F59E0B",
+     "1"
+    ],
+    "message": "Grilă curățată.",
+    "name": "Elementary Cellular Automaton (Rule 30)",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Two Center Seeds (11)",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Single Center Seed (0..010..0)",
+     "Random Row Seed",
+     "Two Center Seeds (11)"
+    ],
+    "rows": 35,
+    "running": false,
+    "selector": "Elementary Cellular Automaton (Rule 30)",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 1  |  Dimensiuni: 35x51  |  Distribuție stări: [0: 1784, 1: 1]"
+   },
+   {
+    "badge": "Tip: 1D Elementary (Left, Center, Right)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "41ba45fc9b42c178274cddc91ae0bf9f7d12562236bac42390b69cc03fc29ffe",
+     1785,
+     "#0F172A"
+    ],
+    "cols": 51,
+    "generation": 0,
+    "grid_sha": "e3d43784df10f4a2c49291ea37c244c012439c51e14d593d31348611d074af04",
+    "label": "click2",
+    "legend": [
+     "#0F172A",
+     "0",
+     "#F59E0B",
+     "1"
+    ],
+    "message": "Grilă curățată.",
+    "name": "Elementary Cellular Automaton (Rule 30)",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Two Center Seeds (11)",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Single Center Seed (0..010..0)",
+     "Random Row Seed",
+     "Two Center Seeds (11)"
+    ],
+    "rows": 35,
+    "running": false,
+    "selector": "Elementary Cellular Automaton (Rule 30)",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 0  |  Dimensiuni: 35x51  |  Distribuție stări: [0: 1785, 1: 0]"
+   },
+   {
+    "badge": "Tip: 1D Elementary (Left, Center, Right)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "41ba45fc9b42c178274cddc91ae0bf9f7d12562236bac42390b69cc03fc29ffe",
+     1785,
+     "#0F172A"
+    ],
+    "cols": 51,
+    "generation": 0,
+    "grid_sha": "e3d43784df10f4a2c49291ea37c244c012439c51e14d593d31348611d074af04",
+    "label": "drag",
+    "legend": [
+     "#0F172A",
+     "0",
+     "#F59E0B",
+     "1"
+    ],
+    "message": "Grilă curățată.",
+    "name": "Elementary Cellular Automaton (Rule 30)",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Two Center Seeds (11)",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Single Center Seed (0..010..0)",
+     "Random Row Seed",
+     "Two Center Seeds (11)"
+    ],
+    "rows": 35,
+    "running": false,
+    "selector": "Elementary Cellular Automaton (Rule 30)",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 0  |  Dimensiuni: 35x51  |  Distribuție stări: [0: 1785, 1: 0]"
+   },
+   {
+    "badge": "Tip: 1D Elementary (Left, Center, Right)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "41ba45fc9b42c178274cddc91ae0bf9f7d12562236bac42390b69cc03fc29ffe",
+     1785,
+     "#0F172A"
+    ],
+    "cols": 51,
+    "generation": 0,
+    "grid_sha": "e3d43784df10f4a2c49291ea37c244c012439c51e14d593d31348611d074af04",
+    "label": "drag after release",
+    "legend": [
+     "#0F172A",
+     "0",
+     "#F59E0B",
+     "1"
+    ],
+    "message": "Grilă curățată.",
+    "name": "Elementary Cellular Automaton (Rule 30)",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Two Center Seeds (11)",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Single Center Seed (0..010..0)",
+     "Random Row Seed",
+     "Two Center Seeds (11)"
+    ],
+    "rows": 35,
+    "running": false,
+    "selector": "Elementary Cellular Automaton (Rule 30)",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 0  |  Dimensiuni: 35x51  |  Distribuție stări: [0: 1785, 1: 0]"
+   },
+   {
+    "badge": "Tip: 1D Elementary (Left, Center, Right)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "41ba45fc9b42c178274cddc91ae0bf9f7d12562236bac42390b69cc03fc29ffe",
+     1785,
+     "#0F172A"
+    ],
+    "cols": 51,
+    "generation": 0,
+    "grid_sha": "e3d43784df10f4a2c49291ea37c244c012439c51e14d593d31348611d074af04",
+    "label": "right click",
+    "legend": [
+     "#0F172A",
+     "0",
+     "#F59E0B",
+     "1"
+    ],
+    "message": "Grilă curățată.",
+    "name": "Elementary Cellular Automaton (Rule 30)",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Two Center Seeds (11)",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Single Center Seed (0..010..0)",
+     "Random Row Seed",
+     "Two Center Seeds (11)"
+    ],
+    "rows": 35,
+    "running": false,
+    "selector": "Elementary Cellular Automaton (Rule 30)",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 0  |  Dimensiuni: 35x51  |  Distribuție stări: [0: 1785, 1: 0]"
+   },
+   {
+    "badge": "Tip: 1D Elementary (Left, Center, Right)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "41ba45fc9b42c178274cddc91ae0bf9f7d12562236bac42390b69cc03fc29ffe",
+     1785,
+     "#0F172A"
+    ],
+    "cols": 51,
+    "generation": 0,
+    "grid_sha": "e3d43784df10f4a2c49291ea37c244c012439c51e14d593d31348611d074af04",
+    "label": "click outside",
+    "legend": [
+     "#0F172A",
+     "0",
+     "#F59E0B",
+     "1"
+    ],
+    "message": "Grilă curățată.",
+    "name": "Elementary Cellular Automaton (Rule 30)",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Two Center Seeds (11)",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Single Center Seed (0..010..0)",
+     "Random Row Seed",
+     "Two Center Seeds (11)"
+    ],
+    "rows": 35,
+    "running": false,
+    "selector": "Elementary Cellular Automaton (Rule 30)",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 0  |  Dimensiuni: 35x51  |  Distribuție stări: [0: 1785, 1: 0]"
+   },
+   {
+    "badge": "Tip: 1D Elementary (Left, Center, Right)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "202e5ad51b01f29845027298177fb33d47b27580a7c543396639f7d029132f7d",
+     1785,
+     "#0F172A"
+    ],
+    "cols": 51,
+    "generation": 0,
+    "grid_sha": "e3d43784df10f4a2c49291ea37c244c012439c51e14d593d31348611d074af04",
+    "label": "resize",
+    "legend": [
+     "#0F172A",
+     "0",
+     "#F59E0B",
+     "1"
+    ],
+    "message": "Grilă curățată.",
+    "name": "Elementary Cellular Automaton (Rule 30)",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Two Center Seeds (11)",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Single Center Seed (0..010..0)",
+     "Random Row Seed",
+     "Two Center Seeds (11)"
+    ],
+    "rows": 35,
+    "running": false,
+    "selector": "Elementary Cellular Automaton (Rule 30)",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 0  |  Dimensiuni: 35x51  |  Distribuție stări: [0: 1785, 1: 0]"
+   },
+   {
+    "badge": "Tip: 1D Elementary (Left, Center, Right)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "202e5ad51b01f29845027298177fb33d47b27580a7c543396639f7d029132f7d",
+     1785,
+     "#0F172A"
+    ],
+    "cols": 51,
+    "generation": 0,
+    "grid_sha": "e3d43784df10f4a2c49291ea37c244c012439c51e14d593d31348611d074af04",
+    "label": "resize ignored",
+    "legend": [
+     "#0F172A",
+     "0",
+     "#F59E0B",
+     "1"
+    ],
+    "message": "Grilă curățată.",
+    "name": "Elementary Cellular Automaton (Rule 30)",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Two Center Seeds (11)",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Single Center Seed (0..010..0)",
+     "Random Row Seed",
+     "Two Center Seeds (11)"
+    ],
+    "rows": 35,
+    "running": false,
+    "selector": "Elementary Cellular Automaton (Rule 30)",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 0  |  Dimensiuni: 35x51  |  Distribuție stări: [0: 1785, 1: 0]"
+   },
+   {
+    "badge": "Tip: 1D Elementary (Left, Center, Right)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "c2cd6cc725a160e1d788146a3c76b4f3f6bbe0d96bc42f63c658d6165c3fbc55",
+     1785,
+     "#0F172A"
+    ],
+    "cols": 51,
+    "generation": 0,
+    "grid_sha": "e3d43784df10f4a2c49291ea37c244c012439c51e14d593d31348611d074af04",
+    "label": "saved",
+    "legend": [
+     "#0F172A",
+     "0",
+     "#F59E0B",
+     "1"
+    ],
+    "message": "[Salvat] Generația 0 salvată.",
+    "name": "Elementary Cellular Automaton (Rule 30)",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Two Center Seeds (11)",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Single Center Seed (0..010..0)",
+     "Random Row Seed",
+     "Two Center Seeds (11)"
+    ],
+    "rows": 35,
+    "running": false,
+    "selector": "Elementary Cellular Automaton (Rule 30)",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 0  |  Dimensiuni: 35x51  |  Distribuție stări: [0: 1785, 1: 0]"
+   },
+   [
+    "saved_sha",
+    "ee7506905a304ad3abe03139e4a166210a3152cf655d5c3a5fcf284849d16408"
+   ],
+   {
+    "badge": "Tip: 1D Elementary (Left, Center, Right)  |  Bordură: Wrap (toroidal)",
+    "canvas": [
+     "0b602edb0209492819578248e7ed7180775f430f56e375908c63af8277e98dfe",
+     1785,
+     "#0F172A"
+    ],
+    "cols": 51,
+    "generation": 0,
+    "grid_sha": "e3d43784df10f4a2c49291ea37c244c012439c51e14d593d31348611d074af04",
+    "label": "loaded",
+    "legend": [
+     "#0F172A",
+     "0",
+     "#F59E0B",
+     "1"
+    ],
+    "message": "[Restaurat] Reluat cu succes de la Generația 0.",
+    "name": "Elementary Cellular Automaton (Rule 30)",
+    "play": [
+     "▶ Play",
+     "#2563EB"
+    ],
+    "preset": "Two Center Seeds (11)",
+    "preset_values": [
+     "-- Alege pattern --",
+     "Single Center Seed (0..010..0)",
+     "Random Row Seed",
+     "Two Center Seeds (11)"
+    ],
+    "rows": 35,
+    "running": false,
+    "selector": "Elementary Cellular Automaton (Rule 30)",
+    "selector_values": [
+     "Brian's Brain",
+     "Cyclic Cellular Automaton",
+     "Elementary Cellular Automaton (Rule 30)"
+    ],
+    "speed": [
+     120,
+     "120 ms"
+    ],
+    "stats": "Generația: 0  |  Celule active: 0  |  Dimensiuni: 35x51  |  Distribuție stări: [0: 1785, 1: 0]"
+   },
+   [
+    "analysis_labels",
+    [
+     "Întrebarea 1 & 4: Analiză după N Iterații",
+     "Număr iterații N:",
+     "Celule de tipul X:",
+     "[Rezultat Q1 & Q4]\n• Generație viitoare: 10\n• Număr celule de tip '1' după 10 iterații: 0",
+     "Întrebarea 2: Când atinge sistemul o stare stabilă?",
+     "O stare este stabilă dacă generația următoare este identică cu cea curentă.",
+     "Limită maximă de pași:",
+     "[Rezultat Q2] Sistemul atinge o stare STABILĂ la generația 2!\n(Nicio modificare nu va mai surveni).",
+     "Întrebarea 5: Intră simularea într-un ciclu repetitiv?",
+     "Detectează oscilatori și cicluri periodice comparând amprenta matricelor.",
+     "Limită maximă de pași:",
+     "[Rezultat Q5] CICLU DETECTAT!\n• Perioada ciclului: 1\n• Ciclul a început la generația: 1\n• Repetarea a fost confirmată la generația: 2",
+     "Întrebarea 3: Apare vreodată o anumită configurație?",
+     "Fișier țintă: state_2.json (35x51)",
+     "[Rezultat Q3] Configurația NU apare în următoarele 500 de generații."
+    ],
+    "tree",
+    {
+     "bg": "SystemButtonFace",
+     "binds": [],
+     "children": [
+      {
+       "binds": [],
+       "children": [
+        {
+         "binds": [],
+         "children": [
+          {
+           "binds": [],
+           "children": [],
+           "class": "TLabel",
+           "font": "{Segoe UI} 10 bold",
+           "foreground": "",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "(0, 10)",
+            "side": "top"
+           },
+           "path": ".!toplevel3.!notebook.!frame.!label",
+           "pytype": "Label",
+           "relief": "",
+           "state": "normal",
+           "style": "",
+           "text": "Întrebarea 1 & 4: Analiză după N Iterații",
+           "width": ""
+          },
+          {
+           "binds": [],
+           "children": [
+            {
+             "binds": [],
+             "children": [],
+             "class": "TLabel",
+             "font": "",
+             "foreground": "",
+             "pack": {
+              "anchor": "center",
+              "expand": "0",
+              "fill": "none",
+              "ipadx": "0",
+              "ipady": "0",
+              "padx": "(0, 6)",
+              "pady": "0",
+              "side": "left"
+             },
+             "path": ".!toplevel3.!notebook.!frame.!frame.!label",
+             "pytype": "Label",
+             "relief": "",
+             "state": "normal",
+             "style": "",
+             "text": "Număr iterații N:",
+             "width": ""
+            },
+            {
+             "binds": [],
+             "children": [],
+             "class": "TEntry",
+             "font": "TkTextFont",
+             "foreground": "",
+             "pack": {
+              "anchor": "center",
+              "expand": "0",
+              "fill": "none",
+              "ipadx": "0",
+              "ipady": "0",
+              "padx": "0",
+              "pady": "0",
+              "side": "left"
+             },
+             "path": ".!toplevel3.!notebook.!frame.!frame.!entry",
+             "pytype": "Entry",
+             "state": "normal",
+             "style": "",
+             "text": "",
+             "width": "8"
+            }
+           ],
+           "class": "TFrame",
+           "pack": {
+            "anchor": "center",
+            "expand": "0",
+            "fill": "x",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "4",
+            "side": "top"
+           },
+           "path": ".!toplevel3.!notebook.!frame.!frame",
+           "pytype": "Frame",
+           "relief": "",
+           "style": "",
+           "width": "0"
+          },
+          {
+           "binds": [],
+           "children": [
+            {
+             "binds": [],
+             "children": [],
+             "class": "TLabel",
+             "font": "",
+             "foreground": "",
+             "pack": {
+              "anchor": "center",
+              "expand": "0",
+              "fill": "none",
+              "ipadx": "0",
+              "ipady": "0",
+              "padx": "(0, 6)",
+              "pady": "0",
+              "side": "left"
+             },
+             "path": ".!toplevel3.!notebook.!frame.!frame2.!label",
+             "pytype": "Label",
+             "relief": "",
+             "state": "normal",
+             "style": "",
+             "text": "Celule de tipul X:",
+             "width": ""
+            },
+            {
+             "binds": [],
+             "children": [],
+             "class": "TCombobox",
+             "font": "TkTextFont",
+             "foreground": "",
+             "pack": {
+              "anchor": "center",
+              "expand": "0",
+              "fill": "none",
+              "ipadx": "0",
+              "ipady": "0",
+              "padx": "0",
+              "pady": "0",
+              "side": "left"
+             },
+             "path": ".!toplevel3.!notebook.!frame.!frame2.!combobox",
+             "pytype": "Combobox",
+             "state": "readonly",
+             "style": "",
+             "text": "",
+             "values": "('0', '1')",
+             "width": "10"
+            }
+           ],
+           "class": "TFrame",
+           "pack": {
+            "anchor": "center",
+            "expand": "0",
+            "fill": "x",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "4",
+            "side": "top"
+           },
+           "path": ".!toplevel3.!notebook.!frame.!frame2",
+           "pytype": "Frame",
+           "relief": "",
+           "style": "",
+           "width": "0"
+          },
+          {
+           "binds": [],
+           "children": [],
+           "class": "TLabel",
+           "font": "",
+           "foreground": "#475569",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "10",
+            "side": "top"
+           },
+           "path": ".!toplevel3.!notebook.!frame.!label2",
+           "pytype": "Label",
+           "relief": "",
+           "state": "normal",
+           "style": "",
+           "text": "Apasă 'Calculează' pentru a obține răspunsul.",
+           "width": ""
+          },
+          {
+           "binds": [],
+           "children": [],
+           "class": "TButton",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "0",
+            "side": "top"
+           },
+           "path": ".!toplevel3.!notebook.!frame.!button",
+           "pytype": "Button",
+           "state": "normal",
+           "style": "",
+           "text": "Calculează Q1 & Q4",
+           "width": ""
+          }
+         ],
+         "class": "TFrame",
+         "path": ".!toplevel3.!notebook.!frame",
+         "pytype": "Frame",
+         "relief": "",
+         "style": "",
+         "width": "0"
+        },
+        {
+         "binds": [],
+         "children": [
+          {
+           "binds": [],
+           "children": [],
+           "class": "TLabel",
+           "font": "{Segoe UI} 10 bold",
+           "foreground": "",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "(0, 10)",
+            "side": "top"
+           },
+           "path": ".!toplevel3.!notebook.!frame2.!label",
+           "pytype": "Label",
+           "relief": "",
+           "state": "normal",
+           "style": "",
+           "text": "Întrebarea 2: Când atinge sistemul o stare stabilă?",
+           "width": ""
+          },
+          {
+           "binds": [],
+           "children": [],
+           "class": "TLabel",
+           "font": "",
+           "foreground": "",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "(0, 8)",
+            "side": "top"
+           },
+           "path": ".!toplevel3.!notebook.!frame2.!label2",
+           "pytype": "Label",
+           "relief": "",
+           "state": "normal",
+           "style": "",
+           "text": "O stare este stabilă dacă generația următoare este identică cu cea curentă.",
+           "width": ""
+          },
+          {
+           "binds": [],
+           "children": [
+            {
+             "binds": [],
+             "children": [],
+             "class": "TLabel",
+             "font": "",
+             "foreground": "",
+             "pack": {
+              "anchor": "center",
+              "expand": "0",
+              "fill": "none",
+              "ipadx": "0",
+              "ipady": "0",
+              "padx": "(0, 6)",
+              "pady": "0",
+              "side": "left"
+             },
+             "path": ".!toplevel3.!notebook.!frame2.!frame.!label",
+             "pytype": "Label",
+             "relief": "",
+             "state": "normal",
+             "style": "",
+             "text": "Limită maximă de pași:",
+             "width": ""
+            },
+            {
+             "binds": [],
+             "children": [],
+             "class": "TEntry",
+             "font": "TkTextFont",
+             "foreground": "",
+             "pack": {
+              "anchor": "center",
+              "expand": "0",
+              "fill": "none",
+              "ipadx": "0",
+              "ipady": "0",
+              "padx": "0",
+              "pady": "0",
+              "side": "left"
+             },
+             "path": ".!toplevel3.!notebook.!frame2.!frame.!entry",
+             "pytype": "Entry",
+             "state": "normal",
+             "style": "",
+             "text": "",
+             "width": "8"
+            }
+           ],
+           "class": "TFrame",
+           "pack": {
+            "anchor": "center",
+            "expand": "0",
+            "fill": "x",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "4",
+            "side": "top"
+           },
+           "path": ".!toplevel3.!notebook.!frame2.!frame",
+           "pytype": "Frame",
+           "relief": "",
+           "style": "",
+           "width": "0"
+          },
+          {
+           "binds": [],
+           "children": [],
+           "class": "TLabel",
+           "font": "",
+           "foreground": "#475569",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "10",
+            "side": "top"
+           },
+           "path": ".!toplevel3.!notebook.!frame2.!label3",
+           "pytype": "Label",
+           "relief": "",
+           "state": "normal",
+           "style": "",
+           "text": "Apasă 'Verifică Stabilitate'.",
+           "width": ""
+          },
+          {
+           "binds": [],
+           "children": [],
+           "class": "TButton",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "0",
+            "side": "top"
+           },
+           "path": ".!toplevel3.!notebook.!frame2.!button",
+           "pytype": "Button",
+           "state": "normal",
+           "style": "",
+           "text": "Verifică Stabilitate Q2",
+           "width": ""
+          }
+         ],
+         "class": "TFrame",
+         "path": ".!toplevel3.!notebook.!frame2",
+         "pytype": "Frame",
+         "relief": "",
+         "style": "",
+         "width": "0"
+        },
+        {
+         "binds": [],
+         "children": [
+          {
+           "binds": [],
+           "children": [],
+           "class": "TLabel",
+           "font": "{Segoe UI} 10 bold",
+           "foreground": "",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "(0, 10)",
+            "side": "top"
+           },
+           "path": ".!toplevel3.!notebook.!frame3.!label",
+           "pytype": "Label",
+           "relief": "",
+           "state": "normal",
+           "style": "",
+           "text": "Întrebarea 5: Intră simularea într-un ciclu repetitiv?",
+           "width": ""
+          },
+          {
+           "binds": [],
+           "children": [],
+           "class": "TLabel",
+           "font": "",
+           "foreground": "",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "(0, 8)",
+            "side": "top"
+           },
+           "path": ".!toplevel3.!notebook.!frame3.!label2",
+           "pytype": "Label",
+           "relief": "",
+           "state": "normal",
+           "style": "",
+           "text": "Detectează oscilatori și cicluri periodice comparând amprenta matricelor.",
+           "width": ""
+          },
+          {
+           "binds": [],
+           "children": [
+            {
+             "binds": [],
+             "children": [],
+             "class": "TLabel",
+             "font": "",
+             "foreground": "",
+             "pack": {
+              "anchor": "center",
+              "expand": "0",
+              "fill": "none",
+              "ipadx": "0",
+              "ipady": "0",
+              "padx": "(0, 6)",
+              "pady": "0",
+              "side": "left"
+             },
+             "path": ".!toplevel3.!notebook.!frame3.!frame.!label",
+             "pytype": "Label",
+             "relief": "",
+             "state": "normal",
+             "style": "",
+             "text": "Limită maximă de pași:",
+             "width": ""
+            },
+            {
+             "binds": [],
+             "children": [],
+             "class": "TEntry",
+             "font": "TkTextFont",
+             "foreground": "",
+             "pack": {
+              "anchor": "center",
+              "expand": "0",
+              "fill": "none",
+              "ipadx": "0",
+              "ipady": "0",
+              "padx": "0",
+              "pady": "0",
+              "side": "left"
+             },
+             "path": ".!toplevel3.!notebook.!frame3.!frame.!entry",
+             "pytype": "Entry",
+             "state": "normal",
+             "style": "",
+             "text": "",
+             "width": "8"
+            }
+           ],
+           "class": "TFrame",
+           "pack": {
+            "anchor": "center",
+            "expand": "0",
+            "fill": "x",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "4",
+            "side": "top"
+           },
+           "path": ".!toplevel3.!notebook.!frame3.!frame",
+           "pytype": "Frame",
+           "relief": "",
+           "style": "",
+           "width": "0"
+          },
+          {
+           "binds": [],
+           "children": [],
+           "class": "TLabel",
+           "font": "",
+           "foreground": "#475569",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "10",
+            "side": "top"
+           },
+           "path": ".!toplevel3.!notebook.!frame3.!label3",
+           "pytype": "Label",
+           "relief": "",
+           "state": "normal",
+           "style": "",
+           "text": "Apasă 'Detectează Ciclu'.",
+           "width": ""
+          },
+          {
+           "binds": [],
+           "children": [],
+           "class": "TButton",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "0",
+            "side": "top"
+           },
+           "path": ".!toplevel3.!notebook.!frame3.!button",
+           "pytype": "Button",
+           "state": "normal",
+           "style": "",
+           "text": "Detectează Ciclu Q5",
+           "width": ""
+          }
+         ],
+         "class": "TFrame",
+         "path": ".!toplevel3.!notebook.!frame3",
+         "pytype": "Frame",
+         "relief": "",
+         "style": "",
+         "width": "0"
+        },
+        {
+         "binds": [],
+         "children": [
+          {
+           "binds": [],
+           "children": [],
+           "class": "TLabel",
+           "font": "{Segoe UI} 10 bold",
+           "foreground": "",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "(0, 8)",
+            "side": "top"
+           },
+           "path": ".!toplevel3.!notebook.!frame4.!label",
+           "pytype": "Label",
+           "relief": "",
+           "state": "normal",
+           "style": "",
+           "text": "Întrebarea 3: Apare vreodată o anumită configurație?",
+           "width": ""
+          },
+          {
+           "binds": [],
+           "children": [],
+           "class": "TLabel",
+           "font": "",
+           "foreground": "#64748B",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "4",
+            "side": "top"
+           },
+           "path": ".!toplevel3.!notebook.!frame4.!label2",
+           "pytype": "Label",
+           "relief": "",
+           "state": "normal",
+           "style": "",
+           "text": "Niciun fișier țintă selectat.",
+           "width": ""
+          },
+          {
+           "binds": [],
+           "children": [],
+           "class": "TButton",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "4",
+            "side": "top"
+           },
+           "path": ".!toplevel3.!notebook.!frame4.!button",
+           "pytype": "Button",
+           "state": "normal",
+           "style": "",
+           "text": "Alege Configurație Țintă (JSON)...",
+           "width": ""
+          },
+          {
+           "binds": [],
+           "children": [],
+           "class": "TLabel",
+           "font": "",
+           "foreground": "#475569",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "10",
+            "side": "top"
+           },
+           "path": ".!toplevel3.!notebook.!frame4.!label3",
+           "pytype": "Label",
+           "relief": "",
+           "state": "normal",
+           "style": "",
+           "text": "",
+           "width": ""
+          },
+          {
+           "binds": [],
+           "children": [],
+           "class": "TButton",
+           "pack": {
+            "anchor": "w",
+            "expand": "0",
+            "fill": "none",
+            "ipadx": "0",
+            "ipady": "0",
+            "padx": "0",
+            "pady": "0",
+            "side": "top"
+           },
+           "path": ".!toplevel3.!notebook.!frame4.!button2",
+           "pytype": "Button",
+           "state": "normal",
+           "style": "",
+           "text": "Verifică Configurația Q3",
+           "width": ""
+          }
+         ],
+         "class": "TFrame",
+         "path": ".!toplevel3.!notebook.!frame4",
+         "pytype": "Frame",
+         "relief": "",
+         "style": "",
+         "width": "0"
+        }
+       ],
+       "class": "TNotebook",
+       "pack": {
+        "anchor": "center",
+        "expand": "1",
+        "fill": "both",
+        "ipadx": "0",
+        "ipady": "0",
+        "padx": "10",
+        "pady": "10",
+        "side": "top"
+       },
+       "path": ".!toplevel3.!notebook",
+       "pytype": "Notebook",
+       "style": "",
+       "width": "0"
+      }
+     ],
+     "class": "Toplevel",
+     "path": ".!toplevel3",
+     "pytype": "Toplevel",
+     "relief": "flat",
+     "width": "0"
+    },
+    "title",
+    "CellLab - Întrebări Analitice Automate",
+    "geom",
+    "1x1"
+   ]
+  ]
+ },
+ "widget_tree": {
+  "bg": "#F1F5F9",
+  "binds": [],
+  "children": [
+   {
+    "binds": [],
+    "children": [
+     {
+      "binds": [],
+      "children": [],
+      "class": "TLabel",
+      "font": "{Segoe UI} 10 bold",
+      "foreground": "",
+      "pack": {
+       "anchor": "center",
+       "expand": "0",
+       "fill": "none",
+       "ipadx": "0",
+       "ipady": "0",
+       "padx": "(0, 6)",
+       "pady": "0",
+       "side": "left"
+      },
+      "path": ".!frame.!label",
+      "pytype": "Label",
+      "relief": "",
+      "state": "normal",
+      "style": "",
+      "text": "Automat:",
+      "width": ""
+     },
+     {
+      "binds": [
+       "<<ComboboxSelected>>"
+      ],
+      "children": [],
+      "class": "TCombobox",
+      "font": "{Segoe UI} 9",
+      "foreground": "",
+      "pack": {
+       "anchor": "center",
+       "expand": "0",
+       "fill": "none",
+       "ipadx": "0",
+       "ipady": "0",
+       "padx": "(0, 10)",
+       "pady": "0",
+       "side": "left"
+      },
+      "path": ".!frame.!combobox",
+      "pytype": "Combobox",
+      "state": "readonly",
+      "style": "",
+      "text": "PY_VAR0",
+      "values": "(\"Brian's Brain\", 'Cyclic Cellular Automaton', 'Elementary Cellular Automaton (Rule 30)')",
+      "width": "28"
+     },
+     {
+      "binds": [],
+      "children": [],
+      "class": "TButton",
+      "pack": {
+       "anchor": "center",
+       "expand": "0",
+       "fill": "none",
+       "ipadx": "0",
+       "ipady": "0",
+       "padx": "(0, 15)",
+       "pady": "0",
+       "side": "left"
+      },
+      "path": ".!frame.!button",
+      "pytype": "Button",
+      "state": "normal",
+      "style": "",
+      "text": "📂 Load JSON...",
+      "width": ""
+     },
+     {
+      "binds": [],
+      "children": [],
+      "class": "TLabel",
+      "font": "{Segoe UI} 9 italic",
+      "foreground": "#475569",
+      "pack": {
+       "anchor": "center",
+       "expand": "0",
+       "fill": "none",
+       "ipadx": "0",
+       "ipady": "0",
+       "padx": "5",
+       "pady": "0",
+       "side": "left"
+      },
+      "path": ".!frame.!label2",
+      "pytype": "Label",
+      "relief": "",
+      "state": "normal",
+      "style": "",
+      "text": "Tip: 1D Elementary (Left, Center, Right)  |  Bordură: Wrap (toroidal)",
+      "width": ""
+     },
+     {
+      "binds": [],
+      "children": [
+       {
+        "binds": [],
+        "children": [
+         {
+          "bg": "#0F172A",
+          "binds": [],
+          "children": [],
+          "class": "Label",
+          "fg": "SystemButtonText",
+          "font": "TkDefaultFont",
+          "foreground": "SystemButtonText",
+          "pack": {
+           "anchor": "center",
+           "expand": "0",
+           "fill": "none",
+           "ipadx": "0",
+           "ipady": "0",
+           "padx": "(0, 2)",
+           "pady": "0",
+           "side": "left"
+          },
+          "path": ".!frame.!frame.!frame.!label",
+          "pytype": "Label",
+          "relief": "ridge",
+          "state": "normal",
+          "text": "",
+          "width": "2"
+         },
+         {
+          "binds": [],
+          "children": [],
+          "class": "TLabel",
+          "font": "{Segoe UI} 8",
+          "foreground": "",
+          "pack": {
+           "anchor": "center",
+           "expand": "0",
+           "fill": "none",
+           "ipadx": "0",
+           "ipady": "0",
+           "padx": "0",
+           "pady": "0",
+           "side": "left"
+          },
+          "path": ".!frame.!frame.!frame.!label2",
+          "pytype": "Label",
+          "relief": "",
+          "state": "normal",
+          "style": "",
+          "text": "0",
+          "width": ""
+         }
+        ],
+        "class": "TFrame",
+        "pack": {
+         "anchor": "center",
+         "expand": "0",
+         "fill": "none",
+         "ipadx": "0",
+         "ipady": "0",
+         "padx": "4",
+         "pady": "0",
+         "side": "left"
+        },
+        "path": ".!frame.!frame.!frame",
+        "pytype": "Frame",
+        "relief": "",
+        "style": "",
+        "width": "0"
+       },
+       {
+        "binds": [],
+        "children": [
+         {
+          "bg": "#F59E0B",
+          "binds": [],
+          "children": [],
+          "class": "Label",
+          "fg": "SystemButtonText",
+          "font": "TkDefaultFont",
+          "foreground": "SystemButtonText",
+          "pack": {
+           "anchor": "center",
+           "expand": "0",
+           "fill": "none",
+           "ipadx": "0",
+           "ipady": "0",
+           "padx": "(0, 2)",
+           "pady": "0",
+           "side": "left"
+          },
+          "path": ".!frame.!frame.!frame2.!label",
+          "pytype": "Label",
+          "relief": "ridge",
+          "state": "normal",
+          "text": "",
+          "width": "2"
+         },
+         {
+          "binds": [],
+          "children": [],
+          "class": "TLabel",
+          "font": "{Segoe UI} 8",
+          "foreground": "",
+          "pack": {
+           "anchor": "center",
+           "expand": "0",
+           "fill": "none",
+           "ipadx": "0",
+           "ipady": "0",
+           "padx": "0",
+           "pady": "0",
+           "side": "left"
+          },
+          "path": ".!frame.!frame.!frame2.!label2",
+          "pytype": "Label",
+          "relief": "",
+          "state": "normal",
+          "style": "",
+          "text": "1",
+          "width": ""
+         }
+        ],
+        "class": "TFrame",
+        "pack": {
+         "anchor": "center",
+         "expand": "0",
+         "fill": "none",
+         "ipadx": "0",
+         "ipady": "0",
+         "padx": "4",
+         "pady": "0",
+         "side": "left"
+        },
+        "path": ".!frame.!frame.!frame2",
+        "pytype": "Frame",
+        "relief": "",
+        "style": "",
+        "width": "0"
+       }
+      ],
+      "class": "TFrame",
+      "pack": {
+       "anchor": "center",
+       "expand": "0",
+       "fill": "none",
+       "ipadx": "0",
+       "ipady": "0",
+       "padx": "0",
+       "pady": "0",
+       "side": "right"
+      },
+      "path": ".!frame.!frame",
+      "pytype": "Frame",
+      "relief": "",
+      "style": "",
+      "width": "0"
+     }
+    ],
+    "class": "TFrame",
+    "pack": {
+     "anchor": "center",
+     "expand": "0",
+     "fill": "x",
+     "ipadx": "0",
+     "ipady": "0",
+     "padx": "0",
+     "pady": "0",
+     "side": "top"
+    },
+    "path": ".!frame",
+    "pytype": "Frame",
+    "relief": "",
+    "style": "",
+    "width": "0"
+   },
+   {
+    "binds": [],
+    "children": [
+     {
+      "bg": "#0F172A",
+      "binds": [
+       "<B1-Motion>",
+       "<Button-1>",
+       "<Button-3>",
+       "<ButtonRelease-1>",
+       "<Configure>"
+      ],
+      "children": [],
+      "class": "Canvas",
+      "pack": {
+       "anchor": "center",
+       "expand": "1",
+       "fill": "both",
+       "ipadx": "0",
+       "ipady": "0",
+       "padx": "0",
+       "pady": "0",
+       "side": "top"
+      },
+      "path": ".!frame2.!canvas",
+      "pytype": "Canvas",
+      "relief": "flat",
+      "state": "normal",
+      "width": "640"
+     }
+    ],
+    "class": "TFrame",
+    "pack": {
+     "anchor": "center",
+     "expand": "1",
+     "fill": "both",
+     "ipadx": "0",
+     "ipady": "0",
+     "padx": "0",
+     "pady": "0",
+     "side": "top"
+    },
+    "path": ".!frame2",
+    "pytype": "Frame",
+    "relief": "",
+    "style": "",
+    "width": "0"
+   },
+   {
+    "binds": [],
+    "children": [
+     {
+      "binds": [],
+      "children": [
+       {
+        "bg": "#2563EB",
+        "binds": [],
+        "children": [],
+        "class": "Button",
+        "fg": "white",
+        "font": "{Segoe UI} 9 bold",
+        "foreground": "white",
+        "pack": {
+         "anchor": "center",
+         "expand": "0",
+         "fill": "none",
+         "ipadx": "0",
+         "ipady": "0",
+         "padx": "(0, 6)",
+         "pady": "0",
+         "side": "left"
+        },
+        "path": ".!frame3.!frame.!button",
+        "pytype": "Button",
+        "relief": "raised",
+        "state": "normal",
+        "text": "▶ Play",
+        "width": "0"
+       },
+       {
+        "binds": [],
+        "children": [],
+        "class": "TButton",
+        "pack": {
+         "anchor": "center",
+         "expand": "0",
+         "fill": "none",
+         "ipadx": "0",
+         "ipady": "0",
+         "padx": "(0, 6)",
+         "pady": "0",
+         "side": "left"
+        },
+        "path": ".!frame3.!frame.!button2",
+        "pytype": "Button",
+        "state": "normal",
+        "style": "",
+        "text": "⏭ Next Step",
+        "width": ""
+       },
+       {
+        "binds": [],
+        "children": [],
+        "class": "TButton",
+        "pack": {
+         "anchor": "center",
+         "expand": "0",
+         "fill": "none",
+         "ipadx": "0",
+         "ipady": "0",
+         "padx": "(0, 6)",
+         "pady": "0",
+         "side": "left"
+        },
+        "path": ".!frame3.!frame.!button3",
+        "pytype": "Button",
+        "state": "normal",
+        "style": "",
+        "text": "🎲 Randomize / Reset",
+        "width": ""
+       },
+       {
+        "binds": [],
+        "children": [],
+        "class": "TButton",
+        "pack": {
+         "anchor": "center",
+         "expand": "0",
+         "fill": "none",
+         "ipadx": "0",
+         "ipady": "0",
+         "padx": "(0, 15)",
+         "pady": "0",
+         "side": "left"
+        },
+        "path": ".!frame3.!frame.!button4",
+        "pytype": "Button",
+        "state": "normal",
+        "style": "",
+        "text": "🧹 Clear Grid",
+        "width": ""
+       },
+       {
+        "binds": [],
+        "children": [],
+        "class": "TLabel",
+        "font": "",
+        "foreground": "",
+        "pack": {
+         "anchor": "center",
+         "expand": "0",
+         "fill": "none",
+         "ipadx": "0",
+         "ipady": "0",
+         "padx": "(0, 5)",
+         "pady": "0",
+         "side": "left"
+        },
+        "path": ".!frame3.!frame.!label",
+        "pytype": "Label",
+        "relief": "",
+        "state": "normal",
+        "style": "",
+        "text": "Interval viteză:",
+        "width": ""
+       },
+       {
+        "binds": [],
+        "children": [],
+        "class": "TScale",
+        "from": "20",
+        "pack": {
+         "anchor": "center",
+         "expand": "0",
+         "fill": "none",
+         "ipadx": "0",
+         "ipady": "0",
+         "padx": "(0, 5)",
+         "pady": "0",
+         "side": "left"
+        },
+        "path": ".!frame3.!frame.!scale",
+        "pytype": "Scale",
+        "state": "normal",
+        "style": "",
+        "to": "500"
+       },
+       {
+        "binds": [],
+        "children": [],
+        "class": "TLabel",
+        "font": "",
+        "foreground": "",
+        "pack": {
+         "anchor": "center",
+         "expand": "0",
+         "fill": "none",
+         "ipadx": "0",
+         "ipady": "0",
+         "padx": "0",
+         "pady": "0",
+         "side": "left"
+        },
+        "path": ".!frame3.!frame.!label2",
+        "pytype": "Label",
+        "relief": "",
+        "state": "normal",
+        "style": "",
+        "text": "120 ms",
+        "width": "7"
+       }
+      ],
+      "class": "TFrame",
+      "pack": {
+       "anchor": "center",
+       "expand": "0",
+       "fill": "x",
+       "ipadx": "0",
+       "ipady": "0",
+       "padx": "0",
+       "pady": "(0, 6)",
+       "side": "top"
+      },
+      "path": ".!frame3.!frame",
+      "pytype": "Frame",
+      "relief": "",
+      "style": "",
+      "width": "0"
+     },
+     {
+      "binds": [],
+      "children": [
+       {
+        "binds": [],
+        "children": [],
+        "class": "TButton",
+        "pack": {
+         "anchor": "center",
+         "expand": "0",
+         "fill": "none",
+         "ipadx": "0",
+         "ipady": "0",
+         "padx": "(0, 6)",
+         "pady": "0",
+         "side": "left"
+        },
+        "path": ".!frame3.!frame2.!button",
+        "pytype": "Button",
+        "state": "normal",
+        "style": "",
+        "text": "💾 Save State (JSON)",
+        "width": ""
+       },
+       {
+        "binds": [],
+        "children": [],
+        "class": "TButton",
+        "pack": {
+         "anchor": "center",
+         "expand": "0",
+         "fill": "none",
+         "ipadx": "0",
+         "ipady": "0",
+         "padx": "(0, 15)",
+         "pady": "0",
+         "side": "left"
+        },
+        "path": ".!frame3.!frame2.!button2",
+        "pytype": "Button",
+        "state": "normal",
+        "style": "",
+        "text": "📂 Load State (JSON)",
+        "width": ""
+       },
+       {
+        "binds": [],
+        "children": [],
+        "class": "TLabel",
+        "font": "",
+        "foreground": "",
+        "pack": {
+         "anchor": "center",
+         "expand": "0",
+         "fill": "none",
+         "ipadx": "0",
+         "ipady": "0",
+         "padx": "(0, 5)",
+         "pady": "0",
+         "side": "left"
+        },
+        "path": ".!frame3.!frame2.!label",
+        "pytype": "Label",
+        "relief": "",
+        "state": "normal",
+        "style": "",
+        "text": "Preset:",
+        "width": ""
+       },
+       {
+        "binds": [
+         "<<ComboboxSelected>>"
+        ],
+        "children": [],
+        "class": "TCombobox",
+        "font": "TkTextFont",
+        "foreground": "",
+        "pack": {
+         "anchor": "center",
+         "expand": "0",
+         "fill": "none",
+         "ipadx": "0",
+         "ipady": "0",
+         "padx": "(0, 8)",
+         "pady": "0",
+         "side": "left"
+        },
+        "path": ".!frame3.!frame2.!combobox",
+        "pytype": "Combobox",
+        "state": "readonly",
+        "style": "",
+        "text": "PY_VAR1",
+        "values": "('-- Alege pattern --', 'Single Center Seed (0..010..0)', 'Random Row Seed', 'Two Center Seeds (11)')",
+        "width": "22"
+       },
+       {
+        "bg": "#0D9488",
+        "binds": [],
+        "children": [],
+        "class": "Button",
+        "fg": "white",
+        "font": "{Segoe UI} 9 bold",
+        "foreground": "white",
+        "pack": {
+         "anchor": "center",
+         "expand": "0",
+         "fill": "none",
+         "ipadx": "0",
+         "ipady": "0",
+         "padx": "0",
+         "pady": "0",
+         "side": "right"
+        },
+        "path": ".!frame3.!frame2.!button3",
+        "pytype": "Button",
+        "relief": "raised",
+        "state": "normal",
+        "text": "❓ Analiză & Întrebări",
+        "width": "0"
+       }
+      ],
+      "class": "TFrame",
+      "pack": {
+       "anchor": "center",
+       "expand": "0",
+       "fill": "x",
+       "ipadx": "0",
+       "ipady": "0",
+       "padx": "0",
+       "pady": "0",
+       "side": "top"
+      },
+      "path": ".!frame3.!frame2",
+      "pytype": "Frame",
+      "relief": "",
+      "style": "",
+      "width": "0"
+     }
+    ],
+    "class": "TFrame",
+    "pack": {
+     "anchor": "center",
+     "expand": "0",
+     "fill": "x",
+     "ipadx": "0",
+     "ipady": "0",
+     "padx": "0",
+     "pady": "0",
+     "side": "top"
+    },
+    "path": ".!frame3",
+    "pytype": "Frame",
+    "relief": "",
+    "style": "",
+    "width": "0"
+   },
+   {
+    "binds": [],
+    "children": [
+     {
+      "binds": [],
+      "children": [],
+      "class": "TLabel",
+      "font": "",
+      "foreground": "",
+      "pack": {
+       "anchor": "center",
+       "expand": "0",
+       "fill": "none",
+       "ipadx": "0",
+       "ipady": "0",
+       "padx": "0",
+       "pady": "0",
+       "side": "left"
+      },
+      "path": ".!frame4.!label",
+      "pytype": "Label",
+      "relief": "",
+      "state": "normal",
+      "style": "Stats.TLabel",
+      "text": "Generația: 0  |  Celule active: 1  |  Dimensiuni: 35x51  |  Distribuție stări: [0: 1784, 1: 1]",
+      "width": ""
+     },
+     {
+      "binds": [],
+      "children": [],
+      "class": "TLabel",
+      "font": "{Segoe UI} 9",
+      "foreground": "#64748B",
+      "pack": {
+       "anchor": "center",
+       "expand": "0",
+       "fill": "none",
+       "ipadx": "0",
+       "ipady": "0",
+       "padx": "0",
+       "pady": "0",
+       "side": "right"
+      },
+      "path": ".!frame4.!label2",
+      "pytype": "Label",
+      "relief": "",
+      "state": "normal",
+      "style": "",
+      "text": "Gata. Click pe celule pentru editare manuală sau apasă Play/Randomize.",
+      "width": ""
+     }
+    ],
+    "class": "TFrame",
+    "pack": {
+     "anchor": "center",
+     "expand": "0",
+     "fill": "x",
+     "ipadx": "0",
+     "ipady": "0",
+     "padx": "0",
+     "pady": "0",
+     "side": "bottom"
+    },
+    "path": ".!frame4",
+    "pytype": "Frame",
+    "relief": "",
+    "style": "",
+    "width": "0"
+   }
+  ],
+  "class": "Tk",
+  "path": ".",
+  "pytype": "Tk",
+  "relief": "flat",
+  "width": "0"
+ }
+}
