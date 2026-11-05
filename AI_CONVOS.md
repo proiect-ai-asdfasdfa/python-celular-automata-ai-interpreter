@@ -247,7 +247,7 @@ Un singur model "universal". Dacă amesteci datele de la toate automatele și î
 Pentru discuția de mâine, prezentați varianta 1. Este cel mai curat mod de a face experimentul cerut: nu îi dați nicio regulă explicită, îi dați doar stările matricei, iar rețeaua trebuie să deducă singură comportamentul. Evaluarea experimentului va fi pur și simplu un procent: cât la sută din matricea prezisă de rețea se suprapune perfect cu matricea generată de engine-ul vostru clasic.
 ```
 
-
+```
 Prompt:
 Vreau să refactorizez acest proiect (CelLab – sistem de automate celulare, proiect de echipă la AI) fără să-i schimb comportamentul. Scopul este o structură modulară, cu fișiere separate pe funcționalități (de ex. reprezentarea/gestionarea stării lumii, definirea și aplicarea regulilor, simularea generațiilor, salvarea/încărcarea stării și parsing JSON, parsing-ul descrierii în limbaj natural, răspunsurile la întrebări – stare după N pași, stabilitate, cicluri, numărare celule –, interfața grafică).
 
@@ -279,5 +279,5 @@ Pasul 4 – Final:
 - Rulează din nou totul și confirmă că rezultatele sunt identice cu baseline-ul.
 - Arată-mi `git status` și un rezumat al lui `git diff --stat`, ca să pot revizui și face eu commit-ul.
 - Actualizează README-ul (dacă există) cu noua structură și instrucțiunile de rulare, dacă s-au schimbat.
-
+```
 
